@@ -4,7 +4,7 @@ const ListRoutes = [
     {
         path: '/',
         component: lazy(() =>
-        import('../components/login/Login')
+        import('../pages/login/Login')
         )
     }
 ];
