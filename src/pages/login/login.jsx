@@ -21,7 +21,7 @@ const Login = () => {
             return false;
         }
     }
-    
+
     return (
         <div className='login'>
             <div className="form">
@@ -30,19 +30,19 @@ const Login = () => {
                     <div className='form-group'>
                         <label htmlFor="">Username</label>
                         <input
-                        type="text"
-                        className='form-control'
-                        name='username'
-                        value={formData.username}
+                            type="text"
+                            className='form-control'
+                            name='username'
+                            value={formData.username}
                         />
                     </div>
                     <div className="form-group">
                         <label htmlFor="">Password</label>
                         <input
-                        type="password"
-                        className='form-control'
-                        name='password'
-                        value={formData.username}
+                            type="password"
+                            className='form-control'
+                            name='password'
+                            value={formData.username}
                         />
                     </div>
                     <div className='sub-btn'>

@@ -4,9 +4,9 @@ const ListRoutes = [
     {
         path: '/',
         component: lazy(() =>
-        import('../pages/login/Login')
+            import('../pages/login/login')
         )
     }
 ];
 
-export {ListRoutes};
+export { ListRoutes };
