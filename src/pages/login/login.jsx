@@ -10,6 +10,12 @@ const Login = () => {
         password: ''
     });
 
+    function handleChange(e) {
+        let data = { ...formData }
+        data[e.target.name] = e.target.value
+        setFormData(data)
+    }
+
     function handleSubmit(e) {
         e.preventDefault();
         if (formData.username === "") {
@@ -34,6 +40,7 @@ const Login = () => {
                             className='form-control'
                             name='username'
                             value={formData.username}
+                            onChange={handleChange}
                         />
                     </div>
                     <div className="form-group">
@@ -42,7 +49,8 @@ const Login = () => {
                             type="password"
                             className='form-control'
                             name='password'
-                            value={formData.username}
+                            value={formData.password}
+                            onChange={handleChange}
                         />
                     </div>
                     <div className='sub-btn'>
