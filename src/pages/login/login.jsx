@@ -19,7 +19,7 @@ const Login = () => {
         // const resData = res?.data?.data;
         // localStorage.setItem('username', resData?.user?.username);
         // localStorage.setItem('email', resData?.user?.email);
-        // localStorage.setItem('password', resData?.password);
+        // localStorage.setItem('token', resData?.token);
 
         navigate('/')
     })
@@ -30,7 +30,7 @@ const Login = () => {
   return (
     <div className="Login">
         <center>
-            <h1>Login</h1>
+            <h3>Login</h3>
         </center>
         <Form
         name="normal_login"
@@ -89,9 +89,9 @@ const Login = () => {
             <Button type="primary" htmlType="submit" className="login-form-button">
                 Log in
             </Button><br />
-            Don't have an account ? 
+            Don't have an account ?&nbsp;&nbsp;
             <Link to={`/register`}>
-                register now!
+                Register Now!
             </Link>
         </Form.Item>
         </Form>
