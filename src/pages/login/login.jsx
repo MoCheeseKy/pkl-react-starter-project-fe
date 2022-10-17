@@ -17,8 +17,6 @@ const Login = () => {
     console.log('Success:', values);
     axios.post("https://bf87-2001-448a-302e-3eba-30a8-6232-ffb7-6c9c.ngrok.io/login-gate/", values).then((res) => {
         const resData = res?.data;
-        localStorage.setItem('username', resData?.username);
-        localStorage.setItem('email', resData?.email);
         localStorage.setItem('token', resData?.token);
 
         navigate('/')
