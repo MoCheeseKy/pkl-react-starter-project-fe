@@ -1,0 +1,47 @@
+.main-topic.large {
+    padding: 0 50px;
+
+    .divider {
+        font-size: 24px;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .right {
+        text-align: right;
+    }
+}
+
+.main-topic.small {
+    padding: 0 20px;
+    display: none;
+
+
+    .divider {
+        font-size: 18px;
+    }
+
+    p {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-topic.large {
+        display: none;
+    }
+
+    .main-topic.small {
+        display: block;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
