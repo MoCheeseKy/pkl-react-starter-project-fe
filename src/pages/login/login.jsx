@@ -68,7 +68,9 @@ const Login = () => {
             }}
         >
             <Button type="primary" htmlType="submit" className="login-form-button">
-                Log in
+                <Link to={`/`}>
+                    Log in
+                </Link>
             </Button><br />
             Don't have an account ? 
             <Link to={`/register`}>
