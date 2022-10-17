@@ -1,65 +1,60 @@
-import React from 'react';
-import './Login.scss';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { Button, Form, Input, Radio } from 'antd';
+import React, { useState } from 'react';
+
 
 const Login = () => {
-
-    const [formData, setFormData] = useState({
-        username: '',
-        password: ''
-    });
-
-    function handleChange(e) {
-        let data = { ...formData }
-        data[e.target.name] = e.target.value
-        setFormData(data)
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        if (formData.username === "") {
-            alert("Mohon isi username")
-            return false;
+  const [form] = Form.useForm();
+  const [formLayout, setFormLayout] = useState('horizontal');
+  const onFormLayoutChange = ({ layout }) => {
+    setFormLayout(layout);
+  };
+  const formItemLayout =
+    formLayout === 'horizontal'
+      ? {
+          labelCol: {
+            span: 4,
+          },
+          wrapperCol: {
+            span: 14,
+          },
         }
-        if (formData.password === "") {
-            alert("Mohon isi password")
-            return false;
+      : null;
+  const buttonItemLayout =
+    formLayout === 'horizontal'
+      ? {
+          wrapperCol: {
+            span: 14,
+            offset: 4,
+          },
         }
-    }
-
-    return (
-        <div className='login'>
-            <div className="form">
-                <h1 className='px-3 py-3'>Login</h1>
-                <form className='px-3 py-4' onSubmit={handleSubmit}>
-                    <div className='form-group'>
-                        <label htmlFor="">Username</label>
-                        <input
-                            type="text"
-                            className='form-control'
-                            name='username'
-                            value={formData.username}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="">Password</label>
-                        <input
-                            type="password"
-                            className='form-control'
-                            name='password'
-                            value={formData.password}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div className='sub-btn'>
-                        <button className='btn btn-primary'>Login</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    );
-}
-
+      : null;
+  return (
+    <Form
+      {...formItemLayout}
+      layout={formLayout}
+      form={form}
+      initialValues={{
+        layout: formLayout,
+      }}
+      onValuesChange={onFormLayoutChange}
+    >
+      <Form.Item label="Form Layout" name="layout">
+        <Radio.Group value={formLayout}>
+          <Radio.Button value="horizontal">Horizontal</Radio.Button>
+          <Radio.Button value="vertical">Vertical</Radio.Button>
+          <Radio.Button value="inline">Inline</Radio.Button>
+        </Radio.Group>
+      </Form.Item>
+      <Form.Item label="Field A">
+        <Input placeholder="input placeholder" />
+      </Form.Item>
+      <Form.Item label="Field B">
+        <Input placeholder="input placeholder" />
+      </Form.Item>
+      <Form.Item {...buttonItemLayout}>
+        <Button type="primary">Submit</Button>
+      </Form.Item>
+    </Form>
+  );
+};
 export default Login;
