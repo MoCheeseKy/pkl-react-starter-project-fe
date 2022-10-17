@@ -1,12 +1,28 @@
 import { Button, Form, Input } from 'antd';
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import './Login.scss'
+import axios from 'axios';
 
 const Login = () => {
   const navigate = useNavigate();
+  const [payloadLogin, setPayloadLogin] = useState({});
+  const handlechange = (e) => {
+    setPayloadLogin({
+        ...payloadLogin,
+        [e.target.name]: e.target.value
+    });
+  };
   const onFinish = (values) => {
     console.log('Success:', values);
-    navigate('/')
+    axios.post("https://bf87-2001-448a-302e-3eba-30a8-6232-ffb7-6c9c.ngrok.io/login-gate/", values).then((res) => {
+        const resData = res?.data?.data;
+        localStorage.setItem('username', resData?.user?.username);
+        localStorage.setItem('email', resData?.user?.email);
+        localStorage.setItem('password', resData?.password);
+
+        navigate('/')
+    })
   };
   const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
@@ -42,7 +58,7 @@ const Login = () => {
             },
             ]}
         >
-            <Input />
+            <Input onChange={handlechange} />
         </Form.Item>
 
         <Form.Item
@@ -55,7 +71,7 @@ const Login = () => {
             },
             ]}
         >
-            <Input.Password />
+            <Input.Password onChange={handlechange} />
         </Form.Item>
 
         <Form.Item
