@@ -1,10 +1,12 @@
 import { Button, Form, Input } from 'antd';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate();
   const onFinish = (values) => {
     console.log('Success:', values);
+    navigate('/')
   };
   const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
