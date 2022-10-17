@@ -2,12 +2,11 @@ import {
     Button,
     Form,
     Input,
-    Select,
 } from 'antd';
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import './register.scss'
 
-const { Option } = Select;
 const formItemLayout = {
   labelCol: {
     xs: {
@@ -38,7 +37,7 @@ const tailFormItemLayout = {
     },
   },
 };
-const App = () => {
+const Register = () => {
   const navigate = useNavigate();
   const [form] = Form.useForm();
   const onFinish = (values) => {
@@ -47,7 +46,7 @@ const App = () => {
   };
   return (
       <div className="Register">
-          <center><h1>Register</h1></center>
+          <center><h3>Register</h3></center>
           <Form
               {...formItemLayout}
               form={form}
@@ -55,6 +54,19 @@ const App = () => {
               onFinish={onFinish}
               scrollToFirstError
           >
+              <Form.Item
+              name="username"
+              label="Username"
+              rules={[
+                  {
+                  required: true,
+                  message: 'Please input your username!',
+                  whitespace: true,
+                  },
+              ]}
+              >
+              <Input />
+              </Form.Item>
               <Form.Item
               name="email"
               label="E-mail"
@@ -109,39 +121,11 @@ const App = () => {
               <Input.Password />
               </Form.Item>
       
-              <Form.Item
-              name="nickname"
-              label="Nickname"
-              rules={[
-                  {
-                  required: true,
-                  message: 'Please input your nickname!',
-                  whitespace: true,
-                  },
-              ]}
-              >
-              <Input />
-              </Form.Item>
-              <Form.Item
-              name="gender"
-              label="Gender"
-              rules={[
-                  {
-                  required: true,
-                  message: 'Please select gender!',
-                  },
-              ]}
-              >
-              <Select placeholder="select your gender">
-                  <Option value="male">Male</Option>
-                  <Option value="female">Female</Option>
-              </Select>
-              </Form.Item>
               <Form.Item {...tailFormItemLayout}>
               <Button type="primary" htmlType="submit">
                   Register
               </Button><br />
-              Have an accout ?
+              Have an accout ?&nbsp;&nbsp;
               <Link to={`/login`}>
                   Login!
               </Link>
@@ -150,4 +134,4 @@ const App = () => {
     </div>
   );
 };
-export default App;
+export default Register;
