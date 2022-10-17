@@ -15,7 +15,8 @@ const Login = () => {
             <h1>Login</h1>
         </center>
         <Form
-        name="basic"
+        name="normal_login"
+        className="login-form"
         labelCol={{
             span: 7,
         }}
@@ -68,9 +69,7 @@ const Login = () => {
             }}
         >
             <Button type="primary" htmlType="submit" className="login-form-button">
-                <Link to={`/`}>
-                    Log in
-                </Link>
+                Log in
             </Button><br />
             Don't have an account ? 
             <Link to={`/register`}>
