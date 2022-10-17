@@ -16,10 +16,10 @@ const Login = () => {
   const onFinish = (values) => {
     console.log('Success:', values);
     axios.post("https://bf87-2001-448a-302e-3eba-30a8-6232-ffb7-6c9c.ngrok.io/login-gate/", values).then((res) => {
-        const resData = res?.data?.data;
-        localStorage.setItem('username', resData?.user?.username);
-        localStorage.setItem('email', resData?.user?.email);
-        localStorage.setItem('password', resData?.password);
+        // const resData = res?.data?.data;
+        // localStorage.setItem('username', resData?.user?.username);
+        // localStorage.setItem('email', resData?.user?.email);
+        // localStorage.setItem('password', resData?.password);
 
         navigate('/')
     })
@@ -58,7 +58,7 @@ const Login = () => {
             },
             ]}
         >
-            <Input onChange={handlechange} />
+            <Input placeholder='Username' onChange={handlechange} />
         </Form.Item>
 
         <Form.Item
@@ -71,7 +71,7 @@ const Login = () => {
             },
             ]}
         >
-            <Input.Password onChange={handlechange} />
+            <Input.Password placeholder='Password' onChange={handlechange} />
         </Form.Item>
 
         <Form.Item
