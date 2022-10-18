@@ -15,6 +15,7 @@ function App() {
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
         <Route exact path='/daftar' element={<Daftar />} />
+        <Route path="*" element={<center><h1>Cannot Found the URL !</h1></center>}/>
       </Routes>
     </Suspense>
   );
