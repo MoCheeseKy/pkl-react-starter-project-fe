@@ -9,15 +9,15 @@
 
     .sider {
         width: 20%;
-        height: 75%;
+        height: 70%;
         background-color: #000;
-        border-radius: 50px 0 0 180px;
+        border-radius: 50px 0 0 170px;
         border: 2px solid black;
     }
 
     .form {
         width: 30%;
-        height: 75%;
+        height: 70%;
         padding: 20px;
         box-sizing: border-box;
         border: 2px solid black;
@@ -51,6 +51,20 @@
             cursor: pointer;
         }
 
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .daftar {
+        .sider {
+            height: 80%;
+            width: 80%;
+        }
+
+        .form {
+            height: 80%;
+            width: 80%;
+        }
     }
 }
 
