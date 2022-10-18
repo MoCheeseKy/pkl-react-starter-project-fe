@@ -2,8 +2,10 @@ import {
     Button,
     Form,
     Input,
+    Space,
 } from 'antd';
-import React from 'react';
+import axios from 'axios';
+import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './register.scss'
 
@@ -38,11 +40,20 @@ const tailFormItemLayout = {
   },
 };
 const Register = () => {
+  const [payloadLogin, setPayloadLogin] = useState({});
+  const handlechange = (e) => {
+    setPayloadLogin({
+        ...payloadLogin,
+        [e.target.name]: e.target.value
+    });
+  };
   const navigate = useNavigate();
   const [form] = Form.useForm();
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
-    navigate('/');
+    axios.post("https://bf87-2001-448a-302e-3eba-30a8-6232-ffb7-6c9c.ngrok.io/User-Register/", values).then((res) =>{
+      navigate('/')
+    })
   };
   return (
       <div className="Register">
@@ -53,6 +64,7 @@ const Register = () => {
               name="register"
               onFinish={onFinish}
               scrollToFirstError
+              autoComplete='off'
           >
               <Form.Item
               name="username"
@@ -65,7 +77,7 @@ const Register = () => {
                   },
               ]}
               >
-              <Input />
+              <Input onChange={handlechange} />
               </Form.Item>
               <Form.Item
               name="email"
@@ -81,7 +93,7 @@ const Register = () => {
                   },
               ]}
               >
-              <Input />
+              <Input onChange={handlechange} />
               </Form.Item>
       
               <Form.Item
@@ -95,7 +107,7 @@ const Register = () => {
               ]}
               hasFeedback
               >
-              <Input.Password />
+              <Input.Password onChange={handlechange} />
               </Form.Item>
       
               <Form.Item
@@ -118,17 +130,19 @@ const Register = () => {
                   }),
               ]}
               >
-              <Input.Password />
+              <Input.Password onChange={handlechange} />
               </Form.Item>
       
               <Form.Item {...tailFormItemLayout}>
+              <Space direction='vertical'>
               <Button type="primary" htmlType="submit">
                   Register
-              </Button><br />
-              Have an accout ?&nbsp;&nbsp;
+              </Button>
+              Have an accout ?
               <Link to={`/login`}>
                   Login!
               </Link>
+              </Space>
               </Form.Item>
           </Form>
     </div>

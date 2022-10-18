@@ -1,4 +1,4 @@
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, Space } from 'antd';
 import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.scss'
@@ -16,10 +16,8 @@ const Login = () => {
   const onFinish = (values) => {
     console.log('Success:', values);
     axios.post("https://bf87-2001-448a-302e-3eba-30a8-6232-ffb7-6c9c.ngrok.io/login-gate/", values).then((res) => {
-        // const resData = res?.data?.data;
-        // localStorage.setItem('username', resData?.user?.username);
-        // localStorage.setItem('email', resData?.user?.email);
-        // localStorage.setItem('token', resData?.token);
+        const resData = res?.data;
+        localStorage.setItem('token', resData?.token);
 
         navigate('/')
     })
@@ -86,13 +84,15 @@ const Login = () => {
               },
             }}
         >
+            <Space direction='vertical'>
             <Button type="primary" htmlType="submit" className="login-form-button">
                 Log in
-            </Button><br />
-            Don't have an account ?&nbsp;&nbsp;
+            </Button>
+            Don't have an account ?
             <Link to={`/register`}>
                 Register Now!
             </Link>
+            </Space>
         </Form.Item>
         </Form>
     </div>
