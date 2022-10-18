@@ -1,0 +1,82 @@
+.daftar {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+
+    .sider {
+        width: 20%;
+        height: 70%;
+        background-color: #000;
+        border-radius: 50px 0 0 180px;
+        border: 2px solid black;
+    }
+
+    .form {
+        width: 30%;
+        height: 70%;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 0 50px 0 0;
+
+
+
+        .text {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .input {
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+        }
+
+        button {
+            width: fit-content;
+            height: fit-content;
+            background: transparent;
+            background-size: 100%;
+            font-size: 15px;
+            border: 1px solid black;
+            padding: 0 13px;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-right: 5px;
+            float: right;
+            cursor: pointer;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .daftar {
+        .sider {
+            width: 5%;
+            height: 60%;
+        }
+
+        .form {
+            width: 70%;
+            height: 60%;
+
+            .text {
+                font-size: 1.5em;
+            }
+
+            .input {
+                height: 35px;
+            }
+
+            button {
+                margin-right: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+}
