@@ -16,7 +16,7 @@ export default function Header() {
                     <div className="list"></div>
                     <div className="list">Covid 19</div>
                     <div className="list">Informasi Publik</div>
-                    <Link to={'/pendaftar'}>
+                    <Link to={'/daftar'}>
                         <div className="list">Pendaftaran</div></Link>
                     <Link to={'/login'}>
                         <div className="list">Login</div>
