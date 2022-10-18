@@ -63,6 +63,7 @@ const Register = () => {
               name="register"
               onFinish={onFinish}
               scrollToFirstError
+              autoComplete='off'
           >
               <Form.Item
               name="username"
