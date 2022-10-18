@@ -2,6 +2,7 @@ import {
     Button,
     Form,
     Input,
+    Space,
 } from 'antd';
 import axios from 'axios';
 import React, {useState} from 'react';
@@ -133,13 +134,15 @@ const Register = () => {
               </Form.Item>
       
               <Form.Item {...tailFormItemLayout}>
+              <Space direction='vertical'>
               <Button type="primary" htmlType="submit">
                   Register
-              </Button><br />
-              Have an accout ?&nbsp;&nbsp;
+              </Button>
+              Have an accout ?
               <Link to={`/login`}>
                   Login!
               </Link>
+              </Space>
               </Form.Item>
           </Form>
     </div>

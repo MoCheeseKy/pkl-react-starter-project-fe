@@ -1,4 +1,4 @@
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, Space } from 'antd';
 import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.scss'
@@ -84,13 +84,15 @@ const Login = () => {
               },
             }}
         >
+            <Space direction='vertical'>
             <Button type="primary" htmlType="submit" className="login-form-button">
                 Log in
-            </Button><br />
-            Don't have an account ?&nbsp;&nbsp;
+            </Button>
+            Don't have an account ?
             <Link to={`/register`}>
                 Register Now!
             </Link>
+            </Space>
         </Form.Item>
         </Form>
     </div>
