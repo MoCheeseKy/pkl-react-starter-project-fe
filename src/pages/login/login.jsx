@@ -90,7 +90,7 @@ const Login = () => {
             </Button>
             Don't have an account ?
             <Link to={`/register`}>
-                Register Now!
+                Register Now !
             </Link>
             </Space>
         </Form.Item>
