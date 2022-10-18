@@ -4,6 +4,7 @@ import './App.scss';
 import Home from './pages/home/home';
 import Login from './pages/login/login';
 import Register from './pages/register/register';
+import Daftar from './pages/daftar/daftar';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
+        <Route exact path='/daftar' element={<Daftar />} />
       </Routes>
     </Suspense>
   );
