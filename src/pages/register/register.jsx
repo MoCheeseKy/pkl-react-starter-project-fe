@@ -1,4 +1,4 @@
-import { Button, Form, Input, Space, } from 'antd';
+import { Button, Form, Input } from 'antd';
 import axios from 'axios';
 import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -29,8 +29,8 @@ const tailFormItemLayout = {
       offset: 0,
     },
     sm: {
-      span: 7,
-      offset: 7,
+      span: 8,
+      offset: 8,
     },
   },
 };
@@ -52,94 +52,96 @@ const Register = () => {
   };
   return (
       <div className="Register">
+        <div className="title">
           <center><h3>Register</h3></center>
-          <Form
-              {...formItemLayout}
-              form={form}
-              name="register"
-              onFinish={onFinish}
-              scrollToFirstError
-              autoComplete='off'
-          >
-              <Form.Item
-              name="username"
-              label="Username"
-              rules={[
-                  {
-                  required: true,
-                  message: 'Please input your username!',
-                  whitespace: true,
-                  },
-              ]}
-              >
-              <Input onChange={handlechange} />
-              </Form.Item>
-              <Form.Item
-              name="email"
-              label="E-mail"
-              rules={[
-                  {
-                  type: 'email',
-                  message: 'The input is not valid E-mail!',
-                  },
-                  {
-                  required: true,
-                  message: 'Please input your E-mail!',
-                  },
-              ]}
-              >
-              <Input onChange={handlechange} />
-              </Form.Item>
+        </div>
+        <Form
+            {...formItemLayout}
+            form={form}
+            name="register"
+            onFinish={onFinish}
+            scrollToFirstError
+            autoComplete='off'
+        >
+            <Form.Item
+            name="username"
+            label="Username"
+            rules={[
+                {
+                required: true,
+                message: 'Please input your username!',
+                whitespace: true,
+                },
+            ]}
+            >
+            <Input onChange={handlechange} />
+            </Form.Item>
+            <Form.Item
+            name="email"
+            label="E-mail"
+            rules={[
+                {
+                type: 'email',
+                message: 'The input is not valid E-mail!',
+                },
+                {
+                required: true,
+                message: 'Please input your E-mail!',
+                },
+            ]}
+            >
+            <Input onChange={handlechange} />
+            </Form.Item>
       
-              <Form.Item
-              name="password"
-              label="Password"
-              rules={[
-                  {
-                  required: true,
-                  message: 'Please input your password!',
-                  },
-              ]}
-              hasFeedback
-              >
-              <Input.Password onChange={handlechange} />
-              </Form.Item>
+            <Form.Item
+            name="password"
+            label="Password"
+            rules={[
+                {
+                required: true,
+                message: 'Please input your password!',
+                },
+            ]}
+            hasFeedback
+            >
+            <Input.Password onChange={handlechange} />
+            </Form.Item>
       
-              <Form.Item
-              name="confirm"
-              label="Confirm Password"
-              dependencies={['password']}
-              hasFeedback
-              rules={[
-                  {
-                  required: true,
-                  message: 'Please confirm your password!',
-                  },
-                  ({ getFieldValue }) => ({
-                  validator(_, value) {
-                      if (!value || getFieldValue('password') === value) {
-                      return Promise.resolve();
-                      }
-                      return Promise.reject(new Error('The two passwords that you entered do not match!'));
-                  },
-                  }),
-              ]}
-              >
-              <Input.Password onChange={handlechange} />
-              </Form.Item>
+            <Form.Item
+            name="confirm"
+            label="Confirm Password"
+            dependencies={['password']}
+            hasFeedback
+            rules={[
+                {
+                required: true,
+                message: 'Please confirm your password!',
+                },
+                ({ getFieldValue }) => ({
+                validator(_, value) {
+                    if (!value || getFieldValue('password') === value) {
+                    return Promise.resolve();
+                    }
+                    return Promise.reject(new Error('The two passwords that you entered do not match!'));
+                },
+                }),
+            ]}
+            >
+            <Input.Password onChange={handlechange} />
+            </Form.Item>
       
-              <Form.Item {...tailFormItemLayout}>
-              <Space direction='vertical'>
-              <Button type="primary" htmlType="submit">
-                  Register
-              </Button>
-              Have an accout ?
+            <Form.Item {...tailFormItemLayout}>
+            <Button className='btn-reg' type="primary" htmlType="submit">
+                Register
+            </Button>
+              <div className="log">
+              Have an account ?&nbsp;
               <Link to={`/login`}>
                   Login!
               </Link>
-              </Space>
-              </Form.Item>
-          </Form>
+            </div>
+            </Form.Item>
+        </Form>
     </div>
   );
 };
