@@ -1,3 +1,19 @@
 .Register{
-    padding-top: 1vh;
+    height: auto;
+    min-height: 100vh;
+}
+
+.Register .title{
+    background: #1890FF;
+}
+
+.btn-reg{
+    width: 100vw;
+    max-width: 100%;
+}
+
+.log{
+    padding: 1vh 0;
+    background: #E3E3E3;
+    text-align: center;
 }

@@ -1,3 +1,19 @@
 .Login{
-    padding-top: 1vh;
+    height: auto;
+    min-height: 100vh;
+}
+
+.Login .title{
+    background: #1890FF;
+}
+
+.btn-log{
+    width: 100vw;
+    max-width: 100%;
+}
+
+.reg{
+    padding: 1vh 0;
+    background: #E3E3E3;
+    text-align: center;
 }

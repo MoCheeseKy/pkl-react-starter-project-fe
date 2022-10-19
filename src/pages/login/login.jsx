@@ -1,4 +1,4 @@
-import { Button, Form, Input, Space } from 'antd';
+import { Button, Form, Input, } from 'antd';
 import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.scss'
@@ -27,9 +27,9 @@ const Login = () => {
   };
   return (
     <div className="Login">
-        <center>
-            <h3>Login</h3>
-        </center>
+        <div className="title">
+            <center><h3>Login</h3></center>
+        </div>
         <Form
         name="normal_login"
         className="login-form"
@@ -79,20 +79,20 @@ const Login = () => {
                 offset: 0
               },
               sm: {
-                span: 7,
-                offset: 7,
+                span: 8,
+                offset: 8,
               },
             }}
         >
-            <Space direction='vertical'>
-            <Button type="primary" htmlType="submit" className="login-form-button">
-                Log in
+            <Button type="primary" htmlType="submit" className="login-form-button btn-log">
+              Log in
             </Button>
-            Don't have an account ?
-            <Link to={`/register`}>
-                Register Now !
-            </Link>
-            </Space>
+            <div className="reg">
+              Don't have an account ? &nbsp;
+              <Link to={`/register`}>
+                  Register !
+              </Link>
+            </div>
         </Form.Item>
         </Form>
     </div>
