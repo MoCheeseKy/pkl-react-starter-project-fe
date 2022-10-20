@@ -49,7 +49,18 @@ export default function Header() {
         fontSize: '18px',
         color: 'black',
     }
+    const login = localStorage.getItem('login')
+    var showButton
+    if (login === "true") {
+        showButton = false
+    } else {
+        showButton = true
+    }
 
+    function Logout() {
+        localStorage.clear()
+        window.location.reload()
+    }
 
 
     return (
@@ -67,9 +78,14 @@ export default function Header() {
                     <Link to="/daftar" >
                         <button className="log">Pendaftaran</button>
                     </Link>
-                    <Link to="/login">
-                        <button className="log">Login</button>
-                    </Link>
+                    <div hidden={!showButton} className="login-btn">
+                        <Link to="/login">
+                            <button>Login</button>
+                        </Link>
+                    </div>
+                    <div hidden={showButton} className="logout-btn">
+                        <button onClick={Logout}>Logout</button>
+                    </div>
                 </div>
                 <div className="bottom-nav">
                     <button>Academic</button>
@@ -104,7 +120,8 @@ export default function Header() {
                         <Link><button style={buttonLeft}>Graduates</button></Link>
                         <Link><button style={buttonLeft}>Alumni</button></Link>
                         <Link to="/daftar"><button style={buttonLeft}>Daftar</button></Link>
-                        <Link to="/login"><button style={buttonLeft}>Login</button></Link>
+                        <Link to="/login"><button hidden={!showButton} style={buttonLeft}>Login</button></Link>
+                        <button onClick={Logout} style={buttonLeft} hidden={showButton}>Logout</button>
                     </div>
                     <div className="right" style={right}>
                         <Link><button style={buttonRight}>Academic</button></Link>

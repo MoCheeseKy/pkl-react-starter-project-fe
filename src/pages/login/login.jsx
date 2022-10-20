@@ -1,10 +1,17 @@
-import { Button, Form, Input, } from 'antd';
+import { Button, Form, Input, Alert, } from 'antd';
 import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.scss'
 import axios from 'axios';
 
 const Login = () => {
+  const login = localStorage.getItem('login')
+  var formAble
+  if (login === "true") {
+    formAble = true
+  } else{
+    formAble = false
+  }
   const navigate = useNavigate();
   const [payloadLogin, setPayloadLogin] = useState({});
   const handlechange = (e) => {
@@ -15,9 +22,10 @@ const Login = () => {
   };
   const onFinish = (values) => {
     console.log('Success:', values);
-    axios.post("https://bf87-2001-448a-302e-3eba-30a8-6232-ffb7-6c9c.ngrok.io/login-gate/", values).then((res) => {
+    axios.post("https://7d2f-180-244-137-26.ngrok.io/login-gate/", values).then((res) => {
         const resData = res?.data;
         localStorage.setItem('token', resData?.token);
+        localStorage.setItem('login', true)
 
         navigate('/')
     })
@@ -28,11 +36,17 @@ const Login = () => {
   return (
     <div className="Login">
         <div className="title">
-          <center><h3>Login</h3></center>
+          <center>
+            <h3>Login</h3>
+            <div hidden={!formAble} className="alert-msg">
+              <Alert message="Kamu sudah login, harap kembali ke homepage" type='error' />
+            </div>
+          </center>
         </div>
         <Form
         name="normal_login"
         className="login-form"
+        disabled={formAble}
         labelCol={{
             span: 7,
         }}
@@ -87,7 +101,7 @@ const Login = () => {
             <Button type="primary" htmlType="submit" className="login-form-button btn-log">
               Log in
             </Button>
-            <div className="reg">
+            <div hidden={formAble} className="reg">
               Don't have an account ? &nbsp;
               <Link to={`/register`}>
                   Register !
