@@ -1,6 +1,6 @@
 import React from 'react'
 import './foot.scss'
-import { WhatsAppOutlined, MailOutlined } from '@ant-design/icons';
+import { WhatsAppOutlined, MailOutlined, FacebookFilled, TwitterCircleFilled, YoutubeFilled, InstagramFilled, LinkedinFilled } from '@ant-design/icons';
 import { List } from 'antd';
 import { Link } from 'react-router-dom';
 
@@ -51,7 +51,18 @@ export default function Foot() {
                   </div>
               </div>
           </div>
-          <div className="icon">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div className="icon">
+            <div className="icon-content">
+              <img src="https://iblam.ac.id/wp-content/themes/iblam_mobile/assets/img/logo.png" alt='iblam' /><br />
+              <div className="icon-img">
+                <FacebookFilled style={{fontSize: '30px', marginRight: '2%'}} />
+                <TwitterCircleFilled style={{fontSize: '30px', marginRight: '2%'}} />
+                <YoutubeFilled style={{fontSize: '30px', marginRight: '2%'}} />
+                <InstagramFilled style={{fontSize: '30px', marginRight: '2%'}} />
+                <LinkedinFilled style={{fontSize: '30px', marginRight: '2%'}} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
   </section>
