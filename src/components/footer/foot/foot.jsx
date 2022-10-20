@@ -65,6 +65,14 @@ export default function Foot() {
           </div>
         </div>
       </div>
+      <div className="footer-down">
+        <p>©2019-2020 IBLAM School of Law. Yayasan LPIHM IBLAM. All rights reserved.</p>
+        <div className="terms">
+          <Link>Privacy Policy</Link>|
+          <Link>Terms of Use</Link>|
+          <Link>Accessibility</Link>
+        </div>
+      </div>
   </section>
   )
 }
