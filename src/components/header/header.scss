@@ -111,11 +111,19 @@
             .bottom-nav {
                 font-size: 1.2em;
                 gap: 20px;
+
+                button:hover {
+                    font-size: 0.9em;
+                }
+
+                .search {
+                    width: 25px;
+                    height: 25px;
+                    background-color: #000;
+                }
             }
 
-            button:hover {
-                font-size: 0.9em;
-            }
+
         }
     }
 }
