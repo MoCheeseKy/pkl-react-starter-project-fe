@@ -78,13 +78,15 @@ export default function Header() {
                     <Link to="/daftar" >
                         <button className="log">Pendaftaran</button>
                     </Link>
-                    <div hidden={!showButton} className="login-btn">
+                    <div hidden={!showButton}>
                         <Link to="/login">
                             <button className="log">Login</button>
                         </Link>
                     </div>
-                    <div hidden={showButton} className="logout-btn">
-                        <button className="log" onClick={Logout}>Logout</button>
+                    <div hidden={showButton}>
+                        <Link>
+                            <button className="log" onClick={Logout}>Logout</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="bottom-nav">
