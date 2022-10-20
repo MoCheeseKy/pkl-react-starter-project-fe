@@ -1,6 +1,8 @@
 import React from "react";
 import "./home.scss"
 import Header from "../../components/header/header";
+import { SwapRightOutlined } from '@ant-design/icons';
+
 import { Carousel, Divider } from 'antd';
 
 export default function Home() {
@@ -35,24 +37,24 @@ export default function Home() {
                 </div>
             </Carousel>
 
-            <div className="wrapper">
+            <div className="wrapper one">
                 <div className="tittle">
-                    Melangkah bersama kami
+                    <div className="icon">
+                    </div>
+                    <div className="text">
+                        Melangkah bersama kami
+                    </div>
                 </div>
                 <div className="content">
                     <div className="item">
                         <div className="item-image">
 
-                        </div>
-                        <div className="subtitle">
-                            Lorem ipsum dolor sit.
-                        </div>
-                        <div className="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi itaque voluptas fugiat a sunt odit doloribus omnis.
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className="item-image">
+                            <div className="image-text">
+                                <div className="text">
+                                    Explore now
+                                </div>
+                                <SwapRightOutlined />
+                            </div>
 
                         </div>
                         <div className="subtitle">
@@ -64,6 +66,31 @@ export default function Home() {
                     </div>
                     <div className="item">
                         <div className="item-image">
+
+                            <div className="image-text">
+                                <div className="text">
+                                    Explore now
+                                </div>
+                                <SwapRightOutlined />
+                            </div>
+
+                        </div>
+                        <div className="subtitle">
+                            Lorem ipsum dolor sit.
+                        </div>
+                        <div className="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi itaque voluptas fugiat a sunt odit doloribus omnis.
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="item-image">
+
+                            <div className="image-text">
+                                <div className="text">
+                                    Explore now
+                                </div>
+                                <SwapRightOutlined />
+                            </div>
 
                         </div>
                         <div className="subtitle">
@@ -76,6 +103,32 @@ export default function Home() {
 
                 </div>
             </div>
+            <div className="wrapper two">
+
+            </div>
+            <div className="wrapper third">
+                <div className="content">
+                    <div className="subtittle">
+
+                        About University
+
+                    </div>
+                    <div className="tittle">
+
+                        Melangkah Bersama University
+
+                    </div>
+                    <div className="text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error et reprehenderit vero, quas nobis quidem? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+
+                    </div>
+                    <button><div className="text">More About University</div> <SwapRightOutlined /></button>
+                </div>
+                <div className="youtube">
+
+                </div>
+            </div>
+
 
         </main>
     )
