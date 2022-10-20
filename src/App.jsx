@@ -5,7 +5,6 @@ import Home from './pages/home/home';
 import Login from './pages/login/login';
 import Register from './pages/register/register';
 import Daftar from './pages/daftar/daftar';
-import Foot from './components/footer/foot/foot';
 
 
 function App() {
@@ -16,8 +15,12 @@ function App() {
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
         <Route exact path='/daftar' element={<Daftar />} />
-        <Route exact path='/tes' element={<Foot />} />
-        <Route path="*" element={<center><h1>Cannot Found the URL !</h1></center>}/>
+        <Route path="*" element={
+        <center>
+          <h1>Oops! That page can’t be found.</h1>
+          <p>It looks like nothing was found at this location. Maybe try other link ?</p>
+        </center>
+        }/>
       </Routes>
     </Suspense>
   );
