@@ -80,11 +80,11 @@ export default function Header() {
                     </Link>
                     <div hidden={!showButton} className="login-btn">
                         <Link to="/login">
-                            <button>Login</button>
+                            <button className="log">Login</button>
                         </Link>
                     </div>
                     <div hidden={showButton} className="logout-btn">
-                        <button onClick={Logout}>Logout</button>
+                        <button className="log" onClick={Logout}>Logout</button>
                     </div>
                 </div>
                 <div className="bottom-nav">
