@@ -5,7 +5,7 @@ import Home from './pages/home/home';
 import Login from './pages/login/login';
 import Register from './pages/register/register';
 import Daftar from './pages/daftar/daftar';
-import Subscribe from './components/footer/subscribe/subscribe';
+import Foot from './components/footer/foot/foot';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/register' element={<Register />} />
         <Route exact path='/daftar' element={<Daftar />} />
-        <Route exact path='/tes' element={<Subscribe />} />
+        <Route exact path='/tes' element={<Foot />} />
         <Route path="*" element={<center><h1>Cannot Found the URL !</h1></center>}/>
       </Routes>
     </Suspense>
