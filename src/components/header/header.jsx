@@ -48,8 +48,9 @@ export default function Header() {
         textAlign: 'right',
         fontSize: '18px',
         color: 'black',
-
     }
+
+
 
     return (
         <div className="header">
@@ -63,11 +64,11 @@ export default function Header() {
                     <button>Ungraduates</button>
                     <button>Graduates</button>
                     <button>Alumni</button>
-                    <Link to="/daftar">
-                        <button>Pendaftaran</button>
+                    <Link to="/daftar" >
+                        <button className="log">Pendaftaran</button>
                     </Link>
                     <Link to="/login">
-                        <button>Login</button>
+                        <button className="log">Login</button>
                     </Link>
                 </div>
                 <div className="bottom-nav">
