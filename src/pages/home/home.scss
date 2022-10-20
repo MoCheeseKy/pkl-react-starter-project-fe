@@ -39,7 +39,7 @@
         justify-content: space-between;
 
         .item {
-            width: 370px;
+            width: 350px;
             height: fit-content;
 
             .item-image {
@@ -79,9 +79,21 @@
         }
     }
 
+
+}
+
+@media only screen and (max-height: 600px) {
+
     .wrapper {
         padding: 80px 100px;
+
+        .content {
+            .item {
+                width: 350px;
+            }
+        }
     }
+
 }
 
 ::-webkit-scrollbar {
