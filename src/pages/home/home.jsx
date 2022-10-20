@@ -128,6 +128,80 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className="wrapper four">
+                <div className="headline">
+                    <div className="tittle">
+
+                        <div className="icon">
+
+                        </div>
+                        <div className="text">
+                            Berita dan Event Terkini
+                        </div>
+
+                    </div>
+                    <button><div className="text">Lihat Semua</div> <SwapRightOutlined /></button>
+                </div>
+                <div className="newsAndEvent">
+
+                    <div className="content one">
+                        <div className="content-image">
+
+                            <div className="tittle">
+
+                                <div className="icon"></div>
+                                <div className="text">News and Event</div>
+
+                            </div>
+                            <div className="desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, beatae! Maxime accusamus molestiae repellat impedit voluptatum pariatur repudiandae error voluptatem! Aliquid tenetur dolorem odio alias!
+                            </div>
+                        </div>
+                    </div>
+                    <div className="content two">
+                        <div className="content-image">
+
+                        </div>
+                        <div className="tittle">
+
+                            <div className="icon"></div>
+                            <div className="text">News and Event</div>
+
+                        </div>
+                        <div className="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, minima sequi deleniti unde eos nihil amet vel facilis? Sit a facilis cupiditate quam doloremque harum beatae earum consequuntur nostrum, maiores modi quo recusandae in velit dolore blanditiis praesentium tempore iusto!
+                        </div>
+                        <div className="timeinfo">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque enim provident fugiat consequuntur quos dolor!
+                        </div>
+                        <button><div className="text">Show more</div> <SwapRightOutlined /></button>
+
+                    </div>
+                    <div className="content two">
+                        <div className="content-image">
+
+                        </div>
+                        <div className="tittle">
+
+                            <div className="icon"></div>
+                            <div className="text">News and Event</div>
+
+                        </div>
+                        <div className="desc">
+
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates esse autem modi tempore officiis, voluptatibus, ad rem reprehenderit atque dolorum unde? Sit dolor perferendis consectetur quis, alias ea illo.
+
+                        </div>
+                        <div className="timeinfo">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quam! Sapiente rem illum possimus expedita.
+
+                        </div>
+                        <button><div className="text">Show more</div> <SwapRightOutlined /></button>
+
+                    </div>
+                </div>
+            </div>
+
 
         </main>
     )
