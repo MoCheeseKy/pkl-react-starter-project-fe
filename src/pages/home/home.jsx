@@ -73,10 +73,8 @@ export default function Home() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi itaque voluptas fugiat a sunt odit doloribus omnis.
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </main>
     )
 }
