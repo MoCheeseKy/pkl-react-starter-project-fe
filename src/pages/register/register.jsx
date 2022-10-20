@@ -1,4 +1,4 @@
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, Alert, } from 'antd';
 import axios from 'axios';
 import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -35,6 +35,13 @@ const tailFormItemLayout = {
   },
 };
 const Register = () => {
+  const login = localStorage.getItem('login')
+  var formAble
+  if (login === "true") {
+    formAble = true
+  } else{
+    formAble = false
+  }
   const [payloadLogin, setPayloadLogin] = useState({});
   const handlechange = (e) => {
     setPayloadLogin({
@@ -47,18 +54,25 @@ const Register = () => {
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
     axios.post("https://7d2f-180-244-137-26.ngrok.io/User-Register/", values).then((res) =>{
-      navigate('/')
+      alert("Now you can login with your account")
+      navigate('/login')
     })
   };
   return (
       <div className="Register">
         <div className="title">
-          <center><h3>Register</h3></center>
+          <center>
+            <h3>Register</h3>
+            <div hidden={!formAble} className="alert-msg">
+              <Alert message="Kamu sudah login, harap kembali ke homepage" type='error' />
+            </div>
+          </center>
         </div>
         <Form
             {...formItemLayout}
             form={form}
             name="register"
+            disabled={formAble}
             onFinish={onFinish}
             scrollToFirstError
             autoComplete='off'
@@ -134,7 +148,7 @@ const Register = () => {
             <Button className='btn-reg' type="primary" htmlType="submit">
                 Register
             </Button>
-              <div className="log">
+              <div hidden={formAble} className="log">
               Have an account ?&nbsp;
               <Link to={`/login`}>
                   Login!
