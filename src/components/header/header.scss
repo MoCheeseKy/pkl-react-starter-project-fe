@@ -98,14 +98,24 @@
                 border: none;
             }
 
-            .drawer {
-                button {
-                    width: 100px;
-                }
-            }
 
         }
 
 
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .header {
+        nav {
+            .bottom-nav {
+                font-size: 1.2em;
+                gap: 20px;
+            }
+
+            button:hover {
+                font-size: 0.9em;
+            }
+        }
     }
 }

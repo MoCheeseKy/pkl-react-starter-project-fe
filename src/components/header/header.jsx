@@ -96,6 +96,7 @@ export default function Header() {
                     key="top"
                     bodyStyle={drawer}
 
+
                 >
                     <div className="left" style={left}>
                         <Link><button style={buttonLeft}>Ungraduates</button></Link>
