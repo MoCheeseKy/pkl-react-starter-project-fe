@@ -176,6 +176,10 @@
         display: flex;
         gap: 20px;
 
+        button {
+            display: none;
+        }
+
         .content.one {
             width: 50%;
             height: 300px;
@@ -349,6 +353,63 @@
 
     }
 
+    .wrapper.four {
+        padding: 0 20px;
+
+
+        .headline {
+            justify-content: center;
+
+            .tittle {
+                font-size: 1.5em;
+            }
+
+            button {
+                display: none;
+            }
+
+        }
+
+        .newsAndEvent {
+            flex-direction: column;
+            gap: 0px;
+            align-items: center;
+
+            button {
+                display: block;
+                width: 180px;
+                height: 50px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border: none;
+                border-radius: 10px;
+
+            }
+
+            .content.one {
+                width: 100%;
+
+                .content-image {
+                    width: 100%;
+
+                    .desc {
+                        font-size: 1.3em;
+                    }
+                }
+
+                .tittle {
+                    display: none;
+                }
+            }
+
+            .content.two {
+                display: none;
+            }
+        }
+    }
 
 }
 

@@ -158,6 +158,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
+
+                    <button><div className="text">Lihat Semua</div> <SwapRightOutlined /></button>
                     <div className="content two">
                         <div className="content-image">
 
