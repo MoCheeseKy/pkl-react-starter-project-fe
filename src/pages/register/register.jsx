@@ -46,7 +46,7 @@ const Register = () => {
   const [form] = Form.useForm();
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
-    axios.post("https://bf87-2001-448a-302e-3eba-30a8-6232-ffb7-6c9c.ngrok.io/User-Register/", values).then((res) =>{
+    axios.post("https://7d2f-180-244-137-26.ngrok.io/User-Register/", values).then((res) =>{
       navigate('/')
     })
   };
