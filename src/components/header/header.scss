@@ -107,13 +107,15 @@
 
 @media only screen and (max-height: 600px) {
     .header {
+        padding: 0 60px;
+
         nav {
             .bottom-nav {
                 font-size: 1.2em;
                 gap: 20px;
 
                 button:hover {
-                    font-size: 0.9em;
+                    font-size: 1em;
                 }
 
                 .search {
