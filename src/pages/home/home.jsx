@@ -204,6 +204,59 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div className="wrapper five">
+
+                <div className="library-image">
+
+                </div>
+
+                <div className="library">
+                    <div className="tittle">
+                        <div className="icon">
+
+                        </div>
+                        <div className="text">
+                            University Library
+                        </div>
+                    </div>
+                    <div className="content one">
+                        <div className="subtittle">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, et.
+                        </div>
+                        <div className="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sed officiis perferendis aspernatur iusto sequi! Lorem, ipsum dolor.
+                        </div>
+                        <div className="writer">
+                            Ferdiansyah | 764
+                        </div>
+                    </div>
+                    <div className="content two">
+                        <div className="subtittle">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, et.
+                        </div>
+                        <div className="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sed officiis perferendis aspernatur iusto sequi! Lorem, ipsum dolor.
+                        </div>
+                        <div className="writer">
+                            Ferdiansyah | 764
+                        </div>
+                    </div>
+                    <div className="content two">
+                        <div className="subtittle">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, et.
+                        </div>
+                        <div className="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sed officiis perferendis aspernatur iusto sequi! Lorem, ipsum dolor.
+                        </div>
+                        <div className="writer">
+                            Ferdiansyah | 764
+                        </div>
+                    </div>
+                    <button><div className="text">Lihat semua</div> <SwapRightOutlined /> </button>
+
+                </div>
+
+            </div>
             <Subscribe />
             <Foot />
         </main>

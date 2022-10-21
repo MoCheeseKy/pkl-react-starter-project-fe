@@ -254,6 +254,69 @@
     }
 }
 
+.wrapper.five {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ddd;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 150px;
+
+    .tittle {
+        margin-bottom: 10px;
+        margin-top: 0;
+
+        .text {
+            font-size: 1em;
+        }
+
+        .icon {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .library {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+
+        .subtittle,
+        .desc {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .subtittle,
+        .desc,
+        .writer {
+            padding-left: 50px;
+        }
+
+        .subtittle {
+            color: yellow;
+        }
+
+        button {
+            width: 180px;
+            padding: 10px 0;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -407,6 +470,42 @@
 
             .content.two {
                 display: none;
+            }
+        }
+    }
+
+    .wrapper.five {
+        width: 100vw;
+        height: fit-content;
+        flex-direction: column;
+        padding: 20px 20px;
+
+
+        .library {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                .subtittle,
+                .desc,
+                .writer {
+                    padding-left: 0;
+                    text-align: center
+                }
+            }
+
+            .content.two {
+                display: none;
+            }
+
+            button {
+                margin: 0;
             }
         }
     }
