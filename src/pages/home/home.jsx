@@ -7,9 +7,6 @@ import Foot from "../../components/footer/foot/foot";
 import { Carousel, Divider } from 'antd';
 
 export default function Home() {
-
-
-
     return (
         <main>
             <Header />
