@@ -6,11 +6,11 @@
         justify-content: center;
         gap: 15px;
         .info{
-            margin: 0px 10vw 24px;
+            margin: 0px 0px 24px;
             padding: 0px 25px;
             text-align: center;
             justify-content: center;
-            width: 50vw;
+            width: 25vw;
             h3{
                 color: #0226c5;
                 margin: 0px 0px 15px;
@@ -90,6 +90,10 @@
     .footer{
         .foot-content{
             flex-direction: column;
+            .info{
+                width: 50vw;
+                margin-left: 15vw;
+            }
         }
     }
 }

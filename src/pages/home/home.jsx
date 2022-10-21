@@ -2,7 +2,8 @@ import React from "react";
 import "./home.scss"
 import Header from "../../components/header/header";
 import { SwapRightOutlined } from '@ant-design/icons';
-
+import Subscribe from "../../components/footer/subscribe/subscribe";
+import Foot from "../../components/footer/foot/foot";
 import { Carousel, Divider } from 'antd';
 
 export default function Home() {
@@ -203,8 +204,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-
+            <Subscribe />
+            <Foot />
         </main>
     )
 }
