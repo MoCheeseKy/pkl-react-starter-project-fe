@@ -1,22 +1,22 @@
 .footer{
-    margin: 0 17px;
+    margin: 20px 17px;
     padding: 0 24px;
     .foot-content{
         display: flex;
         justify-content: center;
-        gap: 25px;
+        gap: 15px;
         .info{
-            margin: 0px 0px 24px;
-            padding: 0px 15px;
+            margin: 0px 10vw 24px;
+            padding: 0px 25px;
             text-align: center;
-            width: 50vh;
-            min-width: 50vh;
+            justify-content: center;
+            width: 50vw;
             h3{
                 color: #0226c5;
                 margin: 0px 0px 15px;
             }
             p{
-                margin: 0px 0px 16px;
+                margin: 0px 0px 15px;
                 font: 14px;
             }
         }
