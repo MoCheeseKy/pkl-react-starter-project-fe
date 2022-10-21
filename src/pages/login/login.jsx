@@ -26,9 +26,8 @@ const Login = () => {
         const resData = res?.data;
         localStorage.setItem('token', resData?.token);
         localStorage.setItem('login', true)
-        localStorage.setItem('is_staff', resData?.is_staff)
 
-        navigate('/')
+        // navigate('/')
     })
   };
   const onFinishFailed = (errorInfo) => {
