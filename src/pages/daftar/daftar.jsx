@@ -14,6 +14,9 @@ export default function Daftar() {
     const [asal_sekolah, setAsalSekolah] = useState('');
     const [tempat_lahir, setTempatLahir] = useState('');
     const [tanggal_lahir, setTanggalLahir] = useState('');
+    const [pengguna, setPengguna] = useState('')
+
+    var user = localStorage.getItem('username')
 
     const postData = () => {
         axios.post(`https://9377-180-244-137-26.ngrok.io/Student-Register/`, {
