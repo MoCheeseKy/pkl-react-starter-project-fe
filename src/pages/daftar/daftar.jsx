@@ -7,8 +7,6 @@ import { useState } from "react";
 import { Alert } from "antd";
 import "./daftar.scss"
 
-
-
 export default function Daftar() {
 
     const [nama, setNama] = useState('');
