@@ -14,18 +14,25 @@ export default function Daftar() {
     const [asal_sekolah, setAsalSekolah] = useState('');
     const [tempat_lahir, setTempatLahir] = useState('');
     const [tanggal_lahir, setTanggalLahir] = useState('');
-    const [pengguna, setPengguna] = useState('')
+    // const [pengguna, setPengguna] = useState('')
 
-    var user = localStorage.getItem('username')
+    var token = localStorage.getItem('token')
+    // console.log(token)
 
     const postData = () => {
-        axios.post(`https://9377-180-244-137-26.ngrok.io/Student-Register/`, {
+        axios.post(`https://2e2f-2001-448a-3025-27ac-2cec-cef6-3add-88bb.ngrok.io/Student-Register/`, {
             nama,
             alamat,
             asal_sekolah,
             tempat_lahir,
             tanggal_lahir
-        }).then(<Alert message="Data berhasil di kirim, silahkan tunggu hasilnya !!!" type="success" />)
+        },
+            {
+                headers: {
+                    'Authorization': "Token " + token
+                }
+            }
+        ).then(<Alert message="Data berhasil di kirim, silahkan tunggu hasilnya !!!" type="success" />)
     }
     const getDate = (date, dateString) => {
         setTanggalLahir(dateString)
