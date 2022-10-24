@@ -62,7 +62,6 @@ export default function Header() {
         window.location.reload()
     }
 
-
     return (
         <div className="header">
             <Link to="/">
@@ -78,15 +77,8 @@ export default function Header() {
                     <Link to="/daftar" >
                         <button className="log">Pendaftaran</button>
                     </Link>
-                    <div hidden={!showButton}>
-                        <Link to="/login">
-                            <button className="log">Login</button>
-                        </Link>
-                    </div>
-                    <div hidden={showButton}>
-                        <Link>
-                            <button className="log" onClick={Logout}>Logout</button>
-                        </Link>
+                    <div>
+                        {showButton ? <Link to="/login"><button className="log">Login</button> </Link> : <Link to="/login"><button className="log">Logout</button></Link>}
                     </div>
                 </div>
                 <div className="bottom-nav">

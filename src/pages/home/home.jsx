@@ -157,7 +157,6 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <button><div className="text">Lihat Semua</div> <SwapRightOutlined /></button>
                     <div className="content two">
                         <div className="content-image">
 
@@ -199,6 +198,8 @@ export default function Home() {
                         <button><div className="text">Show more</div> <SwapRightOutlined /></button>
 
                     </div>
+
+                    <button><div className="text">Lihat Semua</div> <SwapRightOutlined /></button>
                 </div>
             </div>
             <div className="wrapper five">
