@@ -8,8 +8,9 @@ import Daftar from './pages/daftar/daftar';
 import Graduates from './pages/graduates/graduates';
 import Undergraduates from './pages/undergraduates/undergraduates';
 import Partners from './pages/partners/partners';
-import Academic from './pages/academic/academic';
 import Alumni from './pages/alumni/alumni';
+import Academic from './pages/academic/academic';
+import Elibrary from './pages/e-library/e-library';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/alumni' element={<Alumni />} />
         <Route exact path='/academic' element={<Academic />} />
         <Route exact path='/partners' element={<Partners />} />
+        <Route exact path='/e-library' element={<Elibrary />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>
