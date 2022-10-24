@@ -1,0 +1,55 @@
+.library{
+    text-align: center;
+    .header{
+        padding: 12px 120px;
+        button{
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+        }
+    }
+    .main{
+        .image{
+            margin: 0 0 16px;
+            img{
+                width: 96px;
+                height: 96px;
+                border: none;
+                border-radius: 90px;
+            }
+        }
+        .at{
+            h1{
+                font-size: 20px;
+                margin: 0;
+            }
+        }
+        .second{
+            h2{
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+        .links{
+            .link1{
+                padding: 10px 20px;
+                a{
+                    color: black;
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .link2{
+                padding: 10px 20px;
+                a{
+                    color: black;
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
