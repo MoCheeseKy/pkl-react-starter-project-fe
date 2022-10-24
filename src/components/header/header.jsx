@@ -80,7 +80,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="bottom-nav">
-                    <button>Academic</button>
+                    <button><Link to={'/academic'}>Academic</Link></button>
                     <button>Admission</button>
                     <button>E-Library</button>
                     <button>Library</button>

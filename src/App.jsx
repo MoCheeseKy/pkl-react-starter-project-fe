@@ -7,6 +7,7 @@ import Register from './pages/register/register';
 import Daftar from './pages/daftar/daftar';
 import Graduates from './pages/graduates/graduates';
 
+import Academic from './pages/academic/academic';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path='/register' element={<Register />} />
         <Route exact path='/daftar' element={<Daftar />} />
         <Route exact path='/graduates' element={<Graduates />} />
+        <Route exact path='/academic' element={<Academic />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>
