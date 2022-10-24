@@ -11,6 +11,7 @@ import Partners from './pages/partners/partners';
 import Alumni from './pages/alumni/alumni';
 import Academic from './pages/academic/academic';
 import Elibrary from './pages/e-library/e-library';
+import Library from './pages/library/library';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route exact path='/academic' element={<Academic />} />
         <Route exact path='/partners' element={<Partners />} />
         <Route exact path='/e-library' element={<Elibrary />} />
+        <Route exact path='/library' element={<Library />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>

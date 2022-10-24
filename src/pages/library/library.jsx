@@ -1,4 +1,5 @@
 import React from 'react'
+import './library.scss'
 
 export default function Library() {
   return (
