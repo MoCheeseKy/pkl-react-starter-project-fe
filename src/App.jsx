@@ -7,6 +7,7 @@ import Register from './pages/register/register';
 import Daftar from './pages/daftar/daftar';
 import Graduates from './pages/graduates/graduates';
 import Undergraduates from './pages/undergraduates/undergraduates';
+import Partners from './pages/partners/partners';
 import Academic from './pages/academic/academic';
 import Alumni from './pages/alumni/alumni';
 
@@ -22,6 +23,7 @@ function App() {
         <Route exact path='/undergraduates' element={<Undergraduates />} />
         <Route exact path='/alumni' element={<Alumni />} />
         <Route exact path='/academic' element={<Academic />} />
+        <Route exact path='/partners' element={<Partners />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>
