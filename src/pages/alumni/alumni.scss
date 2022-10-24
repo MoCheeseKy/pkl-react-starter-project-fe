@@ -227,3 +227,22 @@
         }
     }
 }
+
+@media only screen and (max-height: 600px) {
+    .alumni {
+        .notable-alumnus {
+            .alumnus-list {
+                padding: 20px 150px;
+
+                .alumnus-item {
+                    width: 320px;
+
+                    .alumnus-image {
+                        width: 320px;
+                        height: 320px;
+                    }
+                }
+            }
+        }
+    }
+}
