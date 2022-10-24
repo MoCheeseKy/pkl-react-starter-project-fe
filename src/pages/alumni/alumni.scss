@@ -1,0 +1,229 @@
+.alumni {
+    width: 100vw;
+    height: fit-content;
+
+    // Atur Headline Disini : --------------------
+    .headline {
+        width: 100vw;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+
+        h1 {
+            margin-left: 500px;
+            margin-top: 50px;
+            font-size: 4em;
+            color: white;
+        }
+    }
+
+    // Atur Content Disini : --------------------
+    .content {
+        width: 100vw;
+        padding: 20px 180px;
+        display: flex;
+        justify-content: space-between;
+
+        .community {
+            width: 70%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .tittle {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                height: fit-content;
+
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #000;
+                }
+
+                .text {
+                    font-size: 2em;
+                }
+            }
+
+            .quote {
+                padding: 50px 30px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                background-color: orange;
+                color: white;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+        }
+
+        .sider {
+            width: 28%;
+            height: fit-content;
+
+            .help {
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h1 {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 8px 0;
+                    font-size: 1.5em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: blue;
+                    color: white;
+                }
+            }
+
+            .career {
+                margin-top: 20px;
+                width: 100%;
+                height: 180px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ddd;
+            }
+        }
+    }
+
+    .notable-alumnus {
+        padding: 20px 180px;
+        margin-bottom: 60px;
+
+        button {
+            width: 180px;
+            padding: 10px 0;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+
+        .alumnus-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+
+            .alumnus-item {
+                width: 350px;
+                height: fit-content;
+
+                .alumnus-image {
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 50%;
+                    background-color: #000;
+                }
+
+                .alumnus-name {
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    color: blue;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .alumni {
+        .headline {
+            height: 100px;
+
+            h1 {
+                font-size: 1.3em;
+                margin-left: 100px;
+                margin-top: 30px;
+            }
+        }
+
+        .content {
+            padding: 10px 20px;
+
+            .community {
+                width: 100%;
+                margin-bottom: 10px;
+
+                .tittle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0;
+
+                    .icon {
+                        width: 35px;
+                        height: 35px;
+                        background-color: #000;
+                    }
+                }
+
+                .help {
+                    display: none;
+                }
+
+                .quote {
+                    padding: 35px 20px;
+                    font-size: 1em;
+                    font-weight: 600;
+                }
+            }
+
+            .sider {
+                display: none;
+            }
+        }
+
+        .notable-alumnus {
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            button {
+                margin: auto;
+                padding: 5px 0;
+                width: 130px;
+            }
+
+            .alumnus-list {
+                gap: 30px;
+                justify-content: center;
+
+                .alumnus-item {
+                    width: 300px;
+
+                    .alumnus-image {
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

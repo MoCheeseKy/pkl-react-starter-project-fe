@@ -73,7 +73,7 @@ export default function Header() {
                 <div className="top-nav">
                     <Link to="/undergraduates"><button>Ungraduates</button></Link>
                     <Link to="/graduates"><button>Graduates</button></Link>
-                    <Link to="/alumi"><button>Alumni</button></Link>
+                    <Link to="/alumni"><button>Alumni</button></Link>
                     <Link to="/daftar" ><button className="log">Pendaftaran</button></Link>
                     <div>
                         {showButton ? <Link to="/login"><button className="log">Login</button> </Link> : <Link to="/login"><button className="log">Logout</button></Link>}
