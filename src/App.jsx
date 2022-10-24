@@ -12,6 +12,7 @@ import Alumni from './pages/alumni/alumni';
 import Academic from './pages/academic/academic';
 import Elibrary from './pages/e-library/e-library';
 import Library from './pages/library/library';
+import Admission from './pages/admission/admission';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path='/partners' element={<Partners />} />
         <Route exact path='/e-library' element={<Elibrary />} />
         <Route exact path='/library' element={<Library />} />
+        <Route exact path='/admission' element={<Admission />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>
