@@ -53,7 +53,9 @@ export default function Foot() {
           </div>
           <div className="icon">
             <div className="icon-content">
-              <img src="https://iblam.ac.id/wp-content/themes/iblam_mobile/assets/img/logo.png" alt='iblam' /><br />
+              <div className="icon-iblam">
+                <img src="https://iblam.ac.id/wp-content/themes/iblam_mobile/assets/img/logo.png" alt='iblam' /><br />
+              </div>
               <div className="icon-img">
                 <FacebookFilled style={{fontSize: '30px', marginRight: '2%'}} />
                 <TwitterCircleFilled style={{fontSize: '30px', marginRight: '2%'}} />

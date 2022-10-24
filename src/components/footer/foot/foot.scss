@@ -66,9 +66,12 @@
         .icon{
             margin: 0px 0px 24px;
             justify-content: center;
-            padding: 0px 25px;
+            padding: 0px 15px;
             width: 25vw;
             .icon-content{
+                .icon-iblam{
+                    max-width: 25vw;
+                }
                 .icon-img{
                     margin-top: 10px;
                 }
