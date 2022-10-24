@@ -1,0 +1,147 @@
+.academic{
+    .entry{
+        img{
+            width: 100vw;
+            height: 55vh;
+        }
+    }
+    .content{
+        margin: 0px 41px;
+        padding: 0px 15px;
+        .breadcrumb{
+            padding: 20px 0px;
+            a{
+                color: #364DA8;
+            }
+        }
+        .img-right{
+            border: 1px solid black;
+            margin: 0px 0px 100px;
+            display: flex;
+            .content{
+                padding: 10px;
+                justify-content: center;
+                h3{
+                    padding-top: 60px;
+                    font-size: 36px;
+                    color: #0226C5;
+                }
+                p{
+                    font-size: 18px;
+                    padding-bottom: 20px;
+                }
+                a{
+                    font-size: 16px;
+                    color: white;
+                    padding: 9px 25px;
+                    background: #F9A31C;
+                    border-radius: 25px;
+                }
+            }
+            .img-r{
+                width: auto;
+            }
+        }
+        .img-left{
+            border: 1px solid black;
+            margin: 0px 0px 100px;
+            display: flex;
+            .content{
+                padding: 20px;
+                justify-content: center;
+                h3{
+                    padding-top: 60px;
+                    font-size: 36px;
+                    color: #0226C5;
+                }
+                p{
+                    font-size: 18px;
+                    padding-bottom: 20px;
+                }
+                a{
+                    font-size: 16px;
+                    color: white;
+                    padding: 9px 25px;
+                    background: #0226C5;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+    .kalender{
+        background: black;
+        width: 100vw;
+        padding-top: 100px;
+        .txt{
+            strong{
+                margin-left: 40px;
+                font-size: 28px;
+                color: #0226C5;
+            }
+        }
+        .download{
+            margin-top: 20px;
+            padding-bottom: 100px;
+            a{
+                margin-left: 40px;
+                font-size: 16px;
+                color: white;
+                padding: 9px 25px;
+                background: #F9A31C;
+                border-radius: 25px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .academic{
+        .entry{
+            img{
+                height: auto;
+            }
+        }
+        .content{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            .breadcrumb{
+                margin-left: 20px;
+                padding-top: 10px;
+            }
+            .img-right{
+                border: none;
+                flex-direction: column;
+                padding: 0;
+                .content{
+                    padding: 0;
+                    h3{
+                        padding-top: 10px;
+                    }
+                }
+                .img-r{
+                    img{
+                        margin-top: 20px;
+                        width: 100vw;
+                    }
+                }
+            }
+            .img-left{
+                border: none;
+                flex-direction: column-reverse;
+                padding: 0;
+                .content{
+                    padding: 0;
+                    h3{
+                        padding-top: 10px;
+                    }
+                }
+                .img-r{
+                    img{
+                        margin-top: 20px;
+                        width: 100vw;
+                    }
+                }
+            }
+        }
+    }
+}
