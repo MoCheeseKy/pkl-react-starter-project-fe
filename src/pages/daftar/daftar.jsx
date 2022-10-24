@@ -29,7 +29,7 @@ export default function Daftar() {
         },
             {
                 headers: {
-                    'Authorization': "Token " + token
+                    'Authorizaion': "Token" + token
                 }
             }
         ).then(<Alert message="Data berhasil di kirim, silahkan tunggu hasilnya !!!" type="success" />)
