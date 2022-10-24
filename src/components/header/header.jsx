@@ -83,7 +83,7 @@ export default function Header() {
                     <button><Link to={'/academic'}>Academic</Link></button>
                     <button>Admission</button>
                     <button>E-Library</button>
-                    <button>Library</button>
+                    <button><Link to={'/library'}>Library</Link></button>
                     <button>Life at Iblam</button>
                     <button>About</button>
                     <button><Link to={'/partners'}>Partners</Link></button>
