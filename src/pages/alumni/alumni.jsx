@@ -33,19 +33,19 @@ export default function Alumni() {
                             </div>
                         </div>
                         <div className="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia porro et commodi id culpa maiores asperiores tenetur ab est earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, commodi.
+                            Sebagai institusi pendidikan yang berintegrasi , IBLAM School of Law senantiasa melahirkan para alumni yang berada di garda depan penerapan hukum di Indonesia.
                         </div>
                         <div className="quote">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore velit ut, reprehenderit maiores odit doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, sapiente!
+                            Alumni IBLAM saat ini juga ambil bagian sebagai motor pembangunan bangsa dan negara Indonesia dan siap membawa IBLAM School of Law sebagai bagian dari komunitas global di 2020.
                         </div>
                         <div className="text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis asperiores autem ea id illum, aperiam, non ab similique alias temporibus ipsum eius accusantium labore culpa doloremque distinctio! Hic deleniti aut voluptatum, eveniet a doloribus, enim reiciendis repudiandae fuga dignissimos tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus architecto nesciunt amet itaque culpa sint minima maxime aut ut qui.
+                            Alumni IBLAM saat ini juga ambil bagian sebagai motor pembangunan bangsa dan negara Indonesia dan siap membawa IBLAM School of Law sebagai bagian dari komunitas global di 2020. Untuk mewujudkan itu, Komunitas Alumni IBLAM menyiapkan jejaring untuk menjembatani kegiatan para alumni dengan almamaternya.
                         </div>
                     </div>
                     <div className="sider">
                         <div className="help">
                             <h1>Butuh Bantuan ?</h1>
-                            <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, repudiandae.</div>
+                            <div className="text">Tim IBLAM siap menjawab kebutuhanmu</div>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Jakarta</div></button>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
