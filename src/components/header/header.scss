@@ -84,6 +84,27 @@
     }
 }
 
+@media only screen and (max-width: 1250px) {
+    .header {
+        nav {
+            display: none;
+        }
+
+        .nav-phone {
+            display: block;
+
+            button {
+                width: 30px;
+                height: 30px;
+                font-size: 20px;
+                border-radius: 100%;
+                background-color: #fff;
+                border: none;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .header {
         padding: 0 15px;

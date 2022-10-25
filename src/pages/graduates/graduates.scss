@@ -160,6 +160,18 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .graduates {
+        .content {
+            padding: 20px 40px;
+        }
+
+        .program {
+            padding: 20px 40px;
+        }
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .graduates {
         .headline {
