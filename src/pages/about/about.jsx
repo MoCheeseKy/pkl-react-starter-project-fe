@@ -10,7 +10,7 @@ export default function About() {
             <div className="headline">
                 <h1>About</h1>
             </div>
-            <div className="about">
+            <div className="about tab">
                 <div className="about-item">
                     <div className="tittle">
                         <div className="icon">

@@ -94,6 +94,7 @@
             height: fit-content;
             display: flex;
             flex-direction: column;
+            padding: 0;
 
             .image {
                 width: 100%;
@@ -162,12 +163,36 @@
 
 @media only screen and (max-width: 1000px) {
     .graduates {
-        .content {
-            padding: 20px 40px;
+        .headline {
+            .text {
+                margin-left: 20px;
+            }
         }
 
-        .program {
+        .content.tab {
             padding: 20px 40px;
+
+            .sider {
+                gap: 250px;
+
+                .tittle {
+                    flex-direction: column;
+                    gap: 0;
+                }
+
+                .help {
+                    display: none;
+                }
+            }
+        }
+
+        .program.tab {
+            padding: 20px 40px;
+            gap: 10px;
+
+            .program-item {
+                height: 200px;
+            }
         }
     }
 }

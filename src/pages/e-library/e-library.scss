@@ -61,6 +61,22 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .elibrary {
+        padding: 10px 40px;
+
+        .elibrary-item {
+            height: 350px;
+
+            .library-image {
+                h1 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .headline {
         height: 100px;

@@ -77,7 +77,7 @@ export default function Wwus() {
                                 <h2>Open Recruitment Unit Kreatif & Sosial Media</h2>
                                 <p>IBLAM</p>
                                 <h3>Persyaratan</h3>
-                                <p>Kepala Unit Kreatif & Sosial MediaLulusan S1 di semua jurusanIPK>3.00Usia min 25 tahunMin 3 Tahun pengalaman di bidang Mar...</p>
+                                <p>Kepala Unit Kreatif & Sosial MediaLulusan S1 di semua jurusan IPK {">"} 3.00Usia min 25 tahunMin 3 Tahun pengalaman di bidang Mar...</p>
                                 <button>Baca Selengkapnya . . .</button>
                             </div>
                         </div>

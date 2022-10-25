@@ -22,7 +22,7 @@ export default function Graduates() {
                 </div>
 
                 {/* Content . . . . */}
-                <div className="content">
+                <div className="content tab">
                     <div className="sider">
                         <div className="tittle">
                             <div className="icon">
@@ -51,7 +51,7 @@ export default function Graduates() {
                 </div>
 
                 {/* Program . . . . */}
-                <div className="program">
+                <div className="program tab">
                     <div className="program-item">
                         <div className="isi">
                             <div className="icon"></div>

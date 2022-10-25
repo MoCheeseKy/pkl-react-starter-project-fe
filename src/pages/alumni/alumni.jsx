@@ -14,7 +14,7 @@ export default function Alumni() {
                 {/* Headline Handler . . . . */}
                 <div className="headline">
 
-                    <h1>Komunitas Alumni</h1>
+                    <h1 className="alumni">Komunitas Alumni</h1>
 
                 </div>
                 <div className="content">

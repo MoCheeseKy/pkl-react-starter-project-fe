@@ -161,6 +161,37 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .graduates {
+        .content {
+            padding: 20px 40px;
+
+            .sider {
+                .tittle.tab {
+                    flex-direction: column;
+                    gap: 0px;
+                }
+
+                .help {
+                    display: none;
+                }
+            }
+
+            .about {
+                gap: 10px;
+
+                .image {
+                    height: 350px;
+                }
+            }
+        }
+
+        .program .program-item .isi h1 {
+            text-align: center;
+        }
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .graduates {
         .headline {

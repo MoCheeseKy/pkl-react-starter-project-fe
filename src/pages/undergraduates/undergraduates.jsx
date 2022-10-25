@@ -24,7 +24,7 @@ export default function Undergraduates() {
                 {/* Content . . . . */}
                 <div className="content">
                     <div className="sider">
-                        <div className="tittle">
+                        <div className="tittle tab">
                             <div className="icon">
 
                             </div>
@@ -51,7 +51,7 @@ export default function Undergraduates() {
                 </div>
 
                 {/* Program . . . . */}
-                <div className="program">
+                <div className="program tab">
                     <div className="program-item">
                         <div className="isi">
                             <h1>S1 Reguler</h1>
