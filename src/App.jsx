@@ -13,6 +13,7 @@ import Academic from './pages/academic/academic';
 import Elibrary from './pages/e-library/e-library';
 import Library from './pages/library/library';
 import Admission from './pages/admission/admission';
+import Lpm from './pages/lpm/lpm';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route exact path='/e-library' element={<Elibrary />} />
         <Route exact path='/library' element={<Library />} />
         <Route exact path='/admission' element={<Admission />} />
+        <Route exact path='/lpm' element={<Lpm />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>

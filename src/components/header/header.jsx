@@ -87,7 +87,7 @@ export default function Header() {
                     <button>Life at Iblam</button>
                     <button>About</button>
                     <button><Link to={'/partners'}>Partners</Link></button>
-                    <button>LPM</button>
+                    <button><Link to={'/lpm'}>LPM</Link></button>
                     <div className="search">
 
                     </div>
