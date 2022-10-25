@@ -1,0 +1,76 @@
+.lpm{
+    .content{
+        .entry{
+            .img{
+                img{
+                    width: 100vw;
+                    height: auto;
+                }
+            }
+        }
+        .container{
+            margin: 0 26px;
+            padding: 0 15px;
+            .breadcrumb{
+                padding: 20px 0;
+            }
+            .header{
+                padding: 0;
+                height: fit-content;
+                width: auto;
+                .title{
+                    margin: 0 0 8px;
+                    color: #3366FF;
+                }
+            }
+            .hr{
+                hr{
+                    margin: 16px 0;
+                }
+            }
+            .text{
+                p{
+                    margin: 0 0 16px;
+                }
+                ol{
+                    margin: 0 0 16px;
+                    padding-left: 40px;
+                }
+            }
+            .collapse-wrap{
+                margin: 0 0 25px;
+                .collapse{
+                    padding: 17px 30px;
+                    .isian{
+                        p{
+                            margin: 0 0 16px;
+                            padding-left: 5vw;
+                        }
+                        ol{
+                            margin: 0 0 16px;
+                            padding-left: 15vw;
+                        }
+                    }
+                }
+            }
+            .kosong{
+                p{
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-height: 700px){
+    .lpm{
+        .content{
+            .container{
+                margin: 0;
+                padding: 0 24px;
+                .collapse{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
