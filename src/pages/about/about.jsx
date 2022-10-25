@@ -271,7 +271,6 @@ export default function About() {
                         </div>
                         <div className="about-footer">
                             <button className="before">{">"}</button>
-
                         </div>
                     </div>
                 </div>
