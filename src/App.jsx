@@ -16,6 +16,7 @@ import About from './pages/about/about';
 import Admission from './pages/admission/admission';
 import Lpm from './pages/lpm/lpm';
 import News from './pages/news-event/news';
+import Wwus from './pages/wwus/wwus';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route exact path='/admission' element={<Admission />} />
         <Route exact path='/lpm' element={<Lpm />} />
         <Route exact path='/news-event' element={<News />} />
+        <Route exact path='/work-with-us' element={<Wwus />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>
