@@ -46,7 +46,7 @@ export default function Undergraduates() {
                         <div className="image-desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aperiam sint voluptates quis officiis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, vel?
                         </div>
-                        <button>Selengkapnya ></button>
+                        <button>Selengkapnya {">"}</button>
                     </div>
                 </div>
 
