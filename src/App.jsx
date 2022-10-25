@@ -15,6 +15,7 @@ import Library from './pages/library/library';
 import About from './pages/about/about';
 import Admission from './pages/admission/admission';
 import Lpm from './pages/lpm/lpm';
+import News from './pages/news-event/news';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route exact path='/about' element={<About />} />
         <Route exact path='/admission' element={<Admission />} />
         <Route exact path='/lpm' element={<Lpm />} />
+        <Route exact path='/news-event' element={<News />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>
