@@ -40,13 +40,20 @@
 
         .top-nav {
             display: flex;
+            align-items: center;
             gap: 20px;
+            width: fit-content;
 
             a {
                 .log {
                     background-color: aquamarine;
                     border-radius: 5px;
                     padding: 5px 20px;
+                }
+
+                .wwu {
+                    width: 110px;
+                    text-align: center;
                 }
             }
 
