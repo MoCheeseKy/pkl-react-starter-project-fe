@@ -81,13 +81,13 @@ export default function Header() {
                 </div>
                 <div className="bottom-nav">
                     <button><Link to={'/academic'}>Academic</Link></button>
-                    <button>Admission</button>
+                    <button><Link to={'/admission'}>Admission</Link></button>
                     <button><Link to={'/e-library'}>E-Library</Link></button>
                     <button><Link to={'/library'}>Library</Link></button>
                     <button>Life at Iblam</button>
                     <button><Link to={'/about'}>About</Link></button>
                     <button><Link to={'/partners'}>Partners</Link></button>
-                    <button>LPM</button>
+                    <button><Link to={'/lpm'}>LPM</Link></button>
                     <div className="search">
 
                     </div>
