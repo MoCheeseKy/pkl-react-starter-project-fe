@@ -3,6 +3,130 @@
         .entry{
             img{
                 width: 100vw;
+                height: auto;
+            }
+        }
+        .container{
+            margin: 0 26px;
+            padding: 0 15px;
+            .breadcrumb{
+                padding: 20px 0;
+            }
+            .title-main{
+                margin-bottom: 48px;
+                h2{
+                    strong{
+                        font-size: 32px;
+                        color: #0226C5;
+                    }
+                }
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                .new-content{
+                    width: 70%;
+                    padding: 0 15px;
+                    img{
+                        width: 100%;
+                    }
+                    h3{
+                        a{
+                            font-size: 36px;
+                            color: #0226C5;
+                        }
+                    }
+                    .category-label{
+                        color: #0226C5;
+                    }
+                    .post-content{
+                        margin: 20px 0;
+                        p{
+                            margin: 0 0 16px;
+                        }
+                    }
+                }
+                .new-contact{
+                    width: 30%;
+                    padding: 0 15px;
+                    .isian{
+                        margin-bottom: 40px;
+                        h4{
+                            strong{
+                                font-size: 24px;
+                                color: #0226C5;
+                            }
+                        }
+                        h6{
+                            font-size: 16px;
+                        }
+                        .cntc{
+                            width: 100%;
+                            text-align: center;
+                            p{
+                                padding: 8px 16px;
+                                background: #0226c5;
+                                font-size: 20px;
+                                border: none;
+                                border-radius: 5px;
+                                a{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .post-item{
+                    width: 30%;
+                    margin: 0 10px;
+                    img{
+                        width: 100%;
+                    }
+                    .post-date{
+                        color: #0226C5;
+                        font-size: 15px;
+                        margin: 10px 0 10px;
+                    }
+                    .post-title{
+                        width: 100%;
+                        font-size: 25px;
+                        margin: 0 0 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .news{
+        .content{
+            .container{
+                margin: 5px 0;
+                .row{
+                    flex-direction: column;
+                    .new-content{
+                        width: 100%;
+                        h3{
+                            a{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .new-contact{
+                        .isian{
+                            display: none;
+                        }
+                    }
+                    .post-item{
+                        width: 90%;
+                        img{
+                            width: 100%;
+                        }
+                        .post-title{
+                            font-size: 18px;
+                        }
+                    }
+                }
             }
         }
     }
