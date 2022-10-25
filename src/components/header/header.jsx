@@ -108,22 +108,22 @@ export default function Header() {
 
                 >
                     <div className="left" style={left}>
-                        <Link><button style={buttonLeft}>Ungraduates</button></Link>
-                        <Link><button style={buttonLeft}>Graduates</button></Link>
-                        <Link><button style={buttonLeft}>Alumni</button></Link>
-                        <Link to="/daftar"><button style={buttonLeft}>Daftar</button></Link>
-                        <Link to="/login"><button hidden={!showButton} style={buttonLeft}>Login</button></Link>
+                        <Link to={'/undergraduates'}><button style={buttonLeft}>Ungraduates</button></Link>
+                        <Link to={'/graduates'}><button style={buttonLeft}>Graduates</button></Link>
+                        <Link to={'/alumni'}><button style={buttonLeft}>Alumni</button></Link>
+                        <Link to={'/work-with-us'}><button style={buttonLeft}>Work with Us</button></Link>
+                        <Link to={'/login'}><button hidden={!showButton} style={buttonLeft}>Login</button></Link>
                         <button onClick={Logout} style={buttonLeft} hidden={showButton}>Logout</button>
                     </div>
                     <div className="right" style={right}>
-                        <Link><button style={buttonRight}>Academic</button></Link>
-                        <Link><button style={buttonRight}>Admission</button></Link>
-                        <Link><button style={buttonRight}>E-Library</button></Link>
-                        <Link><button style={buttonRight}>Library</button></Link>
-                        <Link><button style={buttonRight}>Life at Iblam</button></Link>
-                        <Link><button style={buttonRight}>About</button></Link>
-                        <Link><button style={buttonRight}>Partners</button></Link>
-                        <Link><button style={buttonRight}>LPM</button></Link>
+                        <Link to={'/academic'}><button style={buttonRight}>Academic</button></Link>
+                        <Link to={'/admission'}><button style={buttonRight}>Admission</button></Link>
+                        <Link to={'/e-library'}><button style={buttonRight}>E-Library</button></Link>
+                        <Link to={'/library'}><button style={buttonRight}>Library</button></Link>
+                        <Link to={'/news-event'}><button style={buttonRight}>Life at Iblam</button></Link>
+                        <Link to={'/about'}><button style={buttonRight}>About</button></Link>
+                        <Link to={'/partners'}><button style={buttonRight}>Partners</button></Link>
+                        <Link to={'/lpm'}><button style={buttonRight}>LPM</button></Link>
                     </div>
                 </Drawer>
             </div>
