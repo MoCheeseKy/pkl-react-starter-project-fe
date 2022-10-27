@@ -17,6 +17,7 @@ import Admission from './pages/admission/admission';
 import Lpm from './pages/lpm/lpm';
 import News from './pages/news-event/news';
 import Wwus from './pages/wwus/wwus';
+import Kurikulum from './pages/academic/kurikulum/kurikulum';
 
 function App() {
   return (
