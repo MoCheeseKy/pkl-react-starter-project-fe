@@ -22,28 +22,43 @@ function App() {
   return (
     <Suspense fallback={<>loading...</>}>
       <Routes>
+
+        {/* Top Navigation URL . . . */}
         <Route exact path='/' element={<Home />} />
-        <Route exact path='/login' element={<Login />} />
-        <Route exact path='/register' element={<Register />} />
-        <Route exact path='/daftar' element={<Daftar />} />
+        <Route exact path='/login' element={<Login />} /> <Route exact path='/register' element={<Register />} />
         <Route exact path='/graduates' element={<Graduates />} />
         <Route exact path='/undergraduates' element={<Undergraduates />} />
         <Route exact path='/alumni' element={<Alumni />} />
+        <Route exact path='/work-with-us' element={<Wwus />} />
+
+
+        {/* Bottom Navigation URL . . . */}
         <Route exact path='/academic' element={<Academic />} />
-        <Route exact path='/partners' element={<Partners />} />
+        <Route exact path='/admission' element={<Admission />} />
         <Route exact path='/e-library' element={<Elibrary />} />
         <Route exact path='/library' element={<Library />} />
-        <Route exact path='/about' element={<About />} />
-        <Route exact path='/admission' element={<Admission />} />
-        <Route exact path='/lpm' element={<Lpm />} />
         <Route exact path='/news-event' element={<News />} />
-        <Route exact path='/work-with-us' element={<Wwus />} />
+        <Route exact path='/about' element={<About />} />
+        <Route exact path='/partners' element={<Partners />} />
+        <Route exact path='/lpm' element={<Lpm />} />
+
+
+        {/* Child Admission URL . . . */}
+        <Route exact path='/daftar' element={<Daftar />} />
+
+
+        {/* Child About URL . . . */}
+
+
+        {/* Unknown URL */}
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>
             <p>It looks like nothing was found at this location. Maybe try other link ?</p>
           </center>
         } />
+
+
       </Routes>
     </Suspense>
   );
