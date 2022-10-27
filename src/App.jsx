@@ -10,7 +10,8 @@ import Graduates from './pages/graduates/graduates';
 import Undergraduates from './pages/undergraduates/undergraduates';
 import Alumni from './pages/alumni/alumni';
 import Wwus from './pages/wwus/wwus';
-import Login from './pages/login/login'; {/* && */ } import Register from './pages/register/register';
+import Login from './pages/login/login';
+import Register from './pages/register/register';
 
 // Importing Parent Pages From BOTTOM NAVIGATION :
 import Academic from './pages/academic/academic';
@@ -25,7 +26,9 @@ import Lpm from './pages/lpm/lpm';
 // Importing Child Pages :
 import Daftar from './pages/daftar/daftar';
 import Kurikulum from './pages/academic/kurikulum/kurikulum';
-
+import VisiMisi from './pages/about/visimisi/vm';
+import Sejarah from './pages/about/sejarah/sejarah';
+import Pendiri from './pages/about/pendiri/pendiri';
 
 function App() {
   return (
@@ -57,12 +60,13 @@ function App() {
         {/* Child : Academic */}
         <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
 
-
         {/* Child : Admission URL . . . */}
         <Route exact path='/admission/daftar' element={<Daftar />} />
 
-
         {/* Child : About URL . . . */}
+        <Route exact path='/about/visi-misi' element={<VisiMisi />} />
+        <Route exact path='/about/sejarah-iblam' element={<Sejarah />} />
+        <Route exact path='/about/pendiri-iblam' element={<Pendiri />} />
 
 
 

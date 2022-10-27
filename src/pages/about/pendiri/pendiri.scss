@@ -1,0 +1,98 @@
+.page-pendiri {
+    width: 100vw;
+    height: fit-content;
+
+    // Atur Headline Disini : --------------------
+    .headline {
+        width: 100vw;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+
+        h1.pendiri {
+            margin: 0;
+            font-size: 4em;
+            color: white;
+        }
+    }
+
+    // Atur Content Disini : --------------------
+    .content {
+        padding: 20px 25vw;
+
+    }
+
+    .nama-pendiri {
+        width: 100%;
+        padding: 30px 18vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 2em;
+        text-align: center;
+        background-color: orange;
+        color: white;
+
+        i {
+            margin: 0;
+        }
+
+        b {
+            margin: 0;
+        }
+    }
+
+    .side-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .side-info-item {
+            width: 230px;
+            height: 120px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                font-size: 1.5em;
+                color: white;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .page-pendiri {
+        .content.asd {
+            padding: 20px 17vw;
+        }
+
+        .side-info {
+            padding: 0 10px;
+            gap: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-pendiri {
+        .content.asd {
+            padding: 20px 10vw;
+        }
+
+        .side-info {
+            display: none;
+        }
+    }
+}
