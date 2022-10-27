@@ -1,23 +1,31 @@
 import React, { Suspense } from 'react';
 import { Route, Routes } from "react-router-dom";
 import './App.scss';
+
+// Importing Main Pages :
 import Home from './pages/home/home';
-import Login from './pages/login/login';
-import Register from './pages/register/register';
-import Daftar from './pages/daftar/daftar';
+
+// Importing Parent Pages From TOP NAVIGATION :
 import Graduates from './pages/graduates/graduates';
 import Undergraduates from './pages/undergraduates/undergraduates';
-import Partners from './pages/partners/partners';
 import Alumni from './pages/alumni/alumni';
+import Wwus from './pages/wwus/wwus';
+import Login from './pages/login/login'; {/* && */ } import Register from './pages/register/register';
+
+// Importing Parent Pages From BOTTOM NAVIGATION :
 import Academic from './pages/academic/academic';
+import Admission from './pages/admission/admission';
 import Elibrary from './pages/e-library/e-library';
 import Library from './pages/library/library';
-import About from './pages/about/about';
-import Admission from './pages/admission/admission';
-import Lpm from './pages/lpm/lpm';
 import News from './pages/news-event/news';
-import Wwus from './pages/wwus/wwus';
+import About from './pages/about/about';
+import Partners from './pages/partners/partners';
+import Lpm from './pages/lpm/lpm';
+
+// Importing Child Pages :
+import Daftar from './pages/daftar/daftar';
 import Kurikulum from './pages/academic/kurikulum/kurikulum';
+
 
 function App() {
   return (
@@ -26,11 +34,11 @@ function App() {
 
         {/* Top Navigation URL . . . */}
         <Route exact path='/' element={<Home />} />
-        <Route exact path='/login' element={<Login />} /> <Route exact path='/register' element={<Register />} />
         <Route exact path='/graduates' element={<Graduates />} />
         <Route exact path='/undergraduates' element={<Undergraduates />} />
         <Route exact path='/alumni' element={<Alumni />} />
         <Route exact path='/work-with-us' element={<Wwus />} />
+        <Route exact path='/login' element={<Login />} /> {/* ?? IF YOU DON'T HAVE ACCOUNT ------> */} <Route exact path='/register' element={<Register />} />
 
 
         {/* Bottom Navigation URL . . . */}
@@ -44,11 +52,16 @@ function App() {
         <Route exact path='/lpm' element={<Lpm />} />
 
 
-        {/* Child Admission URL . . . */}
-        <Route exact path='/daftar' element={<Daftar />} />
+        {/* Child : Academic */}
+        <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
 
 
-        {/* Child About URL . . . */}
+        {/* Child : Admission URL . . . */}
+        <Route exact path='/admission/daftar' element={<Daftar />} />
+
+
+        {/* Child : About URL . . . */}
+
 
 
         {/* Unknown URL */}

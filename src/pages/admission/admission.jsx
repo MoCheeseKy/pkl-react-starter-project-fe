@@ -27,7 +27,7 @@ export default function Admission() {
                             Prosedur Pendaftaran
                         </h3>
                         <p>Beberapa langkah mudah untuk menjadi mahasiswa IBLAM School of Law</p>
-                        <p><Link to="/daftar">Selengkapnya</Link></p>
+                        <p><Link to="/admission/daftar">Selengkapnya</Link></p>
                     </div>
                     <ul className='img'>
                         <li>
