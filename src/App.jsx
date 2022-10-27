@@ -43,6 +43,8 @@ function App() {
         <Route exact path='/partners' element={<Partners />} />
         <Route exact path='/lpm' element={<Lpm />} />
 
+        {/* Child Academic URL . . . */}
+        <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
 
         {/* Child Admission URL . . . */}
         <Route exact path='/daftar' element={<Daftar />} />
