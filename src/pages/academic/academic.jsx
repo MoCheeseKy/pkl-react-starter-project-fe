@@ -25,7 +25,7 @@ export default function Academic() {
                 <div className="content">
                     <h3><img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/icon-1.png" alt=""/>&nbsp;Kurikulum</h3>
                     <p>IBLAM School of Law menyiapkan kajian keilmuan dan soft skill yang komprehensif dalam menyiapkan lulusan terbaik.</p>
-                    <Link>Selengkapnya <ArrowRightOutlined /></Link>
+                    <Link to={'/academic/kurikulum'}>Selengkapnya <ArrowRightOutlined /></Link>
                 </div>
                 <div className="img-r">
                     <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/academic-kurikulum.jpg" alt=''/>

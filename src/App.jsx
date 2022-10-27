@@ -39,7 +39,7 @@ function App() {
         <Route exact path='/lpm' element={<Lpm />} />
         <Route exact path='/news-event' element={<News />} />
         <Route exact path='/work-with-us' element={<Wwus />} />
-        <Route exact path='/tes' element={<Kurikulum />} />
+        <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
         <Route path="*" element={
           <center>
             <h1>Oops! That page can’t be found.</h1>
