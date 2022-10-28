@@ -230,7 +230,7 @@ export default function About() {
 
                         </div>
                         <div className="text">
-                            Kontrak
+                            Kontak
                         </div>
                     </div>
                     <div className="about-image-footer">
@@ -279,17 +279,19 @@ export default function About() {
                             Iblam Research and Consulting
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>IBLAM Research and Consulting Group adalah lembaga think tank / pusat penelitian untuk isu-isu hukum kontemporer yang berdampak pada kebijakan publik.</p>
+                    <Link to='/about/iblam-resource-and-consulting-group'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>IBLAM Research and Consulting Group adalah lembaga think tank / pusat penelitian untuk isu-isu hukum kontemporer yang berdampak pada kebijakan publik.</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-                        </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
             <Foot></Foot>
