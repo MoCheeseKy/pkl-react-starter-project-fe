@@ -115,18 +115,20 @@ export default function About() {
                             Akreditas
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>Daftar akreditasi IBLAM School of Law</p>
+                    <Link to='/about/akreditas'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>Daftar akreditasi IBLAM School of Law</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">
@@ -207,18 +209,20 @@ export default function About() {
                             Iblam Career and Development
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>IBLAM Career and Development Center mempersiapkan mahasiswa untuk dapat terjun ke dunia kerja dan bersaing secara global</p>
+                    <Link to='/about/iblam-career-and-development'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>IBLAM Career and Development Center mempersiapkan mahasiswa untuk dapat terjun ke dunia kerja dan bersaing secara global</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">
