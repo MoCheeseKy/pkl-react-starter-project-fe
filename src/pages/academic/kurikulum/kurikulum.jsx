@@ -154,10 +154,10 @@ export default function Kurikulum() {
                     </div>
                     <div className="links">
                         <div className="s1">
-                            <Link><img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/icon-undergraduate-3.png" alt="" /></Link>
+                            <Link to={'/undergraduates/s1'}><img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/icon-undergraduate-3.png" alt="" /></Link>
                         </div>
                         <div className="s2">
-                            <Link><img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/icon-graduate-1.png" alt="" /></Link>
+                            <Link to={'/graduates/s2'}><img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/icon-graduate-1.png" alt="" /></Link>
                         </div>
                     </div>
                 </div>
