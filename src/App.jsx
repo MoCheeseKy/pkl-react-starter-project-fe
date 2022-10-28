@@ -36,6 +36,7 @@ import Akreditas from './pages/about/akreditas/akreditas';
 import CareerDevelopment from './pages/about/career-development/careerdev';
 import S1 from './pages/graduates/s1/s1';
 import ResourceConsulting from './pages/about/research-consulting/rcg';
+import Kontak from './pages/about/kontak/kontak';
 
 function App() {
   return (
@@ -85,6 +86,7 @@ function App() {
         <Route exact path='/about/akreditas' element={<Akreditas />} />
         <Route exact path='/about/iblam-career-and-development' element={<CareerDevelopment />} />
         <Route exact path='/about/iblam-resource-and-consulting-group' element={<ResourceConsulting />} />
+        <Route exact path='/about/kontak-kami' element={<Kontak />} />
 
 
         {/* Unknown URL */}
