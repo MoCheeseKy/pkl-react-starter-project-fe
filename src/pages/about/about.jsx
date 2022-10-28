@@ -159,18 +159,20 @@ export default function About() {
                             Komunitas Mahasiswa
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>Terhubunglah dengan komunitas mahasiswa IBLAM School of Law</p>
+                    <Link to='/about/komunitas-mahasiswa'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>Terhubunglah dengan komunitas mahasiswa IBLAM School of Law</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">
