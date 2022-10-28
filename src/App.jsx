@@ -29,6 +29,7 @@ import Kurikulum from './pages/academic/kurikulum/kurikulum';
 import VisiMisi from './pages/about/visimisi/vm';
 import Sejarah from './pages/about/sejarah/sejarah';
 import Pendiri from './pages/about/pendiri/pendiri';
+import S2 from './pages/undergraduates/s2/s2';
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
         <Route exact path='/about' element={<About />} />
         <Route exact path='/partners' element={<Partners />} />
         <Route exact path='/lpm' element={<Lpm />} />
+
+        {/* Child Graduates URL . . .*/}
+        <Route exact path='/graduates/s2' element={<S2 />} />
 
         {/* Child Academic URL . . . */}
         <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
