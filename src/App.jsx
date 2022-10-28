@@ -32,6 +32,7 @@ import Pendiri from './pages/about/pendiri/pendiri';
 import KomunitasMahasiswa from './pages/about/komun-mahasiswa/komuniswa';
 import S2 from './pages/undergraduates/s2/s2';
 import BantuanKlinikhukum from './pages/about/bantuan-klinik-hukum/bkh';
+import S1 from './pages/graduates/s1/s1';
 
 function App() {
   return (
@@ -56,6 +57,9 @@ function App() {
         <Route exact path='/about' element={<About />} />
         <Route exact path='/partners' element={<Partners />} />
         <Route exact path='/lpm' element={<Lpm />} />
+
+        {/* Child Undergraduates URL . . .*/}
+        <Route exact path='/undergraduates/s1' element={<S1 />} />
 
         {/* Child Graduates URL . . .*/}
         <Route exact path='/graduates/s2' element={<S2 />} />
