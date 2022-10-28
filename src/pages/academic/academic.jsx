@@ -32,7 +32,7 @@ export default function Academic() {
                 </div>
             </div>
             <div className="img-left">
-                <div className="img-r">
+                <div className="img-l">
                     <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/academic-kelulusan.jpg" alt="" />
                 </div>
                 <div className="content">
@@ -52,7 +52,7 @@ export default function Academic() {
                 </div>
             </div>
             <div className="img-left">
-                <div className="img-r">
+                <div className="img-l">
                     <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/academic-pengajar.jpg"alt="" />
                 </div>
                 <div className="content">
