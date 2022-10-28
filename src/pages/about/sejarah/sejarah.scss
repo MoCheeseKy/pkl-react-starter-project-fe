@@ -1,0 +1,255 @@
+.page-sejarah {
+    width: 100vw;
+    height: fit-content;
+
+    // Atur Headline Disini : --------------------
+    .headline {
+        width: 100vw;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+
+        h1.sejarah {
+            margin: 0;
+            font-size: 4em;
+            color: white;
+        }
+    }
+
+    // Atur Content Disini : --------------------
+    .content {
+        width: 100vw;
+        padding: 20px 180px;
+        display: flex;
+        justify-content: space-between;
+
+        .sejarah {
+            width: 70%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .tittle {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                height: fit-content;
+
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #000;
+                }
+
+                .text {
+                    font-size: 2em;
+                    font-weight: bold;
+                    color: blue;
+                }
+            }
+        }
+
+        .sider {
+            width: 28%;
+            height: fit-content;
+
+            .help {
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h1 {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 8px 0;
+                    font-size: 1.5em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: blue;
+                    color: white;
+                }
+            }
+
+            .side-info {
+                margin-top: 20px;
+                width: 100%;
+                height: 180px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ddd;
+            }
+        }
+    }
+
+    .help {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .page-sejarah {
+        .content.asd {
+            padding: 20px 40px;
+
+            .sejarah {
+                width: 100%;
+
+                .tittle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0;
+
+                    .icon {
+                        width: 35px;
+                        height: 35px;
+                        background-color: #000;
+                    }
+
+                    text {
+                        font-weight: 400px;
+                    }
+                }
+
+                .misi {
+                    ol li {
+                        margin-left: 53px;
+                    }
+                }
+            }
+        }
+
+        .sider {
+            display: none;
+        }
+
+        .help {
+            display: block;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 40px;
+            gap: 10px;
+            align-items: center;
+
+            h1 {
+                padding: 0;
+                margin: 0;
+            }
+
+            button {
+                width: 100%;
+                padding: 8px 0;
+                font-size: 1.5em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                border: none;
+                border-radius: 10px;
+                background-color: blue;
+                color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-sejarah {
+        .headline {
+            height: 100px;
+
+            h1 {
+                font-size: 1.3em;
+                margin-left: 100px;
+                margin-top: 30px;
+            }
+        }
+
+        .content.asd {
+            padding: 10px 20px;
+
+            .sejarah {
+                width: 100%;
+                margin-bottom: 10px;
+
+                .tittle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0;
+
+                    .icon {
+                        width: 35px;
+                        height: 35px;
+                        background-color: #000;
+                    }
+
+                    text {
+                        font-weight: 400px;
+                    }
+                }
+
+                .misi {
+                    ol li {
+                        margin-left: 53px;
+                    }
+                }
+
+                .help {
+                    display: none;
+                }
+
+            }
+
+            .sider {
+                display: none;
+            }
+        }
+
+        .help {
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .page-sejarah {
+        .headline {
+            h1.page-sejarah {
+                margin-left: 210px;
+            }
+        }
+
+        .content {
+            padding: 20px 40px;
+
+            .sider {
+                .help {
+                    h1 {
+                        font-size: 1.8em;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header/header";
 import Foot from "../../components/footer/foot/foot";
+import { Link } from "react-router-dom";
 import './about.scss'
 
 export default function About() {
@@ -20,18 +21,20 @@ export default function About() {
                             Sejarah Iblam
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>IBLAM didirikan dengan prakarsa untuk meningkatkan mutu atau nilai tambah Sarjana Hukum dengan menyelenggarakan pendidikan dan pelatihan-pelatihan yang melembaga.</p>
+                    <Link to='/about/sejarah-iblam'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>IBLAM didirikan dengan prakarsa untuk meningkatkan mutu atau nilai tambah Sarjana Hukum dengan menyelenggarakan pendidikan dan pelatihan-pelatihan yang melembaga.</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">
@@ -42,18 +45,20 @@ export default function About() {
                             Pendiri
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>Lebih dekat dengan pendiri IBLAM School of Law</p>
+                    <Link to='/about/pendiri-iblam'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>Lebih dekat dengan pendiri IBLAM School of Law</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">
@@ -64,18 +69,20 @@ export default function About() {
                             Visi dan Misi
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>IBLAM School of Law menjadikan integritas sebagai visi dan misi utama dalam komitmen memberikan kunci perbaikan SDM di bidang hukum.</p>
+                    <Link to='/about/visi-misi'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>IBLAM School of Law menjadikan integritas sebagai visi dan misi utama dalam komitmen memberikan kunci perbaikan SDM di bidang hukum.</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">
@@ -174,18 +181,20 @@ export default function About() {
                             Komunitas Alumni
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>Terhubung dengan komunitas alumni</p>
+                    <Link to='/alumni'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>Terhubung dengan komunitas alumni</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">
