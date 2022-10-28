@@ -1,0 +1,73 @@
+.s2{
+    .content{
+        .entry{
+            img{
+                width: 100vw;
+                height: auto;
+            }
+        }
+        .container{
+            margin: 0 26px;
+            padding: 0 15px;
+            .breadcrumb{
+                padding: 20px;
+            }
+            .title-main{
+                h2{
+                    .br{
+                        display: none;
+                    }
+                    strong{
+                        font-size: 32px;
+                        color: #F9A31C;
+                    }
+                }
+            }
+            .isi{
+                .collapse-wrap{
+                    .collapse{
+                        .isian{
+                            display: flex;
+                            .kiri{
+                                width: 50%;
+                                text-align: left;
+                                table{
+                                    border-collapse: collapse;
+                                    width: 95%;
+                                    tr{
+                                        border-bottom: 1px solid black;
+                                        th{
+                                            color: #33499f;
+                                            padding: 15px 30px;
+                                        }
+                                        td{
+                                            padding: 15px 30px;
+                                        }
+                                    }
+                                }
+                            }
+                            .kanan{
+                                width: 50%;
+                                text-align: left;
+                                table{
+                                    border-collapse: collapse;
+                                    width: 95%;
+                                    tr{
+                                        border-bottom: 1px solid black;
+                                        th{
+                                            color: #33499f;
+                                            padding: 15px 30px;
+                                        }
+                                        td{
+                                            padding: 15px 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
