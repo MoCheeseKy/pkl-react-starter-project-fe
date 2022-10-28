@@ -36,7 +36,7 @@ export default function Kontak() {
                 </div>
                 <div className="kontak-input tab">
                     <h3>Isi formulir ini dan kami akan menghubungi Anda lebih lanjut.</h3>
-                    <input placeholder="Masukan Nama . . . ." type="text" />
+                    <input placeholder="Masukan Nama lengkap . . . ." type="text" />
                     <input placeholder="Masukan Email . . . ." type="text" />
                     <input placeholder="Masukan No HP . . . ." type="text" />
                     <input placeholder="Input Subject . . . ." type="text" />
