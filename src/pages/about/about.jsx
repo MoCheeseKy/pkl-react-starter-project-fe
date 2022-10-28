@@ -251,18 +251,20 @@ export default function About() {
                             Klinik Bantuan Hukum
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>Dapatkan bantuan hukum dari para pakar di IBLAM School of Law</p>
+                    <Link to='/about/bantuan-klinik-hukum'>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>Dapatkan bantuan hukum dari para pakar di IBLAM School of Law</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">
