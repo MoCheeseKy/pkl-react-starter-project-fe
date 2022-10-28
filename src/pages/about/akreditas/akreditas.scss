@@ -1,0 +1,258 @@
+.akreditas {
+    .akreditas-headline {
+        width: 100vw;
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+        margin-bottom: 40px;
+
+        h1 {
+            font-size: 4em;
+            color: white;
+        }
+    }
+
+    .akreditas-content {
+        padding: 20px 12vw;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+
+        .main-content {
+            width: 70%;
+            height: fit-content;
+
+            .main-content-tittle {
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 20px;
+
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #ddd;
+                }
+
+                h2 {
+                    font-size: 3em;
+                    color: blue;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .download-box {
+                width: 100%;
+                height: fit-content;
+                margin-top: 20px;
+                display: flex;
+                gap: 30px;
+                border: 1px solid black;
+                border-radius: 5px;
+
+                .download-box-image {
+                    width: 150px;
+                    height: 150px;
+                    background-color: #ddd;
+                }
+
+                .download-box-text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h3 {
+                        font-size: 2.5em;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        button {
+                            padding: 7px 10px;
+                            width: 130px;
+                            background-color: blue;
+                            border: none;
+                            border-radius: 5px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .side-content {
+            width: 28%;
+
+            .help {
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2 {
+                    font-size: 2.5em;
+                    padding: 0;
+                    margin: 0;
+                    color: blue;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 8px 0;
+                    font-size: 1.5em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: blue;
+                    color: white;
+                }
+            }
+
+            .side-content-nav {
+                margin-top: 20px;
+
+                .side-content-nav-item {
+                    width: 100%;
+                    height: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ddd;
+                    margin-bottom: 10px;
+
+                    h3 {
+                        font-size: 2em;
+                        color: white;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .akreditas {
+        .akreditas-content {
+            padding: 20px 10vw;
+            flex-direction: column;
+
+            .main-content {
+                width: 100%;
+
+                .main-content-tittle {
+                    gap: 0;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                p {
+                    font-size: 1.2em;
+                }
+
+                .download-box {
+                    flex-direction: column;
+                    border: none;
+                    align-items: center;
+
+                    .download-box-image {
+                        width: 450px;
+                        height: 300px;
+                    }
+
+                    .download-box-text {
+                        align-items: center;
+
+                        button {
+                            padding: 10px 10px;
+                        }
+                    }
+
+
+                }
+            }
+
+            .side-content {
+                width: 100%;
+
+                .help {
+                    align-items: center;
+                    padding: 30px 50px;
+                }
+
+                .side-content-nav {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .akreditas {
+        .akreditas-headline {
+            height: 145px;
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        .akreditas-content {
+            .main-content {
+                .main-content-tittle {
+                    h2 {
+                        font-size: 1.7em;
+                    }
+                }
+
+                p {
+                    font-size: 1em;
+                }
+
+                .download-box {
+                    padding: 20px 0;
+
+                    .download-box-image {
+                        width: 300px;
+                        height: 200px;
+                    }
+
+                    .download-box-text {
+                        h3 {
+                            font-size: 1.5em;
+                            text-align: center;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            .side-content {
+                .help {
+                    padding: 60px 0;
+
+                    h2 {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}

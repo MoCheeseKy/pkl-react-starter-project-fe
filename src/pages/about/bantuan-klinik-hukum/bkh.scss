@@ -48,6 +48,14 @@
 
 }
 
+@media only screen and (max-width: 1300px) {
+    .bantuan-klinik-hukum {
+        .bkh-content {
+            padding: 20px 10vw;
+        }
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .bantuan-klinik-hukum {
         .bkh-tittle {

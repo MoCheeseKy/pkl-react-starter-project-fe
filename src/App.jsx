@@ -32,6 +32,8 @@ import Pendiri from './pages/about/pendiri/pendiri';
 import KomunitasMahasiswa from './pages/about/komun-mahasiswa/komuniswa';
 import S2 from './pages/undergraduates/s2/s2';
 import BantuanKlinikhukum from './pages/about/bantuan-klinik-hukum/bkh';
+import Akreditas from './pages/about/akreditas/akreditas';
+import CareerDevelopment from './pages/about/career-development/careerdev';
 
 function App() {
   return (
@@ -75,7 +77,8 @@ function App() {
         <Route exact path='/about/pendiri-iblam' element={<Pendiri />} />
         <Route exact path='/about/komunitas-mahasiswa' element={<KomunitasMahasiswa />} />
         <Route exact path='/about/bantuan-klinik-hukum' element={<BantuanKlinikhukum />} />
-
+        <Route exact path='/about/akreditas' element={<Akreditas />} />
+        <Route exact path='/about/iblam-career-and-development' element={<CareerDevelopment />} />
 
 
         {/* Unknown URL */}
