@@ -10,7 +10,8 @@ import Graduates from './pages/graduates/graduates';
 import Undergraduates from './pages/undergraduates/undergraduates';
 import Alumni from './pages/alumni/alumni';
 import Wwus from './pages/wwus/wwus';
-import Login from './pages/login/login'; {/* && */ } import Register from './pages/register/register';
+import Login from './pages/login/login';
+import Register from './pages/register/register';
 
 // Importing Parent Pages From BOTTOM NAVIGATION :
 import Academic from './pages/academic/academic';
