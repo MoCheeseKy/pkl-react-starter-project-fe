@@ -29,6 +29,7 @@ import Kurikulum from './pages/academic/kurikulum/kurikulum';
 import VisiMisi from './pages/about/visimisi/vm';
 import Sejarah from './pages/about/sejarah/sejarah';
 import Pendiri from './pages/about/pendiri/pendiri';
+import KomunitasMahasiswa from './pages/about/komun-mahasiswa/komuniswa';
 import S2 from './pages/undergraduates/s2/s2';
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
         <Route exact path='/about/visi-misi' element={<VisiMisi />} />
         <Route exact path='/about/sejarah-iblam' element={<Sejarah />} />
         <Route exact path='/about/pendiri-iblam' element={<Pendiri />} />
+        <Route exact path='/about/komunitas-mahasiswa' element={<KomunitasMahasiswa />} />
 
 
 
