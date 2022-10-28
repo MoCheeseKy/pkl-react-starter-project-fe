@@ -110,6 +110,19 @@
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .kontak {
+        .kontak-input {
+            input {
+                width: 350px;
+            }
+
+            textarea {
+                width: 740px;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 1000px) {
     .kontak {
