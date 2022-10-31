@@ -1,0 +1,108 @@
+.beasiswa{
+    .entry{
+        img{
+            width: 100vw;
+            height: auto;
+        }
+    }
+    .content{
+        .container{
+            padding: 0 15px;
+            margin: 0 26px;
+            .breadcrumb{
+                padding: 20px 0;
+            }
+            .title-main{
+                h2{
+                    margin-bottom: 48px;
+                    .br{
+                        display: none;
+                    }
+                    strong{
+                        font-size: 32px;
+                        color: #0026C5;
+                    }
+                }
+            }
+            .isi{
+                .upper{
+                    img{
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        margin-bottom: 16px;
+                    }
+                }
+                .middle{
+                    h4{
+                        strong{
+                            font-size: 24px;
+                            color: #0026C5;
+                        }
+                    }
+                    h5{
+                        margin-bottom: 8px;
+                        font-size: 20px;
+                    }
+                    ol{
+                        margin-bottom: 16px;
+                        padding-left: 40px;
+                    }
+                    p{
+                        margin-bottom: 16px;
+                        a{
+                            padding: 6px 12px;
+                            color: white;
+                            font-size: 16px;
+                            background: #0026C5;
+                            border: none;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .link-beasiswa{
+            a{
+                img{
+                    width: 100vw;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .beasiswa{
+        .content{
+            .container{
+                margin: 0;
+                padding: 24px;
+                .title-main{
+                    h2{
+                        text-align: center;
+                        .br{
+                            display: inline;
+                        }
+                        strong{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .isi{
+                    .upper{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .middle{
+                        h4{
+                            strong{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
