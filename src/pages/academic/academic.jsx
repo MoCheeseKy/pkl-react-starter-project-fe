@@ -58,7 +58,8 @@ export default function Academic() {
                 <div className="content">
                     <h3><img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/icon-1.png" alt="" /> Pengajar</h3>
                     <p>Mereka yang akan membuatmu jatuh cinta pada dunia hukum.</p>
-                    <Link>Selengkapnya <ArrowRightOutlined /></Link>
+                    <Link
+                    to={'/academic/pengajar'}>Selengkapnya <ArrowRightOutlined /></Link>
                 </div>
             </div>
         </div>

@@ -1,0 +1,71 @@
+.pengajar{
+    .entry{
+        img{
+            width: 100vw;
+            height: auto;
+        }
+    }
+    .content{
+        .container{
+            padding: 0 15px;
+            margin: 0 26px;
+            .breadcrumb{
+                padding: 20px 0;
+            }
+            .main-title{
+                h2{
+                    margin-bottom: 48px;
+                    .br{
+                        display: none;
+                    }
+                    strong{
+                        font-size: 32px;
+                        color: #0026C5;
+                    }
+                }
+            }
+            .isi{
+                display: flex;
+                .isi-kiri{
+                    width: 50%;
+                    .isian{
+                        .txt{
+                            img{
+                                margin-bottom: 16px;
+                            }
+                            h4{
+                                strong{
+                                    font-size: 24px;
+                                    color: #0026C5;
+                                }
+                            }
+                        }
+                    }
+                }
+                .isi-kanan{
+                    width: 50%;
+                    .isian{
+                        .txt{
+                            img{
+                                margin-bottom: 16px;
+                            }
+                            h4{
+                                strong{
+                                    font-size: 24px;
+                                    color: #F9A31C;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .link-pengajar{
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

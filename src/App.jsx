@@ -40,6 +40,7 @@ import Kontak from './pages/about/kontak/kontak';
 import ProgramKaryawan from './pages/undergraduates/s1-karyawan/s1k';
 import JurnalHukumBisnis from './pages/e-library/jurnal-hukum-bisnis/jhb';
 import Sispen from './pages/academic/sistem-pendidikan/sispen';
+import Pengajar from './pages/academic/pengajar/pengajar';
 
 function App() {
   return (
@@ -75,9 +76,7 @@ function App() {
         {/* Child Academic URL . . . */}
         <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
         <Route exact path='/academic/sistem-pendidikan' element={<Sispen />} />
-
-        {/* Child : Academic */}
-        <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
+        <Route exact path='/academic/pengajar' element={<Pengajar />} />
 
         {/* Child : Admission URL . . . */}
         <Route exact path='/admission/daftar' element={<Daftar />} />
