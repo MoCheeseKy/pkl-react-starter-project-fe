@@ -43,6 +43,7 @@ import JurnalHukumTataNegara from './pages/e-library/jurnal-series/jurnal-tata-n
 import JurnalHukumPidana from './pages/e-library/jurnal-series/jurnal-pidana';
 import Sispen from './pages/academic/sistem-pendidikan/sispen';
 import Pengajar from './pages/academic/pengajar/pengajar';
+import KompetensiKelulusan from './pages/academic/kompetensi-kelulusan/kkl';
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
         <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
         <Route exact path='/academic/sistem-pendidikan' element={<Sispen />} />
         <Route exact path='/academic/pengajar' element={<Pengajar />} />
+        <Route exact path='/academic/kompetensi-kelulusan' element={<KompetensiKelulusan />} />
 
         {/* Child : Admission URL . . . */}
         <Route exact path='/admission/daftar' element={<Daftar />} />
