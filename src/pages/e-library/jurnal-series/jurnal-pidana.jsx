@@ -15,11 +15,11 @@ export default function JurnalHukumPidana() {
                 </div>
                 <div className="jurnal-tittle">
                     <div className="icon"></div>
-                    <h2>Jurnal Hukum Tata Negara</h2>
+                    <h2>Jurnal Hukum Pidana</h2>
                 </div>
                 <div className="jurnal-content">
                     <div className="main-content">
-                        <p>Negara merupakan suatu organisasi yang terdiri dari berbagai fungsi yang saling mendukung. Hukum tata negara mengatur bagaimana tatanan dan fungsi tersebut berperan menjadi sebuah sistem yang harmonis. Berikut beberapa jurnal hukum tata negara yang dirilis oleh IBLAM School of Law</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et pellentesque elit, eu dapibus massa. Ut nunc purus, iaculis vel felis vel, elementum faucibus purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus cursus nec mi id tempor Phasellus cursus nec mi id tempor.</p>
                         <div className="group-p">
                             <p>Available online since 2016</p>
                             <p>ISSN: 0125-9687 (Print) | 2503-1465 (Online)</p>
@@ -37,9 +37,9 @@ export default function JurnalHukumPidana() {
                     </div>
                     <div className="side-content">
                         <p>Publikasikan jurnal Anda, kirim melalui email ke jurnal@iblam.ac.id</p>
-                        <Link to='/e-library/tanya-jawab-jurnal-hukum-bisnis'><button>Jurnal Hukum Bisnis</button></Link>
-                        <Link to='/e-library/tanya-jawab-jurnal-hukum-pidana'><button>Jurnal Hukum Pidana</button></Link>
-                        <Link to='/e-library/tanya-jawab-jurnal-hukum-tata-negara'><button>Jurnal Hukum Tata Negara</button></Link>
+                        <Link to='/e-library/jurnal-hukum-bisnis'><button>Jurnal Hukum Bisnis</button></Link>
+                        <Link to='/e-library/jurnal-hukum-pidana'><button>Jurnal Hukum Pidana</button></Link>
+                        <Link to='/e-library/jurnal-hukum-tata-negara'><button>Jurnal Hukum Tata Negara</button></Link>
                     </div>
                 </div>
             </div>

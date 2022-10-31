@@ -41,9 +41,9 @@ export default function JurnalHukumTataNegara() {
                     </div>
                     <div className="side-content">
                         <p>Publikasikan jurnal Anda, kirim melalui email ke jurnal@iblam.ac.id</p>
-                        <Link to='/e-library/tanya-jawab-jurnal-hukum-bisnis'><button>Jurnal Hukum Bisnis</button></Link>
-                        <Link to='/e-library/tanya-jawab-jurnal-hukum-pidana'><button>Jurnal Hukum Pidana</button></Link>
-                        <Link to='/e-library/tanya-jawab-jurnal-hukum-tata-negara'><button>Jurnal Hukum Tata Negara</button></Link>
+                        <Link to='/e-library/jurnal-hukum-bisnis'><button>Jurnal Hukum Bisnis</button></Link>
+                        <Link to='/e-library/jurnal-hukum-pidana'><button>Jurnal Hukum Pidana</button></Link>
+                        <Link to='/e-library/jurnal-hukum-tata-negara'><button>Jurnal Hukum Tata Negara</button></Link>
                     </div>
                 </div>
             </div>
