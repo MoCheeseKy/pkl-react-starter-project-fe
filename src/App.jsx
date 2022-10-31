@@ -41,7 +41,6 @@ import ProgramKaryawan from './pages/undergraduates/s1-karyawan/s1k';
 import JurnalHukumBisnis from './pages/e-library/jurnal-series/jurnal-bisnis';
 import JurnalHukumTataNegara from './pages/e-library/jurnal-series/jurnal-tata-negara';
 import JurnalHukumPidana from './pages/e-library/jurnal-series/jurnal-pidana';
-import JurnalHukumBisnis from './pages/e-library/jurnal-hukum-bisnis/jhb';
 import Sispen from './pages/academic/sistem-pendidikan/sispen';
 
 function App() {
