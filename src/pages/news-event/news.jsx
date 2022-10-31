@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './news.scss'
 import { Link } from 'react-router-dom'
-import { Breadcrumb } from 'antd'
+import { Breadcrumb, Typography } from 'antd'
 import Header from '../../components/header/header'
 import Subscribe from '../../components/footer/subscribe/subscribe'
 import Foot from '../../components/footer/foot/foot'
@@ -10,14 +10,14 @@ import axios from 'axios'
 
 export default function News() {
   const [article, setArticle] = useState([])
+
+  const { Paragraph } = Typography
+  
   useEffect(() => {
     axios.get('https://1fe3-2001-448a-302b-150d-e5d1-541a-de2e-8e1d.ngrok.io/article/').then((res) => {
         setArticle(res?.data)
-        // console.log(res?.data);
     })
   }, [])
-  
-  console.log([...article]);
   return (
     <div className='news'>
         <Header />
@@ -61,77 +61,23 @@ export default function News() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="post-item">
-                        <img src="https://iblam.ac.id/wp-content/uploads/2022/07/WhatsApp-Image-2022-05-25-at-15.34.34-350x250.jpeg" alt="" />
-                        <div className="post-date">27 JUL 22</div>
-                        <div className="post-title">
-                            <Link>Ceremony Penandatanganan Memorandum of Understanding (MoU) dan Memorandum of Agreement (MoA) Sekolah Tinggi Ilmu Hukum IBLAM dengan Badan Pengawasan Pemilu Kota Administrasi Jakarta Timur</Link>
-                        </div>
-                        <div className="post-content">
-                            Jakarta, 25 Mei 2022 - Sekolah Tinggi Ilmu Hukum IBLAM (STIH IBLAM) mengunjungi kantor Badan Pengawas Pemilu (Bawaslu) Kota Jakarta T...
-                            <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
-                        </div>
-                    </div>
-                    <div className="post-item">
-                        <img src="https://iblam.ac.id/wp-content/uploads/2022/07/baznas-buat-ig-4-350x250.jpg" 
-                        alt="" />
-                        <div className="post-date">27 JUL 22</div>
-                        <div className="post-title">
-                            <Link>Ceremony Penandatanganan MoU STIH IBLAM dengan Badan Pengawas Pemilu Kota Jakarta Pusat dalam bidang Tri Dharma Perguruan Tinggi dan Partisipasi Pengawasan Pemilu di Wilayah Jakarta Pusat</Link>
-                        </div>
-                        <div className="post-content">
-                            Jakarta, Rabu 23 Maret 2022 - Sekolah Tinggi Ilmu Hukum IBLAM (STIH IBLAM) mengunjungi kantor Badan Pengawas Pemilu (Bawaslu) Kota Ad...
-                            <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
-                        </div>
-                    </div>
-                    <div className="post-item">
-                        <img src="https://iblam.ac.id/wp-content/uploads/2022/04/WhatsApp-Image-2022-03-25-at-14.01.33-350x250.jpeg" 
-                        alt="" />
-                        <div className="post-date">27 JUL 22</div>
-                        <div className="post-title">
-                            <Link>Ceremony Penandatanganan MoU STIH IBLAM dengan Badan Pengawas Pemilu Kota Jakarta Pusat dalam bidang Tri Dharma Perguruan Tinggi dan Partisipasi Pengawasan Pemilu di Wilayah Jakarta Pusat</Link>
-                        </div>
-                        <div className="post-content">
-                            Jakarta, Rabu 23 Maret 2022 - Sekolah Tinggi Ilmu Hukum IBLAM (STIH IBLAM) mengunjungi kantor Badan Pengawas Pemilu (Bawaslu) Kota Ad...
-                            <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
-                        </div>
-                    </div>
-                    <div className="post-item">
-                        <img src="https://iblam.ac.id/wp-content/uploads/2022/04/WhatsApp-Image-2022-03-14-at-12.39.52-1-350x250.jpeg" 
-                        alt="" />
-                        <div className="post-date">7 APR 22</div>
-                        <div className="post-title">
-                            <Link>Audiensi Penjajakan Kerjasama Sekolah Tinggi Ilmu Hukum IBLAM dengan Komisi Pemilihan Umum Jakarta Timur</Link>
-                        </div>
-                        <div className="post-content">
-                            Jakarta, Jumat, 14 Maret 2022 - Sekolah Tinggi Ilmu Hukum IBLAM (STIH IBLAM) berkunjung ke kantor Komisi Pemilihan Umum Jakarta Timur...
-                            <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
-                        </div>
-                    </div>
-                    <div className="post-item">
-                        <img src="https://iblam.ac.id/wp-content/uploads/2022/03/bawaslu-pusat-350x250.jpg" 
-                        alt="" />
-                        <div className="post-date">29 MAR 22</div>
-                        <div className="post-title">
-                            <Link>Ceremony Penandatanganan MoU STIH IBLAM dengan Badan Pengawas Pemilu Kota Jakarta Pusat dalam bidang Tri Dharma Perguruan Tinggi dan Partisipasi Pengawasan Pemilu di Wilayah Jakarta Pusat</Link>
-                        </div>
-                        <div className="post-content">
-                            Jakarta, Rabu 23 Maret 2022 - Sekolah Tinggi Ilmu Hukum IBLAM (STIH IBLAM) mengunjungi kantor Badan Pengawas Pemilu (Bawaslu) Kota Ad...
-                            <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
-                        </div>
-                    </div>
-                    <div className="post-item">
-                        <img src="https://iblam.ac.id/wp-content/uploads/2022/03/IMG_0016-min-350x250.jpg" 
-                        alt="" />
-                        <div className="post-date">28 MAR 22</div>
-                        <div className="post-title">
-                            <Link>Audiensi Penjajakan Kerjasama dan Penandatanganan Nota Kesepahaman (MoU) STIH IBLAM dengan Harry Syahputra & Partners Law Firm</Link>
-                        </div>
-                        <div className="post-content">
-                            Jakarta, Selasa 22 Februari 2022 Sekolah Tinggi Ilmu Hukum IBLAM (STIH IBLAM) berkunjung ke kantor HSP Law Firm untuk mengadakan audiensi penjajakan s...
-                            <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
-                        </div>
-                    </div>
+                    {article.map((article)=>{
+                        return(
+                            <div className="post-item">
+                                {article.thumbnail}
+                                <div className="post-date">27 JUL 22</div>
+                                <div className="post-title">
+                                    <Link to={`/${article.kategori_slug}/${article.artikel_slug}`}>{article.judul}</Link>
+                                </div>
+                                <div className="post-content">
+                                    <Paragraph ellipsis={{rows: 5}}>
+                                        {article.konten}
+                                    </Paragraph>
+                                <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </div>
