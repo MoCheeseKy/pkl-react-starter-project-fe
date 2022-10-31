@@ -63,7 +63,7 @@ export default function Home() {
                             <p>Ceremony Penandatanganan Memorandum of Understanding (MoU) dan Memorandum of Agreement (MoA) Sekolah Tinggi Ilmu Hukum IBLAM dengan Badan Pengawasan Pemilu Kota Administrasi Jakarta Timur</p>
                             <div className="place-date-time">Jakarta, 25 Mei 2022 - Sekolah Tinggi Ilmu Hukum IBLAM (STIH IBLAM) mengunjungi kantor Badan Pengawas P...</div>
                         </div>
-                        <Link><button>show more</button></Link>
+                        <Link className="showing"><button>show more</button></Link>
                     </div>
                     <div className="newsEvent-content-item">
                         <div className="newsEvent-image">
@@ -83,7 +83,7 @@ export default function Home() {
                             <p>Ceremony Penandatanganan Memorandum of Understanding (MoU) dan Memorandum of Agreement (MoA) Sekolah Tinggi Ilmu Hukum IBLAM dengan Badan Pengawasan Pemilu Kota Administrasi Jakarta Timur</p>
                             <div className="place-date-time">Jakarta, 25 Mei 2022 - Sekolah Tinggi Ilmu Hukum IBLAM (STIH IBLAM) mengunjungi kantor Badan Pengawas P...</div>
                         </div>
-                        <Link><button>show more</button></Link>
+                        <Link className="showing"><button>show more</button></Link>
                     </div>
                 </div>
                 <Link to='/news-event'><button>Lihat Semua <SwapRightOutlined></SwapRightOutlined> </button></Link>

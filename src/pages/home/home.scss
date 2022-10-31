@@ -19,7 +19,6 @@ $h5hp : 1em;
         display: none;
     }
 
-
     .newsEvent-header {
         display: flex;
         justify-content: space-between;
@@ -87,6 +86,7 @@ $h5hp : 1em;
                 justify-content: flex-end;
                 padding: 20px;
                 box-sizing: border-box;
+                cursor: pointer;
 
                 .newsEvent-subtittle {
                     width: 100%;
@@ -170,6 +170,7 @@ $h5hp : 1em;
             .newsEvent-subject {
                 width: 100%;
                 height: fit-content;
+                cursor: pointer;
 
                 p {
                     width: 100%;
@@ -185,13 +186,18 @@ $h5hp : 1em;
                 }
             }
 
-            a button {
-                margin-top: 20px;
-                color: gray;
-                border: none;
-                background-color: transparent;
-                padding: 0;
-                text-align: left;
+            a {
+                display: block;
+
+                button {
+                    margin-top: 20px;
+                    color: gray;
+                    border: none;
+                    background-color: transparent;
+                    padding: 0;
+                    text-align: left;
+                    cursor: pointer;
+                }
             }
         }
     }
