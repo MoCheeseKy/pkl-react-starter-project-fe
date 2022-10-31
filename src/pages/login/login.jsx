@@ -1,7 +1,6 @@
 import { Button, Form, Input, Alert, } from 'antd';
 import React, { useState } from 'react';
-// import { Link, useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.scss'
 import axios from 'axios';
 
@@ -13,7 +12,7 @@ const Login = () => {
   } else {
     formAble = false
   }
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [payloadLogin, setPayloadLogin] = useState({});
   const handlechange = (e) => {
     setPayloadLogin({
@@ -23,13 +22,13 @@ const Login = () => {
   };
   const onFinish = (values) => {
     console.log('Success:', values);
-    axios.post("https://2e2f-2001-448a-3025-27ac-2cec-cef6-3add-88bb.ngrok.io/login-gate/", values).then((res) => {
+    axios.post("https://1fe3-2001-448a-302b-150d-e5d1-541a-de2e-8e1d.ngrok.io/login-gate/", values).then((res) => {
       const resData = res?.data;
       localStorage.setItem('token', resData?.token);
       localStorage.setItem('login', true)
       localStorage.setItem('username', values.username)
 
-      // navigate('/')
+      navigate('/')
     })
   };
   const onFinishFailed = (errorInfo) => {

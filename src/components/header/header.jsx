@@ -76,7 +76,7 @@ export default function Header() {
                     <Link to="/alumni"><button>Alumni</button></Link>
                     <Link to="/work-with-us" ><button className="wwu">Work with us</button></Link>
                     <div>
-                        {showButton ? <Link to="/login"><button className="log">Login</button> </Link> : <Link to="/login"><button className="log">Logout</button></Link>}
+                        {showButton ? <Link to="/login"><button className="log">Login</button> </Link> : <Link to="/login"><button onClick={Logout} className="log">Logout</button></Link>}
                     </div>
                 </div>
                 <div className="bottom-nav">
