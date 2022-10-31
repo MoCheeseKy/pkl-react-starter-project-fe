@@ -44,6 +44,7 @@ import JurnalHukumPidana from './pages/e-library/jurnal-series/jurnal-pidana';
 import Sispen from './pages/academic/sistem-pendidikan/sispen';
 import Pengajar from './pages/academic/pengajar/pengajar';
 import KompetensiKelulusan from './pages/academic/kompetensi-kelulusan/kkl';
+import Beasiswa from './pages/admission/beasiswa/beasiswa';
 
 function App() {
   return (
@@ -84,6 +85,7 @@ function App() {
 
         {/* Child : Admission URL . . . */}
         <Route exact path='/admission/daftar' element={<Daftar />} />
+        <Route exact path='/admission/beasiswa' element={<Beasiswa />} />
 
         {/* Child : E-Library URL . . . */}
         <Route exact path='/e-library/tanya-jawab-hukum' element={<JurnalHukumBisnis />} />

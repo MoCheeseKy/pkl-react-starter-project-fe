@@ -69,3 +69,47 @@
         }
     }
 }
+@media only screen and (max-width: 600px){
+    .pengajar{
+        .content{
+            .container{
+                margin: 0;
+                padding: 24px;
+                .main-title{
+                    h2{
+                        text-align: center;
+                        .br{
+                            display: inline;
+                        }
+                        strong{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .isi{
+                    flex-direction: column;
+                    .isi-kiri{
+                        width: 100%;
+                        .isian{
+                            .s1{
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .isi-kanan{
+                        width: 100%;
+                        .isian{
+                            .s2{
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
