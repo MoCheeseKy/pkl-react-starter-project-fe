@@ -3,9 +3,37 @@ import "./kontak.scss"
 import Header from "../../../components/header/header";
 import Foot from "../../../components/footer/foot/foot";
 import Subscribe from "../../../components/footer/subscribe/subscribe";
-// import { Link } from "react-router-dom";
+
+import { useState } from "react";
+import { Alert } from "antd";
+import axios from "axios";
 
 export default function Kontak() {
+
+    const [nama_lengkap, setNama] = useState('');
+    const [user_email, setEmail] = useState('');
+    const [no_hp, setNoHP] = useState('');
+    const [subject, setSubject] = useState('');
+    const [user_msg, setMessage] = useState('');
+
+    var token = localStorage.getItem('token')
+    console.log(token)
+
+    const postData = () => {
+        axios.post(`https://1fe3-2001-448a-302b-150d-e5d1-541a-de2e-8e1d.ngrok.io/formulir`, {
+            nama_lengkap,
+            user_email,
+            no_hp,
+            subject,
+            user_msg
+        },
+            {
+                headers: {
+                    'Authorization': "Token " + token
+                }
+            }
+        ).then(<Alert message="Data berhasil di kirim, silahkan tunggu hasilnya !!!" type="success" />)
+    }
     return (
         <>
             <Header></Header>
@@ -36,12 +64,12 @@ export default function Kontak() {
                 </div>
                 <div className="kontak-input tab">
                     <h3>Isi formulir ini dan kami akan menghubungi Anda lebih lanjut.</h3>
-                    <input placeholder="Masukan Nama lengkap . . . ." type="text" />
-                    <input placeholder="Masukan Email . . . ." type="text" />
-                    <input placeholder="Masukan No HP . . . ." type="text" />
-                    <input placeholder="Input Subject . . . ." type="text" />
-                    <textarea placeholder="input Pesan . . . ."></textarea>
-                    <button>Kirim !</button>
+                    <input onChange={(e) => setNama(e.target.value)} placeholder="Masukan Nama lengkap . . . ." type="text" />
+                    <input onChange={(e) => setEmail(e.target.value)} placeholder="Masukan Email . . . ." type="text" />
+                    <input onChange={(e) => setNoHP(e.target.value)} placeholder="Masukan No HP . . . ." type="text" />
+                    <input onChange={(e) => setSubject(e.target.value)} placeholder="Input Subject . . . ." type="text" />
+                    <textarea onChange={(e) => setMessage(e.target.value)} placeholder="input Pesan . . . ."></textarea>
+                    <button onClick={postData}>Kirim !</button>
                 </div>
 
             </div>
