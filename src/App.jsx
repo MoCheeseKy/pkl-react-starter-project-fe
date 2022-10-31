@@ -38,7 +38,9 @@ import S1 from './pages/graduates/s1/s1';
 import ResourceConsulting from './pages/about/research-consulting/rcg';
 import Kontak from './pages/about/kontak/kontak';
 import ProgramKaryawan from './pages/undergraduates/s1-karyawan/s1k';
-import JurnalHukumBisnis from './pages/e-library/jurnal-hukum-bisnis/jhb';
+import JurnalHukumBisnis from './pages/e-library/jurnal-series/jurnal-bisnis';
+import JurnalHukumTataNegara from './pages/e-library/jurnal-series/jurnal-tata-negara';
+import JurnalHukumPidana from './pages/e-library/jurnal-series/jurnal-pidana';
 
 function App() {
   return (
@@ -81,9 +83,10 @@ function App() {
         <Route exact path='/admission/daftar' element={<Daftar />} />
 
         {/* Child : E-Library URL . . . */}
-        <Route exact path='/e-library/tanya-jawab-jurnal-hukum-bisnis' element={<JurnalHukumBisnis />} />
-        <Route exact path='/e-library/tanya-jawab-jurnal-hukum-pidana' element={<JurnalHukumBisnis />} />
-        <Route exact path='/e-library/tanya-jawab-jurnal-hukum-tata-negara' element={<JurnalHukumBisnis />} />
+        <Route exact path='/e-library/tanya-jawab-hukum' element={<JurnalHukumBisnis />} />
+        <Route exact path='/e-library/jurnal-hukum-bisnis' element={<JurnalHukumBisnis />} />
+        <Route exact path='/e-library/jurnal-hukum-pidana' element={<JurnalHukumPidana />} />
+        <Route exact path='/e-library/jurnal-hukum-tata-negara' element={<JurnalHukumTataNegara />} />
 
         {/* Child : About URL . . . */}
         <Route exact path='/about/visi-misi' element={<VisiMisi />} />

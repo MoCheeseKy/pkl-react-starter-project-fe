@@ -1,5 +1,5 @@
-.jurnal-hukum-bisnis {
-    .jhb-headline {
+.jurnal-hukum {
+    .jurnal-headline {
         width: 100vw;
         height: 380px;
         display: flex;
@@ -13,7 +13,7 @@
         }
     }
 
-    .jhb-tittle {
+    .jurnal-tittle {
         padding: 20px 12vw;
         display: flex;
         align-items: center;
@@ -33,7 +33,7 @@
         }
     }
 
-    .jhb-content {
+    .jurnal-content {
         width: 100vw;
         height: fit-content;
         padding: 20px 12vw;
@@ -45,7 +45,7 @@
             height: fit-content;
 
             p {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .group-p {
@@ -70,7 +70,7 @@
             padding: 20px;
 
             p {
-                font-size: 18px;
+                font-size: 16px;
                 margin-bottom: 20px;
             }
 
@@ -90,5 +90,87 @@
                 }
             }
         }
+
+        .jurnal-content-main {
+            h3 {
+                font-size: 1.7em;
+                padding: 20px 0;
+                border-bottom: 1px solid gray;
+                margin-bottom: 0px;
+            }
+
+            .jurnal-item {
+                padding: 20px 0;
+                border-bottom: 1px solid gray;
+
+                h4 {
+                    font-size: 1.3em;
+                }
+            }
+
+            .issn-number {
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .jurnal-hukum {
+        .jurnal-tittle {
+            margin-top: 40px;
+            flex-direction: column;
+            gap: 0
+        }
+
+        .jurnal-content {
+            padding: 20px 10vw;
+
+            .main-content {
+                width: 100%;
+            }
+
+            .side-content {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .jurnal-hukum {
+        .jurnal-headline {
+            height: 145px;
+
+            h1 {
+                font-size: 2em
+            }
+        }
+
+        .jurnal-tittle {
+            flex-direction: column;
+            padding: 20px 7vw;
+
+            h2 {
+                font-size: 1.7em;
+            }
+        }
+
+        .jurnal-content {
+            padding: 20px 7vw;
+
+            .jurnal-content-main {
+                h3 {
+                    font-size: 1.3em;
+                }
+
+                .jurnal-item {
+                    h4 {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+
     }
 }
