@@ -4,6 +4,7 @@ import Header from "../../components/header/header";
 import Subscribe from "../../components/footer/subscribe/subscribe";
 import Foot from "../../components/footer/foot/foot";
 import { WhatsAppOutlined } from '@ant-design/icons';
+import { Link } from "react-router-dom";
 
 export default function Undergraduates() {
     return (
@@ -52,36 +53,48 @@ export default function Undergraduates() {
 
                 {/* Program . . . . */}
                 <div className="program tab">
-                    <div className="program-item">
-                        <div className="isi">
-                            <h1>S1 Reguler</h1>
+                    <Link>
+                        <div className="program-item">
+                            <div className="isi">
+                                <h1>S1 Reguler</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="program-item">
-                        <div className="isi">
-                            <h1>S1 Karyawan</h1>
+                    </Link>
+                    <Link to="/undergraduates/s1-reguler-karyawan">
+                        <div className="program-item">
+                            <div className="isi">
+                                <h1>S1 Karyawan</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="program-item">
-                        <div className="isi">
-                            <h1>Kurikulum S1</h1>
+                    </Link>
+                    <Link>
+                        <div className="program-item">
+                            <div className="isi">
+                                <h1>Kurikulum S1</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="program-item andro-hide">
-                        <div className="isi">
-                            <h1>Beasiswa</h1>
+                    </Link>
+                    <Link>
+                        <div className="program-item andro-hide">
+                            <div className="isi">
+                                <h1>Beasiswa</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="program-item andro-hide">
-                        <div className="isi">
-                            <h1>Pengajar</h1>
+                    </Link>
+                    <Link>
+                        <div className="program-item andro-hide">
+                            <div className="isi">
+                                <h1>Pengajar</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="program-item andro-hide">
-                        <div className="isi">
-                            <h1>Komunitas Mahasiswa</h1>
+                    </Link>
+                    <Link to="/about/komunitas-mahasiswa">
+                        <div className="program-item andro-hide">
+                            <div className="isi">
+                                <h1>Komunitas Mahasiswa</h1>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                     <button>More</button>
                 </div>
             </div>

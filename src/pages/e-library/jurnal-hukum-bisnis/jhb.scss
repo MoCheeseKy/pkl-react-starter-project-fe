@@ -1,0 +1,94 @@
+.jurnal-hukum-bisnis {
+    .jhb-headline {
+        width: 100vw;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+
+        h1 {
+            font-size: 4em;
+            color: white;
+        }
+    }
+
+    .jhb-tittle {
+        padding: 20px 12vw;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background-color: #ddd;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 3em;
+            color: blue;
+        }
+    }
+
+    .jhb-content {
+        width: 100vw;
+        height: fit-content;
+        padding: 20px 12vw;
+        display: flex;
+        justify-content: space-between;
+
+        .main-content {
+            width: 70%;
+            height: fit-content;
+
+            p {
+                font-size: 18px;
+            }
+
+            .group-p {
+                margin: 20px 0;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .indexed-image {
+                width: 100%;
+                height: 100px;
+                background-color: #ddd;
+            }
+        }
+
+        .side-content {
+            width: 28%;
+            height: fit-content;
+            background-color: #ddd;
+            padding: 20px;
+
+            p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            a {
+                width: 100%;
+                color: white;
+
+                button {
+                    width: 100%;
+                    padding: 14px 0;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    border: none;
+                    background-color: orange;
+                    font-size: 18px;
+
+                }
+            }
+        }
+    }
+}

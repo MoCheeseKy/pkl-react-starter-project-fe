@@ -37,6 +37,8 @@ import CareerDevelopment from './pages/about/career-development/careerdev';
 import S1 from './pages/graduates/s1/s1';
 import ResourceConsulting from './pages/about/research-consulting/rcg';
 import Kontak from './pages/about/kontak/kontak';
+import ProgramKaryawan from './pages/undergraduates/s1-karyawan/s1k';
+import JurnalHukumBisnis from './pages/e-library/jurnal-hukum-bisnis/jhb';
 
 function App() {
   return (
@@ -64,6 +66,7 @@ function App() {
 
         {/* Child Undergraduates URL . . .*/}
         <Route exact path='/undergraduates/s1' element={<S1 />} />
+        <Route exact path='/undergraduates/s1-reguler-karyawan' element={<ProgramKaryawan />} />
 
         {/* Child Graduates URL . . .*/}
         <Route exact path='/graduates/s2' element={<S2 />} />
@@ -76,6 +79,11 @@ function App() {
 
         {/* Child : Admission URL . . . */}
         <Route exact path='/admission/daftar' element={<Daftar />} />
+
+        {/* Child : E-Library URL . . . */}
+        <Route exact path='/e-library/tanya-jawab-jurnal-hukum-bisnis' element={<JurnalHukumBisnis />} />
+        <Route exact path='/e-library/tanya-jawab-jurnal-hukum-pidana' element={<JurnalHukumBisnis />} />
+        <Route exact path='/e-library/tanya-jawab-jurnal-hukum-tata-negara' element={<JurnalHukumBisnis />} />
 
         {/* Child : About URL . . . */}
         <Route exact path='/about/visi-misi' element={<VisiMisi />} />
