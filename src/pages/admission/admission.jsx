@@ -47,7 +47,7 @@ export default function Admission() {
                             Beasiswa
                         </h3>
                         <p>Kuliah tenang, hati senang! Temukan pilihan program beasiswa yang cocok untukmu di sini!</p>
-                        <p><Link style={{ background: '#364DA8' }}>Selengkapnya</Link></p>
+                        <p><Link to={'/admission/beasiswa'} style={{ background: '#364DA8' }}>Selengkapnya</Link></p>
                     </div>
                 </div>
                 <div className="content-entry">
@@ -57,7 +57,7 @@ export default function Admission() {
                             Program S1
                         </h3>
                         <p>Pendaftaran online program S1 Hukum IBLAM School of Law semudah buat akun sosial media!</p>
-                        <p><Link>Selengkapnya</Link></p>
+                        <p><Link to={'/undergraduates'}>Selengkapnya</Link></p>
                     </div>
                     <ul className='img'>
                         <li>
@@ -77,7 +77,7 @@ export default function Admission() {
                             Program S2
                         </h3>
                         <p>Cukup dengan langkah mudah untuk jadi Master. Dapatkan informasinya di sini.</p>
-                        <p><Link style={{ background: '#364DA8' }}>Selengkapnya</Link></p>
+                        <p><Link to={'/graduates'} style={{ background: '#364DA8' }}>Selengkapnya</Link></p>
                     </div>
                 </div>
             </div>
