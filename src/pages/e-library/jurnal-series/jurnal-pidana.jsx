@@ -3,23 +3,23 @@ import Header from "../../../components/header/header";
 import Subscribe from "../../../components/footer/subscribe/subscribe";
 import Foot from "../../../components/footer/foot/foot";
 import { Link } from "react-router-dom";
-import './jhb.scss'
+import './jurnal.scss'
 
-export default function JurnalHukumBisnis() {
+export default function JurnalHukumPidana() {
     return (
         <>
             <Header></Header>
-            <div className="jurnal-hukum-bisnis">
-                <div className="jhb-headline">
+            <div className="jurnal-hukum">
+                <div className="jurnal-headline">
                     <h1>Library</h1>
                 </div>
-                <div className="jhb-tittle">
+                <div className="jurnal-tittle">
                     <div className="icon"></div>
-                    <h2>Jurnal Hukum Bisnis</h2>
+                    <h2>Jurnal Hukum Tata Negara</h2>
                 </div>
-                <div className="jhb-content">
+                <div className="jurnal-content">
                     <div className="main-content">
-                        <p>Untuk menciptakan kegiatan perekonomian atau kegiatan bisnis yang sehat, berbagai aturan disiapkan untuk menjamin para pelakunya. Berikut jurnal hukum bisnis yang membahas berbagai aspek kajian tersebut dan telah dirilis oleh IBLAM School of Law.</p>
+                        <p>Negara merupakan suatu organisasi yang terdiri dari berbagai fungsi yang saling mendukung. Hukum tata negara mengatur bagaimana tatanan dan fungsi tersebut berperan menjadi sebuah sistem yang harmonis. Berikut beberapa jurnal hukum tata negara yang dirilis oleh IBLAM School of Law</p>
                         <div className="group-p">
                             <p>Available online since 2016</p>
                             <p>ISSN: 0125-9687 (Print) | 2503-1465 (Online)</p>
@@ -30,21 +30,9 @@ export default function JurnalHukumBisnis() {
 
                         </div>
                         {/* .... */}
-                        <div className="jurnal-content">
+                        <div className="jurnal-content-main">
                             <h3>Vol 49, No 3 (2019)</h3>
-                            <div className="jurnal-item">
-                                <Link><h4>Artikel – Menyongsong Kualitas Kelembagaan KPPU dengan Memaksimalkan Efektivitas Putusan</h4></Link>
-                                <div className="writer">Noor Mulia Raudah</div>
-                            </div>
-                            <div className="jurnal-item">
-                                <Link><h4>Contoh Jurnal BIsnis</h4></Link>
-                                <div className="writer">Yulia</div>
-                            </div>
-                            <div className="jurnal-item">
-                                <Link><h4>Pembaharuan Peraturan Hukum Perdagangan 2019</h4></Link>
-                                <div className="writer">Dr. Prof. Agus Wahid Susanto, S.H.</div>
-                            </div>
-                            <div className="isn-number">ISSN: 2503-1465</div>
+                            <div className="issn-number">ISSN: 2503-1465</div>
                         </div>
                     </div>
                     <div className="side-content">
