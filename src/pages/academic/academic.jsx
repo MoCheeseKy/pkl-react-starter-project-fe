@@ -45,7 +45,7 @@ export default function Academic() {
                 <div className="content">
                     <h3 style={{color : '#F9A31C'}}><img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/icon-3.png" alt=""/>&nbsp;Sistem Pendidikan</h3>
                     <p>Bagaimana IBLAM School of Law akan membuatmu menjadi yang terbaik?</p>
-                    <Link>Selengkapnya <ArrowRightOutlined /></Link>
+                    <Link to={'/academic/sistem-pendidikan'}>Selengkapnya <ArrowRightOutlined /></Link>
                 </div>
                 <div className="img-r">
                     <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/academic-kurikulum.jpg" alt=''/>

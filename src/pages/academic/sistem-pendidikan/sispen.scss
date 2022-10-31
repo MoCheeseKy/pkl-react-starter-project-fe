@@ -1,0 +1,97 @@
+.sispen{
+    .entry{
+        img{
+            width: 100vw;
+            height: auto;
+        }
+    }
+    .content{
+        .container{
+            padding: 0 15px;
+            margin: 0 26px;
+            .breadcrumb{
+                padding: 20px 0;
+            }
+            .main-title{
+                h2{
+                    margin-bottom: 48px;
+                    .br{
+                        display: none;
+                    }
+                    strong{
+                        font-size: 32px;
+                        color: #F9A31C;
+                    }
+                }
+            }
+            .isi{
+                .img-isi{
+                    margin-bottom: 16px;
+                }
+                .text-isi{
+                    h4{
+                        strong{
+                            font-size: 24px;
+                            color: #0226C5;
+                        }
+                    }
+                    p{
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+        .links-sispen{
+            display: flex;
+            width: 100vw;
+            a{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .sispen{
+        .content{
+            .container{
+                margin: 0;
+                padding: 0 24px;
+                .main-title{
+                    h2{
+                        text-align: center;
+                        .br{
+                            display: inline;
+                        }
+                        strong{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .isi{
+                    .img-isi{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .text-isi{
+                        h4{
+                            strong{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            .links-sispen{
+                flex-direction: column;
+                a{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

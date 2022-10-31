@@ -41,6 +41,8 @@ import ProgramKaryawan from './pages/undergraduates/s1-karyawan/s1k';
 import JurnalHukumBisnis from './pages/e-library/jurnal-series/jurnal-bisnis';
 import JurnalHukumTataNegara from './pages/e-library/jurnal-series/jurnal-tata-negara';
 import JurnalHukumPidana from './pages/e-library/jurnal-series/jurnal-pidana';
+import JurnalHukumBisnis from './pages/e-library/jurnal-hukum-bisnis/jhb';
+import Sispen from './pages/academic/sistem-pendidikan/sispen';
 
 function App() {
   return (
@@ -75,6 +77,7 @@ function App() {
 
         {/* Child Academic URL . . . */}
         <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
+        <Route exact path='/academic/sistem-pendidikan' element={<Sispen />} />
 
         {/* Child : Academic */}
         <Route exact path='/academic/kurikulum' element={<Kurikulum />} />
