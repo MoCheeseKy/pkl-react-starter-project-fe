@@ -22,7 +22,7 @@ const Login = () => {
   };
   const onFinish = (values) => {
     console.log('Success:', values);
-    axios.post("https://1fe3-2001-448a-302b-150d-e5d1-541a-de2e-8e1d.ngrok.io/login-gate/", values).then((res) => {
+    axios.post("https://1fe3-2001-448a-302b-150d-e5d1-541a-de2e-8e1d.ngrok.io/login-gate", values).then((res) => {
       const resData = res?.data;
       localStorage.setItem('token', resData?.token);
       localStorage.setItem('login', true)

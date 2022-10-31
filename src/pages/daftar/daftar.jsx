@@ -17,10 +17,10 @@ export default function Daftar() {
     // const [pengguna, setPengguna] = useState('')
 
     var token = localStorage.getItem('token')
-    // console.log(token)
+    console.log(token)
 
     const postData = () => {
-        axios.post(`https://2e2f-2001-448a-3025-27ac-2cec-cef6-3add-88bb.ngrok.io/Student-Register/`, {
+        axios.post(`https://1fe3-2001-448a-302b-150d-e5d1-541a-de2e-8e1d.ngrok.io/student-register/`, {
             nama,
             alamat,
             asal_sekolah,
@@ -29,7 +29,7 @@ export default function Daftar() {
         },
             {
                 headers: {
-                    'Authorizaion': "Token" + token
+                    'Authorization': "Token " + token
                 }
             }
         ).then(<Alert message="Data berhasil di kirim, silahkan tunggu hasilnya !!!" type="success" />)
