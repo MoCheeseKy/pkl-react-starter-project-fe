@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './news.scss'
 import { Link } from 'react-router-dom'
 import { Breadcrumb } from 'antd'
@@ -6,8 +6,18 @@ import Header from '../../components/header/header'
 import Subscribe from '../../components/footer/subscribe/subscribe'
 import Foot from '../../components/footer/foot/foot'
 import { WhatsAppOutlined } from '@ant-design/icons'
+import axios from 'axios'
 
 export default function News() {
+  const [article, setArticle] = useState([])
+  useEffect(() => {
+    axios.get('https://1fe3-2001-448a-302b-150d-e5d1-541a-de2e-8e1d.ngrok.io/article/').then((res) => {
+        setArticle(res?.data)
+        // console.log(res?.data);
+    })
+  }, [])
+  
+  console.log([...article]);
   return (
     <div className='news'>
         <Header />
