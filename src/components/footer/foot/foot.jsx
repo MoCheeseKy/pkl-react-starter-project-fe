@@ -24,32 +24,32 @@ export default function Foot() {
     'Tunas IBLAM'
   ]
   return (
-  <section>
+    <section>
       <div className="footer">
         <div className="foot-content">
           <div className="info">
-              <div className="info-head"><h3>GET IN TOUCH</h3></div>
-              <p>IBLAM Kampus A <br />Jl. Kramat Raya No. 25, Senen<br /> Jakarta Pusat, Telp (021) 21392851</p>
-              <p>IBLAM Kampus B <br /> Jl. Raden Sanim No. 99 (Tanah Baru)<br /> Kec. Beji, Kota Depok, Telp (021) 7764310 Fax (021) 7762969</p>
+            <div className="info-head"><h3>GET IN TOUCH</h3></div>
+            <p>IBLAM Kampus A <br />Jl. Kramat Raya No. 25, Senen<br /> Jakarta Pusat, Telp (021) 21392851</p>
+            <p>IBLAM Kampus B <br /> Jl. Raden Sanim No. 99 (Tanah Baru)<br /> Kec. Beji, Kota Depok, Telp (021) 7764310 Fax (021) 7762969</p>
           </div>
           <div className="contact">
-              <div className="wa">
-                  <Link><WhatsAppOutlined />&nbsp;Whatsapp 0852-1557-6002</Link>
-              </div>
-              <div className="gmail">
-                  <Link><MailOutlined />&nbsp;Email info@iblam.ac.id</Link>
-              </div>
+            <div className="wa">
+              <a href="https://wa.me/+6285215576002"><WhatsAppOutlined />&nbsp;Whatsapp 0852-1557-6002</a>
+            </div>
+            <div className="gmail">
+              <a href="mailto:info@iblam.ac.id"><MailOutlined />&nbsp;Email info@iblam.ac.id</a>
+            </div>
           </div>
           <div className="links">
-              <div className="links-head"><h3>HELPFUL LINKS</h3></div>
-              <div className="links-content">
-                  <div className="kiri">
-                    <List size='small' dataSource={dataKiri} renderItem={(item) => <li>{item}</li>} />
-                  </div>
-                  <div className="kanan">
-                    <List size='small' dataSource={dataKanan} renderItem={(item) => <li>{item}</li>}/>
-                  </div>
+            <div className="links-head"><h3>HELPFUL LINKS</h3></div>
+            <div className="links-content">
+              <div className="kiri">
+                <List size='small' dataSource={dataKiri} renderItem={(item) => <li>{item}</li>} />
               </div>
+              <div className="kanan">
+                <List size='small' dataSource={dataKanan} renderItem={(item) => <li>{item}</li>} />
+              </div>
+            </div>
           </div>
           <div className="icon">
             <div className="icon-content">
@@ -57,11 +57,11 @@ export default function Foot() {
                 <img src="https://iblam.ac.id/wp-content/themes/iblam_mobile/assets/img/logo.png" alt='iblam' /><br />
               </div>
               <div className="icon-img">
-                <FacebookFilled style={{fontSize: '30px', marginRight: '2%'}} />
-                <TwitterCircleFilled style={{fontSize: '30px', marginRight: '2%'}} />
-                <YoutubeFilled style={{fontSize: '30px', marginRight: '2%'}} />
-                <InstagramFilled style={{fontSize: '30px', marginRight: '2%'}} />
-                <LinkedinFilled style={{fontSize: '30px', marginRight: '2%'}} />
+                <FacebookFilled style={{ fontSize: '30px', marginRight: '2%' }} />
+                <TwitterCircleFilled style={{ fontSize: '30px', marginRight: '2%' }} />
+                <YoutubeFilled style={{ fontSize: '30px', marginRight: '2%' }} />
+                <InstagramFilled style={{ fontSize: '30px', marginRight: '2%' }} />
+                <LinkedinFilled style={{ fontSize: '30px', marginRight: '2%' }} />
               </div>
             </div>
           </div>
@@ -75,6 +75,6 @@ export default function Foot() {
           <Link>Accessibility</Link>
         </div>
       </div>
-  </section>
+    </section>
   )
 }
