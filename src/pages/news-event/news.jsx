@@ -66,11 +66,13 @@ export default function News() {
                             <div className="post-item">
                                 {article.thumbnail}
                                 <div className="post-date">27 JUL 22</div>
-                                <div className="post-title"><Link>{article.judul}</Link></div>
+                                <div className="post-title">
+                                    <Link to={`/${article.kategori_slug}/${article.artikel_slug}`}>{article.judul}</Link>
+                                </div>
                                 <div className="post-content">
-                                <Paragraph ellipsis={{rows: 5}}>
-                                    {article.konten}
-                                </Paragraph>
+                                    <Paragraph ellipsis={{rows: 5}}>
+                                        {article.konten}
+                                    </Paragraph>
                                 <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
                                 </div>
                             </div>
