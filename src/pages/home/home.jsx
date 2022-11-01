@@ -10,12 +10,22 @@ import Foot from "../../components/footer/foot/foot";
 import { Link } from "react-router-dom";
 
 import { SwapRightOutlined } from '@ant-design/icons';
-// import { Carousel, Divider } from 'antd';
+import { Carousel } from 'antd';
 
 export default function Home() {
     return (
         <main>
             <Header />
+            <div className="carousel">
+                <Carousel  autoplay>
+                    <div className="isiCarousel">
+                        <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner1.jpg" alt="" />
+                    </div>
+                    <div className="isiCarousel">
+                        <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner2.jpg" alt="" />
+                    </div>
+                </Carousel>
+            </div>
 
             {/* ======================================================================= */}
             {/* ==================== Bagian Melangkah bersama Kami ==================== */}
