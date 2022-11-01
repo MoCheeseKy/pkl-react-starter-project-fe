@@ -73,7 +73,7 @@ export default function News() {
                                     <Paragraph ellipsis={{rows: 5}}>
                                         {article.konten}
                                     </Paragraph>
-                                <p><strong><Link>Selengkapnya &gt;</Link></strong></p>
+                                <p><strong><Link to={`/${article.kategori_slug}/${article.artikel_slug}`}>Selengkapnya &gt;</Link></strong></p>
                                 </div>
                             </div>
                         )
