@@ -16,8 +16,6 @@ export default function Home() {
         <main>
             <Header />
 
-
-
             {/* ======================================================================= */}
             {/* ==================== Bagian Melangkah bersama Kami ==================== */}
             {/* ======================================================================= */}
@@ -154,9 +152,6 @@ export default function Home() {
                         <Link className="showing"><button>show more</button></Link>
                     </div>
                 </div>
-
-                {/* Mapping END */}
-
                 <Link to='/news-event'><button>Lihat Semua <SwapRightOutlined></SwapRightOutlined> </button></Link>
             </div>
 
