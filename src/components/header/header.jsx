@@ -66,7 +66,7 @@ export default function Header() {
         <div className="header">
             <Link to="/">
                 <div className="logo">
-
+                    <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/logo.png" alt="" />
                 </div>
             </Link>
             <nav>

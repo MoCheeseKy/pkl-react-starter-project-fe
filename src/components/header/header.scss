@@ -11,9 +11,9 @@
         height: 100%;
 
         .logo {
+            margin-top: 15px;
             width: 100%;
             height: 100%;
-            background-color: #000;
 
         }
     }
@@ -119,7 +119,12 @@
             width: 50%;
 
             .logo {
+                margin-top: 0;
                 width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
 
