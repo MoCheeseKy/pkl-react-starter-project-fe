@@ -4,6 +4,7 @@ import "./walkTogehter.scss"
 import "./homeAbout.scss"
 import "./homeBeasiswa.scss"
 import "./homeLibrary.scss"
+import "./carousel.scss"
 
 import Header from "../../components/header/header";
 import Subscribe from "../../components/footer/subscribe/subscribe";
@@ -11,12 +12,58 @@ import Foot from "../../components/footer/foot/foot";
 import { Link } from "react-router-dom";
 
 import { SwapRightOutlined } from '@ant-design/icons';
-// import { Carousel, Divider } from 'antd';
+import { Carousel } from 'antd';
 
 export default function Home() {
     return (
         <main>
             <Header />
+            <div className="carousel">
+                <Carousel>
+                    <div className="isiCarousel1">
+                        <div className="contentIsi">
+                            <div className="atas">
+                                <div className="blue">
+                                    <span>&nbsp;</span>
+                                </div>
+                                <div className="txt">
+                                    <p>Meraih Mimpi, Membangun Bangsa</p>
+                                </div>
+                            </div>
+                            <div className="bawah">
+                                <div className="span">&nbsp;</div>
+                                <div className="text">
+                                    <p>
+                                        Kamulah yang akan menjadi ahli hukum dan pengambil kebijakan yang berintegritas. Indonesia dan dunia menunggumu. Siap untuk mulai perjalananmu?
+                                        <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/btn-arrow-orange.png" alt="" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="isiCarousel2">
+                        <div className="contentIsi">
+                            <div className="atas">
+                                <div className="blue">
+                                    <span>&nbsp;</span>
+                                </div>
+                                <div className="txt">
+                                    <p>Pendidikan Hukum untuk Semua</p>
+                                </div>
+                            </div>
+                            <div className="bawah">
+                                <div className="span">&nbsp;</div>
+                                <div className="text">
+                                    <p>
+                                        IBLAM School of Law menyiapkan berbagai program pendidikan yang ramah untuk semua kalangan.
+                                        <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/btn-arrow-orange.png" alt="" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Carousel>
+            </div>
 
             {/* =============================================================== */}
             {/* ==================== Bagian Carousel Image ==================== */}
