@@ -18,6 +18,12 @@ export default function News() {
         setArticle(res?.data)
     })
   }, [])
+
+    // Untuk mengambil data sesuai index array
+    // <div className="dlt">
+    // <button onClick={() =>{console.log([article[0]])}}>log</button>
+    // </div>
+  
   return (
     <div className='news'>
         <Header />
