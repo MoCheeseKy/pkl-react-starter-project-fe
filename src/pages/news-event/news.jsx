@@ -70,13 +70,13 @@ export default function News() {
                     {article.map((article)=>{
                         return(
                             <div key={article.id} className="post-item">
-                                {article.thumbnail}
-                                <div className="post-date">27 JUL 22</div>
+                                <img src={article.thumbnail} alt="" />
+                                {/* <div className="post-date">27 JUL 22</div> */}
                                 <div className="post-title">
                                     <Link to={`/${article.kategori_slug}/${article.artikel_slug}`}>{article.judul}</Link>
                                 </div>
                                 <div className="post-content">
-                                    <Paragraph ellipsis={{rows: 5}}>
+                                    <Paragraph ellipsis={{rows: 3}}>
                                         {article.konten}
                                     </Paragraph>
                                 <p><strong><Link to={`/${article.kategori_slug}/${article.artikel_slug}`}>Selengkapnya &gt;</Link></strong></p>
