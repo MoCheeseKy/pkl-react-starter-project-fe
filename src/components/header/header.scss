@@ -51,7 +51,15 @@
                 }
 
                 .log {
-                    background-color: aquamarine;
+                    background-color: orange;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 5px 20px;
+                }
+
+                .out {
+                    background-color: rgb(215, 23, 23);
+                    color: white;
                     border-radius: 5px;
                     padding: 5px 20px;
                 }

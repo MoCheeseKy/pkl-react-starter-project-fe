@@ -10,10 +10,25 @@ $h3hp : 2em;
 $h4hp : 1.5em;
 $h5hp : 1em;
 
+$paddingL : 40px 13vw;
+$paddingM : 20px 10vw;
+$paddingS : 20px 7vw;
+
+
+// Removing Scrollbar
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+// Main Code ----------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
 .newsEvent {
     width: 100vw;
     margin: 40px 0;
-    padding: 10px 13vw;
+    padding: $paddingL;
 
     a {
         display: none;
@@ -203,9 +218,15 @@ $h5hp : 1em;
     }
 }
 
+
+
+// Tampilan Tablet ----------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
 @media only screen and (max-width: 1000px) {
     .newsEvent {
-        padding: 10px 10vw;
+        padding: $paddingM;
         display: flex;
         flex-direction: column;
 
@@ -262,9 +283,15 @@ $h5hp : 1em;
     }
 }
 
+
+
+// Tampilan HP ----------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
 @media only screen and (max-width: 600px) {
     .newsEvent {
-        padding: 10px 7vw;
+        padding: $paddingS;
 
         .newsEvent-header {
             justify-content: center;
@@ -281,8 +308,4 @@ $h5hp : 1em;
             }
         }
     }
-}
-
-::-webkit-scrollbar {
-    width: 0;
 }
