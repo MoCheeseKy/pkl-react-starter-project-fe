@@ -64,6 +64,12 @@ $blue : #0226c5;
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .homeAbout {
+        padding: $paddingM;
+    }
+}
+
 
 // Tampilan Tablet ----------------------------------------
 // --------------------------------------------------------
