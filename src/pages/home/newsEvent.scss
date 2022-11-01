@@ -220,6 +220,12 @@ $blue : #0226c5;
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .newsEvent {
+        padding: $paddingM;
+    }
+}
+
 
 
 // Tampilan Tablet ----------------------------------------

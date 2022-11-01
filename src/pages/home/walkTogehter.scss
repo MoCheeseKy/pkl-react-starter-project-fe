@@ -16,6 +16,13 @@ $paddingS : 20px 7vw;
 
 $blue : #0226c5;
 
+@media only screen and (max-width: 1300px) {
+    main {
+        .melangkahBersama {
+            padding: $paddingM;
+        }
+    }
+}
 
 // Main Code ----------------------------------------------
 // --------------------------------------------------------
