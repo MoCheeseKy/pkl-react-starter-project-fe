@@ -69,7 +69,7 @@ export default function News() {
                 <div className="row">
                     {article.map((article)=>{
                         return(
-                            <div className="post-item">
+                            <div key={article.id} className="post-item">
                                 {article.thumbnail}
                                 <div className="post-date">27 JUL 22</div>
                                 <div className="post-title">
