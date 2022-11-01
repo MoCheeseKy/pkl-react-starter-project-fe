@@ -4,6 +4,7 @@ import Header from "../../components/header/header";
 import Foot from "../../components/footer/foot/foot";
 import Subscribe from "../../components/footer/subscribe/subscribe";
 import { WhatsAppOutlined } from '@ant-design/icons';
+import { Link } from "react-router-dom";
 
 export default function Wwus() {
     return (
@@ -90,13 +91,13 @@ export default function Wwus() {
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
                         <div className="side-info">
-                            <h1>Visi dan Misi</h1>
+                            <h1><Link to={'/about/visi-misi'} style={{color: 'black'}}>Visi dan Misi</Link></h1>
                         </div>
                         <div className="side-info">
-                            <h1>Kampus Iblam</h1>
+                            <h1><Link style={{color: 'black'}}>Kampus Iblam</Link></h1>
                         </div>
                         <div className="side-info">
-                            <h1>Kontrak</h1>
+                            <h1><Link to={'/about/kontak-kami'} style={{color: 'black'}}>Kontak</Link></h1>
                         </div>
                     </div>
                 </div>

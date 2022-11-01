@@ -14,7 +14,7 @@ export default function News() {
   const { Paragraph } = Typography
   
   useEffect(() => {
-    axios.get('https://1fe3-2001-448a-302b-150d-e5d1-541a-de2e-8e1d.ngrok.io/article/').then((res) => {
+    axios.get('https://38c2-2001-448a-3024-202d-d0f7-ea02-d5eb-b90b.ngrok.io/article/').then((res) => {
         setArticle(res?.data)
     })
   }, [])

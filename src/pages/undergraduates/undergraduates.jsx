@@ -53,7 +53,7 @@ export default function Undergraduates() {
 
                 {/* Program . . . . */}
                 <div className="program tab">
-                    <Link>
+                    <Link to={'/admission/beasiswa'}>
                         <div className="program-item">
                             <div className="isi">
                                 <h1>S1 Reguler</h1>
@@ -67,21 +67,21 @@ export default function Undergraduates() {
                             </div>
                         </div>
                     </Link>
-                    <Link>
+                    <Link to={'/undergraduates/s1'}>
                         <div className="program-item">
                             <div className="isi">
                                 <h1>Kurikulum S1</h1>
                             </div>
                         </div>
                     </Link>
-                    <Link>
+                    <Link to={'/admission/beasiswa'}>
                         <div className="program-item andro-hide">
                             <div className="isi">
                                 <h1>Beasiswa</h1>
                             </div>
                         </div>
                     </Link>
-                    <Link>
+                    <Link to={'/academic/pengajar'}>
                         <div className="program-item andro-hide">
                             <div className="isi">
                                 <h1>Pengajar</h1>

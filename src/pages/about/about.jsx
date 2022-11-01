@@ -93,18 +93,20 @@ export default function About() {
                             Struktur Organisasi
                         </div>
                     </div>
-                    <div className="about-image-footer">
-                        <div className="about-image">
-                            <div className="about-image-content">
-                                <button className="after">{">"}</button>
-                                <p>Struktur organisasi IBLAM School of Law</p>
+                    <Link to={'/about/struktur-organisasi'}>
+                        <div className="about-image-footer">
+                            <div className="about-image">
+                                <div className="about-image-content">
+                                    <button className="after">{">"}</button>
+                                    <p>Struktur organisasi IBLAM School of Law</p>
+                                </div>
+                            </div>
+                            <div className="about-footer">
+                                <button className="before">{">"}</button>
+
                             </div>
                         </div>
-                        <div className="about-footer">
-                            <button className="before">{">"}</button>
-
-                        </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about-item">
                     <div className="tittle">

@@ -58,6 +58,16 @@
 }
 @media only screen and (max-width: 600px){
     .admission{
+        .content{
+            .content-entry{
+                padding-left: 0;
+                .txt{
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
         .help{
             flex-direction: column;
             .left{

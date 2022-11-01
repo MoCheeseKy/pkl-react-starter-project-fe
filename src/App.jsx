@@ -45,6 +45,7 @@ import Sispen from './pages/academic/sistem-pendidikan/sispen';
 import Pengajar from './pages/academic/pengajar/pengajar';
 import KompetensiKelulusan from './pages/academic/kompetensi-kelulusan/kkl';
 import Beasiswa from './pages/admission/beasiswa/beasiswa';
+import Struktur from './pages/about/struktur-organisasi/struktur';
 
 function App() {
   return (
@@ -103,7 +104,7 @@ function App() {
         <Route exact path='/about/iblam-career-and-development' element={<CareerDevelopment />} />
         <Route exact path='/about/iblam-resource-and-consulting-group' element={<ResourceConsulting />} />
         <Route exact path='/about/kontak-kami' element={<Kontak />} />
-
+        <Route exact path='/about/struktur-organisasi' element={<Struktur />} />
 
         {/* Unknown URL */}
         <Route path="*" element={
