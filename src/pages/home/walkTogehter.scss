@@ -139,9 +139,15 @@ main {
             padding: $paddingM;
 
             .melangkahBersama-content {
+                height: fit-content;
+
                 .melangkahBersama-content-item {
                     width: 300px;
-                    height: 190px;
+
+                    .content-image {
+                        width: 300px;
+                        height: 190px;
+                    }
                 }
             }
         }
