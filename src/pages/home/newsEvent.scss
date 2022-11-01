@@ -14,6 +14,8 @@ $paddingL : 40px 13vw;
 $paddingM : 20px 10vw;
 $paddingS : 20px 7vw;
 
+$blue : #0226c5;
+
 
 // Removing Scrollbar
 ::-webkit-scrollbar {
@@ -56,7 +58,7 @@ $paddingS : 20px 7vw;
                 padding: 0;
                 font-size: $h2pc;
                 font-weight: 400;
-                color: blue;
+                color: $blue;
             }
         }
 
@@ -73,7 +75,7 @@ $paddingS : 20px 7vw;
             }
 
             button:hover {
-                background-color: blue;
+                background-color: $blue;
                 color: white;
                 border: none;
             }
@@ -244,7 +246,7 @@ $paddingS : 20px 7vw;
             }
 
             button:hover {
-                background-color: blue;
+                background-color: $blue;
                 color: white;
                 border: none;
             }
@@ -285,7 +287,7 @@ $paddingS : 20px 7vw;
 
 
 
-// Tampilan HP ----------------------------------------
+// Tampilan HP --------------------------------------------
 // --------------------------------------------------------
 // --------------------------------------------------------
 // --------------------------------------------------------

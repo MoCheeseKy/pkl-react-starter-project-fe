@@ -1,0 +1,109 @@
+$h1pc : 4em;
+$h2pc : 3em;
+$h3pc : 2.5em;
+$h4pc : 2em;
+$h5pc : 1.5em;
+
+$h1hp : 3em;
+$h2hp : 2.5em;
+$h3hp : 2em;
+$h4hp : 1.5em;
+$h5hp : 1em;
+
+$paddingL : 40px 13vw;
+$paddingM : 20px 10vw;
+$paddingS : 20px 7vw;
+
+$blue : #0226c5;
+
+
+// Main Code ----------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+.homeAbout {
+    width: 100vw;
+    padding: $paddingL;
+    display: flex;
+    justify-content: space-between;
+
+    .homeAbout-content {
+        width: 40%;
+
+        h5 {
+            color: $blue;
+        }
+
+        h2 {
+            font-size: $h2pc;
+            color: $blue;
+        }
+
+        a {
+            button {
+                margin-top: 10px;
+                width: 200px;
+                padding: 10px 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: $blue;
+                color: white;
+            }
+        }
+    }
+
+    .youtube {
+        width: 55%;
+        height: 340px;
+        background-color: #ddd;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+// Tampilan Tablet ----------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media only screen and (max-width: 1000px) {
+    .homeAbout {
+        padding: 0;
+        flex-direction: column-reverse;
+
+        .youtube {
+            width: 100%;
+            height: 300px;
+        }
+
+        .homeAbout-content {
+            padding: $paddingM;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+                font-size: $h2hp;
+                width: 250px;
+                line-height: 40px;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+// Tampilan HP --------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media only screen and (max-width: 600px) {}

@@ -1,0 +1,205 @@
+$h1pc : 4em;
+$h2pc : 3em;
+$h3pc : 2.5em;
+$h4pc : 2em;
+$h5pc : 1.5em;
+
+$h1hp : 3em;
+$h2hp : 2.5em;
+$h3hp : 2em;
+$h4hp : 1.5em;
+$h5hp : 1em;
+
+$paddingL : 40px 13vw;
+$paddingM : 20px 10vw;
+$paddingS : 20px 7vw;
+
+$blue : #0226c5;
+
+
+// Main Code ----------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+main {
+    .melangkahBersama {
+        width: 100vw;
+        padding: $paddingL;
+
+        .melangkahBersama-tittle {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+            height: fit-content;
+            align-items: center;
+            gap: 10px;
+
+            .icon {
+                width: 45px;
+                height: 45px;
+                background-color: #ddd;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: $h2pc;
+                font-weight: 400;
+                color: $blue;
+            }
+        }
+
+        .melangkahBersama-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5%;
+
+            .melangkahBersama-content-item {
+                width: 340px;
+                height: fit-content;
+
+                .content-image {
+                    width: 340px;
+                    height: 200px;
+                    box-sizing: border-box;
+                    border-radius: 0 100px 100px 0;
+                    background-color: #ddd;
+                    overflow: hidden;
+                    transition: .3s;
+
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 40px;
+                        background-color: transparent;
+                        transition: .3s;
+
+                        button {
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            background-color: transparent;
+                            cursor: pointer;
+                            text-align: left;
+                            font-size: 1.3em;
+                            color: white;
+                            background-color: transparent;
+                            opacity: 0;
+                            transition: .3s;
+                        }
+
+
+                    }
+
+                    a:hover {
+                        opacity: 1;
+                        background-color: rgba(0, 0, 255, 0.432);
+                    }
+
+                    a:hover button {
+                        opacity: 1;
+                    }
+                }
+
+                .content-image.first {
+                    background-image: url(https://iblam.ac.id/wp-content/themes/iblam_mobile/assets/img/img-1.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .content-image.second {
+                    background-image: url(https://iblam.ac.id/wp-content/themes/iblam_mobile/assets/img/img-2.jpg);
+                    background-position-y: -25px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .content-image.third {
+                    background-image: url(https://iblam.ac.id/wp-content/themes/iblam_mobile/assets/img/img-3.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                h5 {
+                    font-size: $h5pc;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Tampilan Tablet ----------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media only screen and (max-width: 1000px) {
+    main {
+        .melangkahBersama {
+            padding: $paddingM;
+
+            .melangkahBersama-tittle {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-size: $h3pc;
+                }
+            }
+
+            .melangkahBersama-content {
+                gap: 50px;
+
+                .melangkahBersama-content-item {
+                    width: 80%;
+
+                    .content-image {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Tampilan HP --------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media only screen and (max-width: 600px) {
+    main {
+        .melangkahBersama {
+            padding: $paddingS;
+
+            .melangkahBersama-tittle {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                h2 {
+                    font-size: $h3hp;
+                    text-align: center;
+                }
+            }
+
+            .melangkahBersama-content {
+                width: 100%;
+
+                .melangkahBersama-content-item {
+                    width: 100%;
+
+                    .content-image {
+                        width: 100%;
+                        height: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
