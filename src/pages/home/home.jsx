@@ -2,6 +2,7 @@ import React from "react";
 import "./newsEvent.scss"
 import "./walkTogehter.scss"
 import "./homeAbout.scss"
+import "./homeBeasiswa.scss"
 
 import Header from "../../components/header/header";
 import Subscribe from "../../components/footer/subscribe/subscribe";
@@ -53,6 +54,23 @@ export default function Home() {
                         <p>Bergabung bersama ribuan alumni IBLAM yang telah sukses meraih mimpinya</p>
                     </div>
                 </div>
+            </div>
+
+
+            {/* ======================================================================= */}
+            {/* ==================== Bagian Melangkah bersama Kami ==================== */}
+            {/* ======================================================================= */}
+            <div className="homeBeasiswa">
+                <div className="homeBeasiswa-image"></div>
+                <div className="homeBeasiswa-stair-image">
+                    <div className="homeBeasiswa-content">
+                        <h5>program beasiswa</h5>
+                        <h2><p className="h2">Beasiswa</p> untuk Semua. <Link to='/admission/beasiswa'><button><SwapRightOutlined></SwapRightOutlined></button></Link></h2>
+                        <p>Jadi mahir tanpa khawatir! Temukan pilihan pembiayaan kuliah yang aman di kantong untuk pendidikanmu di IBLAM School of Law</p>
+                        {/* <Link to='/academic/beasiswa'><button><SwapRightOutlined></SwapRightOutlined></button></Link> */}
+                    </div>
+                </div>
+                <div className="homeBeasiswa-block"></div>
             </div>
 
 

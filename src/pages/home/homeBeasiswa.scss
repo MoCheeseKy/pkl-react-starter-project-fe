@@ -1,0 +1,98 @@
+$h1pc : 4em;
+$h2pc : 3em;
+$h3pc : 2.5em;
+$h4pc : 2em;
+$h5pc : 1.5em;
+
+$h1hp : 3em;
+$h2hp : 2.5em;
+$h3hp : 2em;
+$h4hp : 1.5em;
+$h5hp : 1em;
+
+$blue : #0226c5;
+
+.homeBeasiswa {
+    width: 100vw;
+    height: 550px;
+    display: flex;
+
+    .homeBeasiswa-image {
+        width: 65%;
+        background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/big-banner2.jpg);
+    }
+
+    .homeBeasiswa-stair-image {
+        width: 800px;
+        height: 550px;
+        padding: 60px;
+        box-sizing: border-box;
+        position: absolute;
+        right: 18%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/path-1.png);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .homeBeasiswa-content {
+            width: 400px;
+
+            h5 {
+                color: $blue;
+            }
+
+            h2 {
+                line-height: 50px;
+                color: white;
+
+                p.h2 {
+                    margin-bottom: 0;
+                    color: $blue;
+                }
+
+                font-size: $h2pc;
+
+                a {
+                    position: absolute;
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+
+                    button {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        border: none;
+                        font-size: 30px;
+                        background-color: $blue;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            p {
+                color: white;
+            }
+
+            // a {
+            //     button {
+            //         width: 50px;
+            //         height: 50px;
+            //         border-radius: 50%;
+            //         border: none;
+            //         font-size: 30px;
+            //         background-color: $blue;
+            //         color: white;
+            //         margin-left: 175px;
+            //     }
+            // }
+        }
+    }
+
+    .homeBeasiswa-block {
+        width: 35%;
+        background-color: orange;
+    }
+}
