@@ -3,6 +3,7 @@ import "./newsEvent.scss"
 import "./walkTogehter.scss"
 import "./homeAbout.scss"
 import "./homeBeasiswa.scss"
+import "./homeLibrary.scss"
 
 import Header from "../../components/header/header";
 import Subscribe from "../../components/footer/subscribe/subscribe";
@@ -16,6 +17,12 @@ export default function Home() {
     return (
         <main>
             <Header />
+
+            {/* =============================================================== */}
+            {/* ==================== Bagian Carousel Image ==================== */}
+            {/* =============================================================== */}
+            {/* .... */}
+
 
             {/* ======================================================================= */}
             {/* ==================== Bagian Melangkah bersama Kami ==================== */}
@@ -70,7 +77,14 @@ export default function Home() {
                         {/* <Link to='/academic/beasiswa'><button><SwapRightOutlined></SwapRightOutlined></button></Link> */}
                     </div>
                 </div>
-                <div className="homeBeasiswa-block"></div>
+                <div className="homeBeasiswa-block">
+                    <div className="homeBeasiswa-content">
+                        <h5>program beasiswa</h5>
+                        <h2><p className="h2">Beasiswa</p> untuk Semua.</h2>
+                        <p>Jadi mahir tanpa khawatir! Temukan pilihan pembiayaan kuliah yang aman di kantong untuk pendidikanmu di IBLAM School of Law</p>
+                        <Link to='/academic/beasiswa'><button><SwapRightOutlined></SwapRightOutlined></button></Link>
+                    </div>
+                </div>
             </div>
 
 
@@ -171,6 +185,46 @@ export default function Home() {
                     </div>
                 </div>
                 <Link to='/news-event'><button>Lihat Semua <SwapRightOutlined></SwapRightOutlined> </button></Link>
+            </div>
+
+            {/* ============================================================== */}
+            {/* ==================== Bagian Library Iblam ==================== */}
+            {/* ============================================================== */}
+            <div className="homeLibrary">
+                <div className="homeLibrary-content">
+                    <div className="homeLibrary-tittle">
+                        <div className="icon"></div>
+                        <h2>IBLAM E-Library</h2>
+                    </div>
+                    <div className="homeLibrary-content-item">
+                        <p className="subject">Saya diteror penagih utang, padahal saya merasa tidak meminjam</p>
+                        <p>Belakangan ini, saya sering ditelpon oleh penagih utang. Katanya, saya mengambil kredit barang lalu menunggak. Padahal s...</p>
+                        <p>Rahmat Fathi | 764</p>
+                    </div>
+                    <div className="homeLibrary-content-item">
+                        <p className="subject">Suka cover lagu, apakah akan masalah?</p>
+                        <p>Saya suka sekali musik. Saya sangat sering mendengar lagu dan membuat cover yang sama dengan lagunya lalu diupload di Yo...</p>
+                        <p>Yulia Fitriani | 762</p>
+                    </div>
+                    <div className="homeLibrary-content-item">
+                        <p className="subject">Sudah Tahun Kedua Masih Belum Naik Gaji?</p>
+                        <p>Saat baru lulus kuliah, saya langsung mendapatkan pekerjaan di sebuah digital agency bidang periklanan. Sebagai karyawan...</p>
+                        <p>Dhiasyifa Fajrin | 713</p>
+                    </div>
+                    <Link to='/e-library'><button>Lihat Semua <SwapRightOutlined></SwapRightOutlined></button></Link>
+                </div>
+            </div>
+            <div className="homeLibrary-content-bottom">
+                <div className="homeLibrary-tittle">
+                    <div className="icon"></div>
+                    <h2>IBLAM E-Library</h2>
+                </div>
+                <div className="homeLibrary-content-item">
+                    <p className="subject">Saya diteror penagih utang, padahal saya merasa tidak meminjam</p>
+                    <p>Belakangan ini, saya sering ditelpon oleh penagih utang. Katanya, saya mengambil kredit barang lalu menunggak. Padahal s...</p>
+                    <p>Rahmat Fathi | 764</p>
+                </div>
+                <Link to='/e-library'><button>Lihat Semua <SwapRightOutlined></SwapRightOutlined></button></Link>
             </div>
 
             <Subscribe />

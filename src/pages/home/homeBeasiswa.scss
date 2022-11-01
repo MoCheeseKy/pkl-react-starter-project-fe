@@ -10,8 +10,17 @@ $h3hp : 2em;
 $h4hp : 1.5em;
 $h5hp : 1em;
 
+$paddingL : 40px 13vw;
+$paddingM : 20px 10vw;
+$paddingS : 20px 7vw;
+
+
 $blue : #0226c5;
 
+// Main Code ----------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
 .homeBeasiswa {
     width: 100vw;
     height: 550px;
@@ -94,5 +103,110 @@ $blue : #0226c5;
     .homeBeasiswa-block {
         width: 35%;
         background-color: orange;
+
+        .homeBeasiswa-content {
+            display: none;
+        }
+    }
+}
+
+
+// Tampilan Tablet ----------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media only screen and (max-width: 1000px) {
+    .homeBeasiswa {
+        flex-direction: column;
+        height: fit-content;
+
+        .homeBeasiswa-image {
+            width: 100%;
+            height: 400px;
+        }
+
+        .homeBeasiswa-stair-image {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            align-self: flex-end;
+            right: 0;
+            margin-top: 250px;
+            padding: 0;
+
+            .homeBeasiswa-content {
+                display: none;
+            }
+        }
+
+        .homeBeasiswa-block {
+            width: 100%;
+            height: fit-content;
+            padding: $paddingM;
+            display: block;
+            background-color: orange;
+
+            .homeBeasiswa-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h5 {
+                    margin: 0;
+                    color: $blue;
+                }
+
+                h2 {
+                    p.h2 {
+                        color: $blue;
+                    }
+
+                    text-align: center;
+                    line-height: 10px;
+                    padding: 20px 0;
+                    font-size: $h3pc;
+                }
+
+                p {
+                    text-align: center;
+                    color: white;
+                }
+
+                a {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+
+                    button {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        border: none;
+                        font-size: 30px;
+                        background-color: $blue;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Tampilan HP --------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media only screen and (max-width: 600px) {
+    .homeBeasiswa {
+        .homeBeasiswa-block {
+            .homeBeasiswa-content {
+                h2 {
+                    font-size: $h3hp;
+                }
+            }
+        }
     }
 }
