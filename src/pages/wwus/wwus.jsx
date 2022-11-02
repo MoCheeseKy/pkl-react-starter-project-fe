@@ -89,15 +89,9 @@ export default function Wwus() {
                             <button><WhatsAppOutlined /> <div className="text">Kampus Jakarta</div></button>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
-                        <div className="side-info">
-                            <h1><Link to={'/about/visi-misi'} style={{ color: 'black' }}>Visi dan Misi</Link></h1>
-                        </div>
-                        <div className="side-info">
-                            <h1><Link style={{ color: 'black' }}>Kampus Iblam</Link></h1>
-                        </div>
-                        <div className="side-info">
-                            <h1><Link to={'/about/kontak-kami'} style={{ color: 'black' }}>Kontak</Link></h1>
-                        </div>
+                        <Link to="/about/visi-misi"><div className="side-info visimisi"></div></Link>
+                        <Link to="/anout/iblam-campuss"><div className="side-info campuss"></div></Link>
+                        <Link to="/about/kontak-kami"><div className="side-info contact"></div></Link>
                     </div>
                 </div>
             </div>

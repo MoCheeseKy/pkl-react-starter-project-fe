@@ -30,7 +30,7 @@ export default function Graduates() {
                         </div>
                         <div className="help">
                             <h1>Butuh Bantuan ?</h1>
-                            <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, repudiandae.</div>
+                            <div className="text">Tim IBLAM siap menjawab kebutuhanmu</div>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Jakarta</div></button>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
@@ -40,7 +40,7 @@ export default function Graduates() {
 
                         </div>
                         <div className="image-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aperiam sint voluptates quis officiis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, vel?
+                            Program Magister IBLAM School of Law menyiapkan lulusan yang siap menjadi bagian dari pembangunan berkelanjutan dalam bidang hukum dan mampu bersaing di ranah global.
                         </div>
                         <button>Selengkapnya {">"}</button>
                     </div>
@@ -49,27 +49,13 @@ export default function Graduates() {
                 {/* Program . . . . */}
                 <div className="program tab">
                     <Link to={'/graduates/s2'}>
-                        <div className="program-item">
-                            <div className="isi">
-                                <div className="icon"></div>
-                                <h1>Kurikulum S2</h1>
-                            </div>
-                        </div>
+                        <div className="program-item s2"></div>
                     </Link>
                     <Link to={'/academic/pengajar'}>
-                        <div className="program-item">
-                            <div className="isi">
-                                <div className="icon"></div>
-                                <h1>Pengajar</h1>
-                            </div>
-                        </div>
+                        <div className="program-item pengajar"></div>
                     </Link>
                     <Link to={'/admission/beasiswa'}>
-                        <div className="program-item">
-                            <div className="isi">
-                                <h1>Beasiswa</h1>
-                            </div>
-                        </div>
+                        <div className="program-item beasiswa"></div>
                     </Link>
                 </div>
 

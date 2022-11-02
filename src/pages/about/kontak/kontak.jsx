@@ -38,9 +38,7 @@ export default function Kontak() {
         <>
             <Header></Header>
             <div className="kontak">
-                <div className="kontak-headline">
-                    <h1>Kontak</h1>
-                </div>
+                <div className="kontak-headline"></div>
                 <div className="kontak-tittle">
                     <div className="icon"></div>
                     <h2>Kontak Kami</h2>

@@ -30,7 +30,7 @@ export default function Undergraduates() {
                         </div>
                         <div className="help">
                             <h1>Butuh Bantuan ?</h1>
-                            <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, repudiandae.</div>
+                            <div className="text">Tim IBLAM siap menjawab kebutuhanmu</div>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Jakarta</div></button>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
@@ -40,7 +40,7 @@ export default function Undergraduates() {
 
                         </div>
                         <div className="image-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aperiam sint voluptates quis officiis mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, vel?
+                            Semua bisa jadi sarjana! IBLAM School of Law menyelenggarakan program pendidikan hukum yang komprehensif untuk para calon sarjana muda Indonesia.
                         </div>
                         <button>Selengkapnya {">"}</button>
                     </div>
@@ -49,46 +49,22 @@ export default function Undergraduates() {
                 {/* Program . . . . */}
                 <div className="program tab">
                     <Link to={'/admission/beasiswa'}>
-                        <div className="program-item">
-                            <div className="isi">
-                                <h1>S1 Reguler</h1>
-                            </div>
-                        </div>
+                        <div className="program-item s1reguler"></div>
                     </Link>
                     <Link to="/undergraduates/s1-reguler-karyawan">
-                        <div className="program-item">
-                            <div className="isi">
-                                <h1>S1 Karyawan</h1>
-                            </div>
-                        </div>
+                        <div className="program-item s1regulerKaryawan"></div>
                     </Link>
                     <Link to={'/undergraduates/s1'}>
-                        <div className="program-item">
-                            <div className="isi">
-                                <h1>Kurikulum S1</h1>
-                            </div>
-                        </div>
+                        <div className="program-item s1"></div>
                     </Link>
                     <Link to={'/admission/beasiswa'}>
-                        <div className="program-item andro-hide">
-                            <div className="isi">
-                                <h1>Beasiswa</h1>
-                            </div>
-                        </div>
+                        <div className="program-item beasiswa andro-hide"></div>
                     </Link>
                     <Link to={'/academic/pengajar'}>
-                        <div className="program-item andro-hide">
-                            <div className="isi">
-                                <h1>Pengajar</h1>
-                            </div>
-                        </div>
+                        <div className="program-item pengajar andro-hide"></div>
                     </Link>
                     <Link to="/about/komunitas-mahasiswa">
-                        <div className="program-item andro-hide">
-                            <div className="isi">
-                                <h1>Komunitas Mahasiswa</h1>
-                            </div>
-                        </div>
+                        <div className="program-item komunsiswa andro-hide"></div>
                     </Link>
                     <button>More</button>
                 </div>

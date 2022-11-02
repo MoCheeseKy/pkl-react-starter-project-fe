@@ -1,16 +1,12 @@
 .komun-mahasiswa {
     .komunsiswa-headline {
         width: 100vw;
-        height: 380px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ddd;
-
-        h1 {
-            font-size: 4em;
-            color: white;
-        }
+        height: 500px;
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2020/05/Komunitas-mahasiswa-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: -20px;
     }
 
     .komunsiswa-tittle {
@@ -58,6 +54,69 @@
                 box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
             }
 
+            .komunsiswa-content-item-image.satu {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-kopma.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .komunsiswa-content-item-image.dua {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-pers.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .komunsiswa-content-item-image.tiga {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-moot.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .komunsiswa-content-item-image.empat {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-senat.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .komunsiswa-content-item-image.lima {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-bem.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .komunsiswa-content-item-image.enam {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-alsa.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .komunsiswa-content-item-image.tujuh {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-mun.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .komunsiswa-content-item-image.delapan {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-english.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .komunsiswa-content-item-image.sembilan {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/komunitas-paduan.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
             h3 {
                 text-align: center;
                 font-size: 1.5em;
@@ -82,6 +141,11 @@
 
 @media only screen and (max-width: 1000px) {
     .komun-mahasiswa {
+        .komunsiswa-headline {
+            height: 300px;
+            background-position-y: 0px;
+        }
+
         .komunsiswa-tittle {
             margin-top: 40px;
             display: flex;
@@ -100,7 +164,8 @@
 @media only screen and (max-width: 600px) {
     .komun-mahasiswa {
         .komunsiswa-headline {
-            height: 145px;
+            height: 150px;
+            background-size: 100vw;
 
             h1 {
                 font-size: 2em
@@ -119,6 +184,7 @@
         .komunsiswa-content {
             padding: 20px 7vw;
             gap: 20px;
+            justify-content: center;
 
             .komunsiswa-content-item {
                 width: 280px;

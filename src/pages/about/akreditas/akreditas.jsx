@@ -11,9 +11,7 @@ export default function Akreditas() {
         <>
             <Header></Header>
             <div className="akreditas">
-                <div className="akreditas-headline">
-                    <h1>Akreditasi</h1>
-                </div>
+                <div className="akreditas-headline"> </div>
                 <div className="akreditas-content">
                     <div className="main-content">
                         <div className="main-content-tittle">
@@ -38,21 +36,9 @@ export default function Akreditas() {
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
                         <div className="side-content-nav">
-                            <Link to='/about/visi-misi'>
-                                <div className="side-content-nav-item">
-                                    <h3>Visi dan Misi</h3>
-                                </div>
-                            </Link>
-                            <Link to='/about/kampus-iblam'>
-                                <div className="side-content-nav-item">
-                                    <h3>Kampus Iblam</h3>
-                                </div>
-                            </Link>
-                            <Link to='/about/kontak-iblam'>
-                                <div className="side-content-nav-item">
-                                    <h3>Kontak</h3>
-                                </div>
-                            </Link>
+                            <Link to='/about/visi-misi'><div className="side-content-nav-item visimisi"></div></Link>
+                            <Link to='/about/iblam-campuss'><div className="side-content-nav-item campuss"></div></Link>
+                            <Link to='/about/kontak-kami'><div className="side-content-nav-item contact"></div></Link>
                         </div>
                     </div>
                 </div>

@@ -53,8 +53,9 @@
 
             .content-image {
                 width: 100%;
-                height: 400px;
-                background-color: #ddd;
+                height: 500px;
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/karir.jpg);
+                background-size: cover;
             }
 
         }
@@ -151,6 +152,27 @@
                 align-items: center;
                 background-color: #ddd;
             }
+
+            .side-info.visimisi {
+                background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about1.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .side-info.campuss {
+                background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about2.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .side-info.contact {
+                background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about3.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         }
     }
 }
@@ -167,10 +189,22 @@
                     font-size: 1.8em;
                 }
             }
+
+            .side-info.visimisi,
+            .side-info.campuss,
+            .side-info.contact {
+                height: 110px;
+            }
         }
 
         .content {
             padding: 20px 40px;
+
+            .content-info {
+                .content-image {
+                    height: 300px;
+                }
+            }
         }
     }
 }
@@ -216,6 +250,7 @@
                     padding: 35px 20px;
                     font-size: 1em;
                     font-weight: 600;
+                    height: 200px;
                 }
             }
 

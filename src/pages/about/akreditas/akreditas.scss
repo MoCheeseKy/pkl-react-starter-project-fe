@@ -1,17 +1,12 @@
 .akreditas {
     .akreditas-headline {
         width: 100vw;
-        height: 370px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ddd;
+        height: 500px;
         margin-bottom: 40px;
-
-        h1 {
-            font-size: 4em;
-            color: white;
-        }
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2020/05/header-akreditasi-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .akreditas-content {
@@ -126,20 +121,34 @@
             .side-content-nav {
                 margin-top: 20px;
 
-                .side-content-nav-item {
+                a {
                     width: 100%;
-                    height: 180px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #ddd;
-                    margin-bottom: 10px;
 
-                    h3 {
-                        font-size: 2em;
-                        color: white;
-                        margin: 0;
-                        padding: 0;
+                    .side-content-nav-item {
+                        width: 100%;
+                        height: 180px;
+                        margin-bottom: 10px;
+                    }
+
+                    .side-content-nav-item.visimisi {
+                        background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about1.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .side-content-nav-item.campuss {
+                        background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about2.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .side-content-nav-item.contact {
+                        background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about3.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
                     }
                 }
             }

@@ -3,6 +3,7 @@ import "./pendiri.scss"
 import Header from "../../../components/header/header";
 import Foot from "../../../components/footer/foot/foot";
 import Subscribe from "../../../components/footer/subscribe/subscribe";
+import { Link } from "react-router-dom";
 
 export default function Pendiri() {
     return (
@@ -11,17 +12,11 @@ export default function Pendiri() {
             <div className="page-pendiri">
 
                 {/* Headline Handler . . . . */}
-                <div className="headline">
-
-                    <h1 className="pendiri">Pendiri</h1>
-
-                </div>
-
+                <div className="headline"></div>
                 <div className="nama-pendiri">
                     <i>Nama Pendiri</i>
                     <b>Alm. Dr. H. Edy Susanto, S.H., M.H., M.M., M.A.</b>
                 </div>
-
                 {/* Content Handler . . . . */}
                 <div className="content asd">
                     <div className="biografi-pendiri">
@@ -32,15 +27,9 @@ export default function Pendiri() {
                     </div>
                 </div>
                 <div className="side-info">
-                    <div className="side-info-item">
-                        <h3>Visi dan Misi</h3>
-                    </div>
-                    <div className="side-info-item">
-                        <h3>Kampus Iblam</h3>
-                    </div>
-                    <div className="side-info-item">
-                        <h3>Kontak</h3>
-                    </div>
+                    <Link to='/about/visi-misi'><div className="side-info-item visimisi"></div></Link>
+                    <Link to='/about/iblam-campuss'><div className="side-info-item campuss"></div></Link>
+                    <Link to='/about/kontak-kami'><div className="side-info-item contact"></div></Link>
                 </div>
             </div>
             <Subscribe></Subscribe>
