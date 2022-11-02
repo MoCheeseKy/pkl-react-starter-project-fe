@@ -13,18 +13,13 @@ export default function Graduates() {
             <div className="graduates">
 
                 {/* Headline . . . . */}
-                <div className="headline">
-                    <div className="image">
+                <div className="headline graduates">
 
-                    </div>
-                    <div className="text">
-                        Graduates Pages
-                    </div>
                 </div>
 
                 {/* Content . . . . */}
                 <div className="content tab">
-                    <div className="sider">
+                    <div className="sider con">
                         <div className="tittle">
                             <div className="icon">
 
@@ -41,7 +36,7 @@ export default function Graduates() {
                         </div>
                     </div>
                     <div className="about">
-                        <div className="image">
+                        <div className="image about">
 
                         </div>
                         <div className="image-desc">
@@ -62,12 +57,12 @@ export default function Graduates() {
                         </div>
                     </Link>
                     <Link to={'/academic/pengajar'}>
-                    <div className="program-item">
-                        <div className="isi">
-                            <div className="icon"></div>
-                            <h1>Pengajar</h1>
+                        <div className="program-item">
+                            <div className="isi">
+                                <div className="icon"></div>
+                                <h1>Pengajar</h1>
+                            </div>
                         </div>
-                    </div>
                     </Link>
                     <Link to={'/admission/beasiswa'}>
                         <div className="program-item">

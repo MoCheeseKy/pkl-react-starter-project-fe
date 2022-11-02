@@ -1,11 +1,13 @@
 .program-karyawan {
     .proka-headline {
         width: 100vw;
-        height: 370px;
+        height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ddd;
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/s1-karyawan.jpeg);
+        background-size: cover;
+        background-position: center;
         margin-bottom: 40px;
 
         h1 {
@@ -131,6 +133,10 @@
 
 @media only screen and (max-width: 1000px) {
     .program-karyawan {
+        .proka-headline {
+            height: 250px;
+        }
+
         .proka-content {
             padding: 20px 10vw;
             flex-direction: column;
@@ -171,7 +177,7 @@
 @media only screen and (max-width: 600px) {
     .program-karyawan {
         .proka-headline {
-            height: 145px;
+            height: 170px;
 
             h1 {
                 font-size: 2em;

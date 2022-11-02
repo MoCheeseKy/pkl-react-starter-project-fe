@@ -12,10 +12,7 @@ export default function Alumni() {
             <Header></Header>
             <div className="alumni">
                 {/* Headline Handler . . . . */}
-                <div className="headline">
-
-                    <h1 className="alumni">Komunitas Alumni</h1>
-
+                <div className="headline alumni">
                 </div>
                 <div className="content">
 
@@ -60,7 +57,7 @@ export default function Alumni() {
                     <button>Alumnus Notable</button>
                     <div className="alumnus-list">
                         <div className="alumnus-item">
-                            <div className="alumnus-image">
+                            <div className="alumnus-image nikita">
 
                             </div>
                             <div className="alumnus-name">
@@ -68,7 +65,7 @@ export default function Alumni() {
                             </div>
                         </div>
                         <div className="alumnus-item">
-                            <div className="alumnus-image">
+                            <div className="alumnus-image zulkarnia">
 
                             </div>
                             <div className="alumnus-name">
@@ -76,7 +73,7 @@ export default function Alumni() {
                             </div>
                         </div>
                         <div className="alumnus-item">
-                            <div className="alumnus-image">
+                            <div className="alumnus-image desmon">
 
                             </div>
                             <div className="alumnus-name">
@@ -84,7 +81,7 @@ export default function Alumni() {
                             </div>
                         </div>
                         <div className="alumnus-item">
-                            <div className="alumnus-image">
+                            <div className="alumnus-image hutomo">
 
                             </div>
                             <div className="alumnus-name">
@@ -92,7 +89,7 @@ export default function Alumni() {
                             </div>
                         </div>
                         <div className="alumnus-item">
-                            <div className="alumnus-image">
+                            <div className="alumnus-image whulandary">
 
                             </div>
                             <div className="alumnus-name">
@@ -100,7 +97,7 @@ export default function Alumni() {
                             </div>
                         </div>
                         <div className="alumnus-item">
-                            <div className="alumnus-image">
+                            <div className="alumnus-image anwar">
 
                             </div>
                             <div className="alumnus-name">

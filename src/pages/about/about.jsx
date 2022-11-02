@@ -8,8 +8,7 @@ export default function About() {
     return (
         <>
             <Header></Header>
-            <div className="headline">
-                <h1>About</h1>
+            <div className="headline about">
             </div>
             <div className="about tab">
                 <div className="about-item">
@@ -23,7 +22,7 @@ export default function About() {
                     </div>
                     <Link to='/about/sejarah-iblam'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image sejarah">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>IBLAM didirikan dengan prakarsa untuk meningkatkan mutu atau nilai tambah Sarjana Hukum dengan menyelenggarakan pendidikan dan pelatihan-pelatihan yang melembaga.</p>
@@ -47,7 +46,7 @@ export default function About() {
                     </div>
                     <Link to='/about/pendiri-iblam'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image pendiri">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>Lebih dekat dengan pendiri IBLAM School of Law</p>
@@ -71,7 +70,7 @@ export default function About() {
                     </div>
                     <Link to='/about/visi-misi'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image visimisi">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>IBLAM School of Law menjadikan integritas sebagai visi dan misi utama dalam komitmen memberikan kunci perbaikan SDM di bidang hukum.</p>
@@ -95,7 +94,7 @@ export default function About() {
                     </div>
                     <Link to={'/about/struktur-organisasi'}>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image organizationStruc">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>Struktur organisasi IBLAM School of Law</p>
@@ -103,7 +102,6 @@ export default function About() {
                             </div>
                             <div className="about-footer">
                                 <button className="before">{">"}</button>
-
                             </div>
                         </div>
                     </Link>
@@ -119,7 +117,7 @@ export default function About() {
                     </div>
                     <Link to='/about/akreditas'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image akreditas">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>Daftar akreditasi IBLAM School of Law</p>
@@ -142,7 +140,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="about-image-footer">
-                        <div className="about-image">
+                        <div className="about-image campuss">
                             <div className="about-image-content">
                                 <button className="after">{">"}</button>
                                 <p>Temukan kampus IBLAM School of Law terdekat di kotamu</p>
@@ -165,7 +163,7 @@ export default function About() {
                     </div>
                     <Link to='/about/komunitas-mahasiswa'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image mahasiswa">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>Terhubunglah dengan komunitas mahasiswa IBLAM School of Law</p>
@@ -189,7 +187,7 @@ export default function About() {
                     </div>
                     <Link to='/alumni'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image alumni">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>Terhubung dengan komunitas alumni</p>
@@ -213,7 +211,7 @@ export default function About() {
                     </div>
                     <Link to='/about/iblam-career-and-development'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image careerDev">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>IBLAM Career and Development Center mempersiapkan mahasiswa untuk dapat terjun ke dunia kerja dan bersaing secara global</p>
@@ -237,7 +235,7 @@ export default function About() {
                     </div>
                     <Link to='/about/kontak-kami'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image contact">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>Informasi lengkap mengenai kontak IBLAM School of Law</p>
@@ -261,7 +259,7 @@ export default function About() {
                     </div>
                     <Link to='/about/bantuan-klinik-hukum'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image helpCenter">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>Dapatkan bantuan hukum dari para pakar di IBLAM School of Law</p>
@@ -285,7 +283,7 @@ export default function About() {
                     </div>
                     <Link to='/about/iblam-resource-and-consulting-group'>
                         <div className="about-image-footer">
-                            <div className="about-image">
+                            <div className="about-image researchConsult">
                                 <div className="about-image-content">
                                     <button className="after">{">"}</button>
                                     <p>IBLAM Research and Consulting Group adalah lembaga think tank / pusat penelitian untuk isu-isu hukum kontemporer yang berdampak pada kebijakan publik.</p>

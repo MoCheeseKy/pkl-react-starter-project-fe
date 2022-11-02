@@ -1,28 +1,15 @@
 .graduates {
 
     // Healine Atur Disini : --------------------
-    .headline {
+    .headline.graduates {
         width: 100vw;
         height: 300px;
         display: flex;
         margin-top: 20px;
-        background-color: orange;
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/Graduates.jpg);
+        background-size: cover;
+        background-position: center;
 
-        .image {
-            width: 50%;
-            height: 100%;
-            background-color: #ddd;
-            border-radius: 0 150px 150px 0;
-        }
-
-        .text {
-            width: 50%;
-            font-size: 4em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: orange;
-        }
     }
 
 
@@ -35,13 +22,13 @@
         padding: 20px 150px;
         box-sizing: border-box;
 
-        .sider {
+        .sider.con {
             width: 28%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 350px;
+            gap: 230px;
 
             .tittle {
                 display: flex;
@@ -96,10 +83,12 @@
             flex-direction: column;
             padding: 0;
 
-            .image {
+            .image.about {
                 width: 100%;
-                height: 90vh;
-                background-color: #ddd;
+                height: 500px;
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/IMG_28941.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
             }
 
             .image-desc {
@@ -163,7 +152,11 @@
 
 @media only screen and (max-width: 1000px) {
     .graduates {
-        .headline {
+
+        .headline.graduates {
+            height: 300px;
+            background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/Graduates-mobile.jpg);
+
             .text {
                 margin-left: 20px;
             }
@@ -199,8 +192,10 @@
 
 @media only screen and (max-width: 600px) {
     .graduates {
-        .headline {
-            height: 200px;
+        .headline.graduates {
+            width: 100vw;
+            background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/Graduates-mobile.jpg);
+            height: 120px;
 
             .text {
                 font-size: 1.5em;
@@ -241,8 +236,8 @@
             .about {
                 width: 100%;
 
-                .image {
-                    height: 250px;
+                .image.about {
+                    height: 200px;
                 }
 
                 button {

@@ -1,8 +1,10 @@
 .kompetensi-kelulusan {
     .kkl-headline {
         width: 100vw;
-        height: 370px;
-        background-color: #ddd;
+        height: 400px;
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2019/12/Header_03.jpg);
+        background-size: cover;
+        background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,7 +58,36 @@
                 height: 300px;
                 margin-bottom: 40px;
                 border-radius: 50%;
-                background-color: #ddd;
+            }
+
+            .profession-image.praktisi {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/11/profesi-praktisi-hukum.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .profession-image.instansi {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/11/profesi-instansi-hukum.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .profession-image.konsultan {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/11/profesi-konsultan-hukum.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .profession-image.perusahaan {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/11/profesi-perbankan.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .profession-image.akademis {
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2019/11/profesi-akademisi.png);
+                background-size: cover;
+                background-repeat: no-repeat;
             }
 
             h4 {
@@ -83,6 +114,10 @@
 
 @media only screen and (max-width: 1000px) {
     .kompetensi-kelulusan {
+        .kkl-headline {
+            height: 250px;
+        }
+
         p {
             font-size: 16px
         }
@@ -103,7 +138,7 @@
 @media only screen and (max-width: 600px) {
     .kompetensi-kelulusan {
         .kkl-headline {
-            height: 145px;
+            height: 150px;
 
             h1 {
                 font-size: 2em

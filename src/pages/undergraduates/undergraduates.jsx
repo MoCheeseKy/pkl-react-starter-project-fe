@@ -13,13 +13,8 @@ export default function Undergraduates() {
             <div className="graduates">
 
                 {/* Headline . . . . */}
-                <div className="headline">
-                    <div className="image">
+                <div className="headline undergraduates">
 
-                    </div>
-                    <div className="text">
-                        Undergraduates
-                    </div>
                 </div>
 
                 {/* Content . . . . */}
