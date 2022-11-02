@@ -1,78 +1,96 @@
-.carousel{
+.carousel {
     width: 100vw;
     height: 100%;
-    .isiCarousel1{
+
+    .isiCarousel1 {
         height: 90vh;
         background-image: url('https://iblam.ac.id/wp-content/uploads/2019/11/big-banner1.jpg');
         background-size: 100vw;
         background-repeat: no-repeat;
-        .contentIsi{
+
+        .contentIsi {
             width: 60%;
-            .atas{
+
+            .atas {
                 width: 100%;
                 display: flex;
                 margin-top: 30vh;
-                .blue{
+
+                .blue {
                     background: #0226c5;
                     width: 20%;
                 }
-                .txt{
+
+                .txt {
                     margin-left: -80px;
                     width: 100%;
-                    p{
+
+                    p {
                         margin-bottom: 0px;
                         color: white;
                         font-size: 48px;
                     }
                 }
             }
-            .bawah{
+
+            .bawah {
                 display: flex;
                 color: white;
-                .span{
+
+                .span {
                     padding-right: 20%;
                 }
-                .text{
-                    p{
+
+                .text {
+                    p {
                         display: flex;
                     }
                 }
             }
         }
     }
-    .isiCarousel2{
+
+    .isiCarousel2 {
         height: 90vh;
         background-image: url('https://iblam.ac.id/wp-content/uploads/2019/11/big-banner2.jpg');
         background-size: 100vw;
         background-repeat: no-repeat;
-        .contentIsi{
+
+        .contentIsi {
             width: 60%;
-            .atas{
+
+            .atas {
                 width: 100%;
                 display: flex;
                 margin-top: 30vh;
-                .blue{
+
+                .blue {
                     background: #0226c5;
                     width: 20%;
                 }
-                .txt{
+
+                .txt {
                     margin-left: -80px;
                     width: 100%;
-                    p{
+
+                    p {
                         margin-bottom: 0px;
                         color: white;
                         font-size: 48px;
                     }
                 }
             }
-            .bawah{
+
+            .bawah {
                 display: flex;
                 color: white;
-                .span{
+
+                .span {
                     padding-right: 20%;
                 }
-                .text{
-                    p{
+
+                .text {
+                    p {
                         display: flex;
                     }
                 }
@@ -82,35 +100,44 @@
 }
 
 @media only screen and (max-width: 750px) {
-    .carousel{
-        .isiCarousel1{
+    .carousel {
+        .isiCarousel1 {
             height: 90%;
-            .contentIsi{
+
+            .contentIsi {
                 width: 100%;
-                .atas{
+
+                .atas {
                     margin-top: 125px;
-                    .blue{
+
+                    .blue {
                         display: none;
                     }
-                    .txt{
+
+                    .txt {
                         text-align: center;
                         margin: 0;
-                        p{
+
+                        p {
                             margin-bottom: 8px;
                             font-size: 20px;
                         }
                     }
                 }
-                .bawah{
+
+                .bawah {
                     padding: 20px;
-                    .span{
+
+                    .span {
                         display: none;
                     }
-                    .text{
-                        p{
+
+                    .text {
+                        p {
                             text-align: center;
                             color: black;
-                            img{
+
+                            img {
                                 display: none;
                             }
                         }
@@ -118,34 +145,44 @@
                 }
             }
         }
-        .isiCarousel2{
+
+        .isiCarousel2 {
             height: 90%;
-            .contentIsi{
+
+            .contentIsi {
                 width: 100%;
-                .atas{
+
+                .atas {
                     margin-top: 125px;
-                    .blue{
+
+                    .blue {
                         display: none;
                     }
-                    .txt{
+
+                    .txt {
                         text-align: center;
                         margin: 0;
-                        p{
+
+                        p {
                             margin-bottom: 8px;
                             font-size: 20px;
                         }
                     }
                 }
-                .bawah{
+
+                .bawah {
                     padding: 20px;
-                    .span{
+
+                    .span {
                         display: none;
                     }
-                    .text{
-                        p{
+
+                    .text {
+                        p {
                             text-align: center;
                             color: black;
-                            img{
+
+                            img {
                                 display: none;
                             }
                         }
