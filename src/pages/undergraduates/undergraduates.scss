@@ -1,28 +1,14 @@
 .graduates {
 
     // Healine Atur Disini : --------------------
-    .headline {
+    .headline.undergraduates {
         width: 100vw;
         height: 300px;
         display: flex;
         margin-top: 20px;
-        background-color: orange;
-
-        .image {
-            width: 50%;
-            height: 100%;
-            background-color: #ddd;
-            border-radius: 0 150px 150px 0;
-        }
-
-        .text {
-            width: 50%;
-            font-size: 4em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: orange;
-        }
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/undergraduates.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
 
@@ -41,7 +27,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 350px;
+            gap: 230px;
 
             .tittle {
                 display: flex;
@@ -97,8 +83,10 @@
 
             .image {
                 width: 100%;
-                height: 90vh;
-                background-color: #ddd;
+                height: 500px;
+                background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/E-01-1-1536x1166.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
             }
 
             .image-desc {
@@ -169,6 +157,11 @@
 
 @media only screen and (max-width: 1000px) {
     .graduates {
+        .headline.undergraduates {
+            height: 300px;
+            background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/Undergraduates-mobile.jpg);
+        }
+
         .content {
             padding: 20px 40px;
 
@@ -200,8 +193,8 @@
 
 @media only screen and (max-width: 600px) {
     .graduates {
-        .headline {
-            height: 200px;
+        .headline.undergraduates {
+            height: 120px;
 
             .text {
                 font-size: 1.5em;

@@ -13,7 +13,7 @@ export default function ProgramKaryawan() {
             <Header></Header>
             <div className="program-karyawan">
                 <div className="proka-headline">
-                    <h1>S1 Karyawan</h1>
+
                 </div>
                 <div className="proka-content">
                     <div className="main-content">

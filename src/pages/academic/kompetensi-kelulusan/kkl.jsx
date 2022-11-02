@@ -9,7 +9,6 @@ export default function KompetensiKelulusan() {
             <Header></Header>
             <div className="kompetensi-kelulusan">
                 <div className="kkl-headline">
-                    <h1>Kompetensi Kelulusan</h1>
                 </div>
                 <p>Sistem pendidikan di IBLAM School of Law tidak hanya mempersiapkan lulusan yang baik secara akademis, namun juga mampu menyesuaikan diri di dunia pekerjaan. Para lulusan akan dapat melakukan skill analitik untuk memecahkan masalah secara profesional.</p>
                 <p>Dengan dibekali hard skill dan soft skill selama proses pembelajaran, lulusan IBLAM School of Law mampu bekerja di berbagai sektor bahkan menciptakan lapangan pekerjaan.</p>
@@ -20,7 +19,7 @@ export default function KompetensiKelulusan() {
                 <p>Berbagai profesi di bidang hukum yang dapat dimasuki alumni IBLAM School of Law sangat luas di antaranya :</p>
                 <div className="profession-content">
                     <div className="profession-item">
-                        <div className="profession-image">
+                        <div className="profession-image praktisi">
 
                         </div>
                         <h4>Praktisi Hukum</h4>
@@ -31,7 +30,7 @@ export default function KompetensiKelulusan() {
                         <p>Mediator</p>
                     </div>
                     <div className="profession-item">
-                        <div className="profession-image">
+                        <div className="profession-image instansi">
 
                         </div>
                         <h4>Instansi/Aparat Penegak Hukum</h4>
@@ -43,7 +42,7 @@ export default function KompetensiKelulusan() {
                         <p>Bea Cukai</p>
                     </div>
                     <div className="profession-item">
-                        <div className="profession-image">
+                        <div className="profession-image konsultan">
 
                         </div>
                         <h4>Konsultan Hukum</h4>
@@ -54,7 +53,7 @@ export default function KompetensiKelulusan() {
                         <p>Perusahaan</p>
                     </div>
                     <div className="profession-item">
-                        <div className="profession-image">
+                        <div className="profession-image perusahaan">
 
                         </div>
                         <h4>Perusahaan Perbankan Lembaga Keuangan Lain</h4>
@@ -68,7 +67,7 @@ export default function KompetensiKelulusan() {
                     </div>
 
                     <div className="profession-item">
-                        <div className="profession-image">
+                        <div className="profession-image akademis">
 
                         </div>
                         <h4>Akademisi/Keahlian</h4>

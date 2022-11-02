@@ -9,8 +9,7 @@ export default function Elibrary() {
     return (
         <>
             <Header></Header>
-            <div className="headline">
-                <h1>E - Library</h1>
+            <div className="headline elibrary">
             </div>
             <div className="elibrary">
                 <div className="elibrary-item">

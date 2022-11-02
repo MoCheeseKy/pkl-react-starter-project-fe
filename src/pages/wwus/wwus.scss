@@ -3,13 +3,15 @@
     height: fit-content;
 
     // Atur Headline Disini : --------------------
-    .headline {
+    .headline.wwu {
         width: 100vw;
-        height: 300px;
+        height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ddd;
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2020/04/karir.jpg);
+        background-size: cover;
+        background-position: center;
 
         h1 {
             font-size: 4em;
@@ -155,6 +157,10 @@
 
 @media only screen and (max-width: 1000px) {
     .wwus {
+        .headline.wwu {
+            height: 350px;
+        }
+
         .sider {
             .help {
                 h1 {
@@ -171,8 +177,8 @@
 
 @media only screen and (max-width: 600px) {
     .wwus {
-        .headline {
-            height: 100px;
+        .headline.wwu {
+            height: 170px;
 
             h1 {
                 font-size: 1.3em;

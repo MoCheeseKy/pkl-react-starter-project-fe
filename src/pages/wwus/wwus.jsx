@@ -12,9 +12,8 @@ export default function Wwus() {
             <Header></Header>
             <div className="wwus">
                 {/* Headline Handler . . . . */}
-                <div className="headline">
+                <div className="headline wwu">
 
-                    <h1>Karir</h1>
 
                 </div>
                 <div className="content">
@@ -91,13 +90,13 @@ export default function Wwus() {
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
                         <div className="side-info">
-                            <h1><Link to={'/about/visi-misi'} style={{color: 'black'}}>Visi dan Misi</Link></h1>
+                            <h1><Link to={'/about/visi-misi'} style={{ color: 'black' }}>Visi dan Misi</Link></h1>
                         </div>
                         <div className="side-info">
-                            <h1><Link style={{color: 'black'}}>Kampus Iblam</Link></h1>
+                            <h1><Link style={{ color: 'black' }}>Kampus Iblam</Link></h1>
                         </div>
                         <div className="side-info">
-                            <h1><Link to={'/about/kontak-kami'} style={{color: 'black'}}>Kontak</Link></h1>
+                            <h1><Link to={'/about/kontak-kami'} style={{ color: 'black' }}>Kontak</Link></h1>
                         </div>
                     </div>
                 </div>
