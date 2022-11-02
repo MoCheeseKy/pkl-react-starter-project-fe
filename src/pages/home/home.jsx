@@ -24,43 +24,37 @@ export default function Home() {
             {/* =============================================================== */}
             <div className="carousel">
                 <Carousel>
-                    <div className="isiCarousel1">
-                        <div className="contentIsi">
-                            <div className="atas">
-                                <div className="blue">
-                                    <span>&nbsp;</span>
+                    <div className="content">
+                        <div className="cover">
+                            <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner1.jpg" alt="" />
+                            <div className="isi">
+                                <div className="atas">
+                                    <span>&nbsp;</span><h2>Meraih Mimpi, Membangun Bangsa</h2>
                                 </div>
-                                <div className="txt">
-                                    <p>Meraih Mimpi, Membangun Bangsa</p>
-                                </div>
-                            </div>
-                            <div className="bawah">
-                                <div className="span">&nbsp;</div>
-                                <div className="text">
+                                <div className="bawah">
+                                    <Link>
+                                        <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/btn-arrow-orange.png" alt="" />
+                                    </Link>
                                     <p>
                                         Kamulah yang akan menjadi ahli hukum dan pengambil kebijakan yang berintegritas. Indonesia dan dunia menunggumu. Siap untuk mulai perjalananmu?
-                                        <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/btn-arrow-orange.png" alt="" />
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="isiCarousel2">
-                        <div className="contentIsi">
-                            <div className="atas">
-                                <div className="blue">
-                                    <span>&nbsp;</span>
+                    <div className="content">
+                        <div className="cover">
+                            <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner2.jpg" alt="" />
+                            <div className="isi">
+                                <div className="atas">
+                                    <span>&nbsp;</span><h2>Pendidikan Hukum untuk Semua</h2>
                                 </div>
-                                <div className="txt">
-                                    <p>Pendidikan Hukum untuk Semua</p>
-                                </div>
-                            </div>
-                            <div className="bawah">
-                                <div className="span">&nbsp;</div>
-                                <div className="text">
+                                <div className="bawah">
+                                    <Link>
+                                        <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/btn-arrow-orange.png" alt="" />
+                                    </Link>
                                     <p>
                                         IBLAM School of Law menyiapkan berbagai program pendidikan yang ramah untuk semua kalangan.
-                                        <img src="https://iblam.ac.id/wp-content/themes/iblam/assets/img/btn-arrow-orange.png" alt="" />
                                     </p>
                                 </div>
                             </div>
