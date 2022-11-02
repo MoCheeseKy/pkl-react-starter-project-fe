@@ -19,7 +19,7 @@
                         background-color: #0226c5;
                     }
                     h2{
-                        width: 75%;
+                        width: 80%;
                         color: white;
                         margin: 0 0 0 -10%;
                         font-size: 48px;
@@ -48,7 +48,7 @@
 @media only screen and (max-width: 600px){
     .carousel{
         .content{
-            height: 50vh;
+            height: 55vh;
             .cover{
                 img{
                     height: 50%;
@@ -65,13 +65,13 @@
                         h2{
                             text-align: center;
                             width: 100%;
-                            margin: 0;
+                            margin: 0 0 20px;
                             font-size: 20px;
                         }
                     }
                     .bawah{
                         margin: 0;
-                        padding: 30px 20px 10px;
+                        padding: 20px;
                         width: 100%;
                         a{
                             display: none;
@@ -81,6 +81,26 @@
                             padding: 0;
                             font-size: 14px;
                             text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 333px){
+    .carousel{
+        .content{
+            .cover{
+                .isi{
+                    .atas{
+                        h2{
+                            font-size: 15px;
+                        }
+                    }
+                    .bawah{
+                        p{
+                            font-size: 12px;
                         }
                     }
                 }
