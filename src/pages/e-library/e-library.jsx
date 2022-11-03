@@ -16,7 +16,7 @@ export default function Elibrary() {
                     <div className="icon">
 
                     </div>
-                    <div className="library-image">
+                    <div className="library-image tanyaJawab">
                         <h1>Tanya Jawab Hukum</h1>
                         <Link to='/e-library/tanya-jawab-hukum'><button>Selengkapnya . . .</button></Link>
                     </div>
@@ -25,7 +25,7 @@ export default function Elibrary() {
                     <div className="icon">
 
                     </div>
-                    <div className="library-image">
+                    <div className="library-image tataNegara">
                         <h1>Jurnal Hukum tata Negara</h1>
                         <Link to='/e-library/jurnal-hukum-tata-negara'><button>Selengkapnya . . .</button></Link>
                     </div>
@@ -34,7 +34,7 @@ export default function Elibrary() {
                     <div className="icon">
 
                     </div>
-                    <div className="library-image">
+                    <div className="library-image bisnis">
                         <h1>Jurnal Hukum Bisnis</h1>
                         <Link to='/e-library/jurnal-hukum-bisnis'><button>Selengkapnya . . .</button></Link>
                     </div>
@@ -43,7 +43,7 @@ export default function Elibrary() {
                     <div className="icon">
 
                     </div>
-                    <div className="library-image">
+                    <div className="library-image pidana">
                         <h1>Jurnal Hukum Pidana</h1>
                         <Link to='/e-library/jurnal-hukum-pidana'><button>Selengkapnya . . .</button></Link>
                     </div>

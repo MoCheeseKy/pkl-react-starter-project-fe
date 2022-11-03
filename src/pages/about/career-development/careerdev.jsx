@@ -11,9 +11,7 @@ export default function CareerDevelopment() {
         <>
             <Header></Header>
             <div className="careerdev">
-                <div className="careerdev-headline">
-                    <h1>Iblam Career Center</h1>
-                </div>
+                <div className="careerdev-headline"></div>
                 <div className="careerdev-content">
                     <div className="main-content">
                         <div className="main-content-tittle">
@@ -35,21 +33,9 @@ export default function CareerDevelopment() {
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
                         <div className="side-content-nav">
-                            <Link to='/about/visi-misi'>
-                                <div className="side-content-nav-item">
-                                    <h3>Visi dan Misi</h3>
-                                </div>
-                            </Link>
-                            <Link to='/about/kampus-iblam'>
-                                <div className="side-content-nav-item">
-                                    <h3>Kampus Iblam</h3>
-                                </div>
-                            </Link>
-                            <Link to='/about/kontak-iblam'>
-                                <div className="side-content-nav-item">
-                                    <h3>Kontak</h3>
-                                </div>
-                            </Link>
+                            <Link to='/about/visi-misi'><div className="side-content-nav-item visimisi"></div></Link>
+                            <Link to='/about/iblam-campuss'><div className="side-content-nav-item campuss"></div></Link>
+                            <Link to='/about/kontak-kami'><div className="side-content-nav-item contact"></div></Link>
                         </div>
                     </div>
                 </div>

@@ -45,10 +45,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #ddd;
+
 
             h1 {
                 font-size: 2em;
+                color: white;
             }
 
             button {
@@ -60,6 +61,32 @@
                 color: white;
                 cursor: pointer;
             }
+        }
+
+        .library-image.tanyaJawab {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/library-1.jpg);
+        }
+
+        .library-image.tataNegara {
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/library-2.jpg);
+        }
+
+        .library-image.bisnis {
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/library-3.jpg;);
+
+        }
+
+        .library-image.pidana {
+            background-size: cover;
+            background-position: center;
+            background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/library-4.jpg);
         }
     }
 }

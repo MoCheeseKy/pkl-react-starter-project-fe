@@ -126,22 +126,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
 
-            .icon {
-                width: 50px;
-                height: 50px;
-                background-color: #000;
-            }
-
-            .isi {
-                width: 90%;
-                height: 85%;
-                border: 1px solid black;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
+        .program-item.s2 {
+            background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/icon-graduate-1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 
@@ -185,6 +176,17 @@
 
             .program-item {
                 height: 200px;
+            }
+        }
+
+        .program {
+            a {
+
+                .program-item.s2,
+                .program-item.beasiswa,
+                .program-item.pengajar {
+                    height: 130px;
+                }
             }
         }
     }
@@ -253,6 +255,15 @@
 
             .program-item {
                 width: 100%;
+            }
+
+            a {
+
+                .program-item.s2,
+                .program-item.beasiswa,
+                .program-item.pengajar {
+                    height: 150px;
+                }
             }
         }
 

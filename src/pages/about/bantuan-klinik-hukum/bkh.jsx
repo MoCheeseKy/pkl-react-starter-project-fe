@@ -10,7 +10,6 @@ export default function BantuanKlinikhukum() {
             <Header></Header>
             <div className="bantuan-klinik-hukum">
                 <div className="bkh-headline">
-                    <h1>Iblam Legal help</h1>
                 </div>
                 <div className="bkh-tittle">
                     <div className="icon"></div>

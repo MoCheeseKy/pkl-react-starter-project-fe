@@ -11,9 +11,7 @@ export default function ResourceConsulting() {
         <>
             <Header></Header>
             <div className="rcg">
-                <div className="rcg-headline">
-                    <h1>Iblam Research</h1>
-                </div>
+                <div className="rcg-headline"></div>
                 <div className="rcg-content">
                     <div className="main-content">
                         <div className="main-content-tittle">
@@ -36,21 +34,9 @@ export default function ResourceConsulting() {
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
                         <div className="side-content-nav">
-                            <Link to='/about/visi-misi'>
-                                <div className="side-content-nav-item">
-                                    <h3>Visi dan Misi</h3>
-                                </div>
-                            </Link>
-                            <Link to='/about/kampus-iblam'>
-                                <div className="side-content-nav-item">
-                                    <h3>Kampus Iblam</h3>
-                                </div>
-                            </Link>
-                            <Link to='/about/kontak-iblam'>
-                                <div className="side-content-nav-item">
-                                    <h3>Kontak</h3>
-                                </div>
-                            </Link>
+                            <Link to='/about/visi-misi'><div className="side-content-nav-item visimisi"></div></Link>
+                            <Link to='/about/iblam-campuss'><div className="side-content-nav-item campuss"></div></Link>
+                            <Link to='/about/kontak-kami'><div className="side-content-nav-item contact"></div></Link>
                         </div>
                     </div>
                 </div>

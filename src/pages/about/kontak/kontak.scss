@@ -2,15 +2,10 @@
     .kontak-headline {
         width: 100vw;
         height: 380px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ddd;
-
-        h1 {
-            font-size: 4em;
-            color: white;
-        }
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2020/05/header-kontak.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .kontak-tittle {

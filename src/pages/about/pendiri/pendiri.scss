@@ -5,17 +5,14 @@
     // Atur Headline Disini : --------------------
     .headline {
         width: 100vw;
-        height: 300px;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ddd;
-
-        h1.pendiri {
-            margin: 0;
-            font-size: 4em;
-            color: white;
-        }
+        background-image: url(https://iblam.ac.id/wp-content/uploads/2020/05/pendiri-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     // Atur Content Disini : --------------------
@@ -58,16 +55,28 @@
         .side-info-item {
             width: 230px;
             height: 120px;
-            background-color: #ddd;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
-            h3 {
-                font-size: 1.5em;
-                color: white;
+        }
 
-            }
+        .side-info-item.visimisi {
+            background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .side-info-item.campuss {
+            background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .side-info-item.contact {
+            background-image: url(https://iblam.ac.id/wp-content/themes/iblam/assets/img/banner-xs-about3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
     }
 }
@@ -87,6 +96,10 @@
 
 @media only screen and (max-width: 600px) {
     .page-pendiri {
+        .headline {
+            height: 200px;
+        }
+
         .content.asd {
             padding: 20px 10vw;
         }

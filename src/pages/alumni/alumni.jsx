@@ -4,6 +4,7 @@ import Header from "../../components/header/header";
 import Foot from "../../components/footer/foot/foot";
 import Subscribe from "../../components/footer/subscribe/subscribe";
 import { WhatsAppOutlined } from '@ant-design/icons';
+import { Link } from "react-router-dom";
 
 
 export default function Alumni() {
@@ -46,9 +47,7 @@ export default function Alumni() {
                             <button><WhatsAppOutlined /> <div className="text">Kampus Jakarta</div></button>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
-                        <div className="career">
-                            <h1>Karir</h1>
-                        </div>
+                        <Link to="work-with-us"><div className="career"></div></Link>
                     </div>
                 </div>
 

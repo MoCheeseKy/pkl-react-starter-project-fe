@@ -4,6 +4,7 @@ import Header from "../../../components/header/header";
 import Foot from "../../../components/footer/foot/foot";
 import Subscribe from "../../../components/footer/subscribe/subscribe";
 import { WhatsAppOutlined } from '@ant-design/icons';
+import { Link } from "react-router-dom";
 
 export default function VisiMisi() {
     return (
@@ -11,22 +12,13 @@ export default function VisiMisi() {
             <Header></Header>
             <div className="page-visimisi">
                 {/* Headline Handler . . . . */}
-                <div className="headline">
-
-                    <h1 className="alumni">Komunitas Alumni</h1>
-
-                </div>
-                <div className="content">
-
-                </div>
-
+                <div className="headline"></div>
+                <div className="content"></div>
                 {/* Content Handler . . . . */}
                 <div className="content asd">
                     <div className="visimisi">
                         <div className="tittle">
-                            <div className="icon">
-
-                            </div>
+                            <div className="icon"></div>
                             <div className="text">
                                 Visi dan Misi
                             </div>
@@ -53,15 +45,9 @@ export default function VisiMisi() {
                             <button><WhatsAppOutlined /> <div className="text">Kampus Jakarta</div></button>
                             <button><WhatsAppOutlined /> <div className="text">Kampus Depok</div></button>
                         </div>
-                        <div className="side-info">
-                            <h1>Visi dan Misi</h1>
-                        </div>
-                        <div className="side-info">
-                            <h1>Kampus Iblam</h1>
-                        </div>
-                        <div className="side-info">
-                            <h1>Kontrak</h1>
-                        </div>
+                        <Link to='/about/visi-misi'><div className="side-info visimisi"></div></Link>
+                        <Link to='/about/iblam-campuss'><div className="side-info campuss"></div></Link>
+                        <Link to='/about/kontak-kami'><div className="side-info contact"></div></Link>
                     </div>
                 </div>
                 <div className="help">
