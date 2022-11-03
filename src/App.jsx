@@ -46,6 +46,7 @@ import Pengajar from './pages/academic/pengajar/pengajar';
 import KompetensiKelulusan from './pages/academic/kompetensi-kelulusan/kkl';
 import Beasiswa from './pages/admission/beasiswa/beasiswa';
 import Struktur from './pages/about/struktur-organisasi/struktur';
+import Article from './pages/news-event/article/article';
 
 function App() {
   return (
@@ -106,10 +107,13 @@ function App() {
         <Route exact path='/about/kontak-kami' element={<Kontak />} />
         <Route exact path='/about/struktur-organisasi' element={<Struktur />} />
 
+        {/* Child News URL . . .*/}
+        <Route exact path='/tes' element={<Article />} />
+
         {/* Unknown URL */}
         <Route path="*" element={
           <center>
-            <h1>Oops! That page can’t be found.</h1>
+            <h1>Oops! That page can't be found.</h1>
             <p>It looks like nothing was found at this location. Maybe try other link ?</p>
           </center>
         } />
