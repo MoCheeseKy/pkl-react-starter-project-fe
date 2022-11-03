@@ -29,7 +29,7 @@ export default function Home() {
                             <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner1.jpg" alt="" />
                             <div className="isi">
                                 <div className="atas">
-                                    <span>&nbsp;</span><h2>Meraih Mimpi, Membangun Bangsa</h2>
+                                    <span>&nbsp;</span><h2>Meraih Mimpi,<br className="br" /> Membangun Bangsa</h2>
                                 </div>
                                 <div className="bawah">
                                     <Link>
@@ -47,7 +47,7 @@ export default function Home() {
                             <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner2.jpg" alt="" />
                             <div className="isi">
                                 <div className="atas">
-                                    <span>&nbsp;</span><h2>Pendidikan Hukum untuk Semua</h2>
+                                    <span>&nbsp;</span><h2>Pendidikan Hukum <br className="br" /> untuk Semua</h2>
                                 </div>
                                 <div className="bawah">
                                     <Link>
