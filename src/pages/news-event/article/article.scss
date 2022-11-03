@@ -1,0 +1,150 @@
+.article{
+    .content{
+        .entry{
+            img{
+                width: 100vw;
+                height: auto;
+            }
+        }
+        .container{
+            margin: 0 26px;
+            padding: 0 15px;
+            .breadcrumb{
+                padding: 20px;
+            }
+            .title-main{
+                h2{
+                    .br{
+                        display: none;
+                    }
+                    strong{
+                        font-size: 32px;
+                        color: #0226c5;
+                    }
+                }
+            }
+            .isi{
+                display: flex;
+                margin-bottom: 20px;
+                .berita{
+                    width: 70%;
+                    padding: 0 15px;
+                    .judul-berita{
+                        h2{
+                            strong{
+                                font-size: 32px;
+                                color: #0226c5;
+                            }
+                        }
+                    }
+                }
+                .help{
+                    padding: 0 15px;
+                    .isihelp{
+                        h4{
+                            strong{
+                                font-size: 24px;
+                                color: #0226c5;
+                            }
+                        }
+                        h6{
+                            font-size: 16px;
+                        }
+                        .link-help{
+                            display: flex;
+                            flex-direction: column;
+                            a{
+                                width: 100%;
+                                border: none;
+                                border-radius: 5px;
+                                background-color: #0226c5;
+                                color: white;
+                                font-size: 20px;
+                                text-align: center;
+                                padding: 8px 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            .lainnya{
+                display: flex;
+                flex-wrap: wrap;
+                .post-item{
+                    width: 30%;
+                    margin: 0 10px;
+                    img{
+                        width: 100%;
+                        height: 50%;
+                    }
+                    .post-date{
+                        color: #0226C5;
+                        font-size: 15px;
+                        margin: 10px 0 10px;
+                    }
+                    .post-title{
+                        width: 100%;
+                        font-size: 25px;
+                        margin: 0 0 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .article{
+        .content{
+            .container{
+                margin: 0;
+                padding: 24px;
+                .breadcrumb{
+                    padding: 20px 0;
+                }
+                .title-main{
+                    text-align: center;
+                    h2{
+                        .br{
+                            display: inline;
+                        }
+                        strong{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .isi{
+                    flex-direction: column;
+                    .berita{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        .judul-berita{
+                            h2{
+                                strong{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .help{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        .isihelp{
+                            h4{
+                                strong{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .lainnya{
+                    flex-direction: column;
+                    .post-item{
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
