@@ -23,7 +23,7 @@ export default function Home() {
             {/* ==================== Bagian Carousel Image ==================== */}
             {/* =============================================================== */}
             <div className="carousel">
-                <Carousel>
+                <Carousel autoplay dots={false}>
                     <div className="content">
                         <div className="cover">
                             <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner1.jpg" alt="" />
