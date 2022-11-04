@@ -1,0 +1,124 @@
+.footlib{
+    width: 100vw;
+    padding: 24px 0;
+    background-color: #3D4852;
+    .container{
+        color: white;
+        margin: 0 31px;
+        padding: 15px;
+        .up{
+            display: flex;
+            margin-top: 10px;
+            .profile{
+                width: 25%;
+                padding: 0 10px;
+                img{
+                    width: 64px;
+                    height: 64px;
+                    margin-bottom: 8px;
+                }
+                .profname{
+                    margin-bottom: 24px;
+                    font-size: 16px;
+                }
+                ul{
+                    list-style-type: none;
+                    li{
+                        a{
+                            color: white;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .info{
+                width: 40%;
+                padding: 0 10px;
+                h4{
+                    color: white;
+                    font-size: 24px;
+                    margin-bottom: 24px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            .search{
+                width: 35%;
+                padding: 0 10px;
+                h4{
+                    font-size: 24px;
+                    color: white;
+                }
+                .subjudul{
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+                .donate{
+                    display: flex;
+                    flex-direction: column;
+                    .support{
+                        color: #28A745;
+                        border: #28A745 1px solid;
+                        border-radius: 5px;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        width: fit-content;
+                        font-size: 16px;
+                        .icon{
+                            svg{
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                    .contribute{
+                        color: white;
+                        border: white 1px solid;
+                        border-radius: 5px;
+                        padding: 10px;
+                        width: fit-content;
+                        font-size: 16px;
+                        .icon{
+                            svg{
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .down{
+            display: flex;
+            justify-content: space-between;
+            p{
+                margin: 0;
+            }
+            .kanan{
+                code{
+                    color: #E83E8C;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 760px){
+    .footlib{
+        .container{
+            margin: 0;
+            .up{
+                flex-direction: column;
+                .profile{
+                    width: 100%;
+                }
+                .info{
+                    width: 100%;
+                }
+                .search{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
