@@ -292,10 +292,24 @@ $paddingS : 20px 7vw;
                 }
             }
         }
+
+        .collectionLovers {
+            .collectionLovers-item {
+                .collectionLovers-user {
+                    .user-name {
+                        text-align: center;
+                    }
+
+                    .user-job {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     .berandaLibrary {
         h1 {
             padding: 0 10vw;

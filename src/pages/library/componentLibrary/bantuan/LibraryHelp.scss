@@ -1,0 +1,31 @@
+$paddingL : 40px 10vw;
+$paddingM : 20px 10vw;
+$paddingS : 20px 7vw;
+
+.libraryHelp {
+    padding: $paddingM;
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid gray;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 30px;
+
+        b {
+            font-size: 1.3em;
+        }
+    }
+}

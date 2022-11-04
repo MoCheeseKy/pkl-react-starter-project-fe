@@ -1,0 +1,73 @@
+$h1pc : 4em;
+$h2pc : 3em;
+$h3pc : 2.5em;
+$h4pc : 2em;
+$h5pc : 1.5em;
+
+$h1hp : 3em;
+$h2hp : 2.5em;
+$h3hp : 2em;
+$h4hp : 1.5em;
+$h5hp : 1em;
+
+$paddingL : 40px 10vw;
+$paddingM : 20px 10vw;
+$paddingS : 20px 7vw;
+
+.libraryInformation {
+    padding: $paddingM;
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid gray;
+        margin-bottom: 40px;
+    }
+
+    .information-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .main-information {
+            width: 55%;
+            height: fit-content;
+
+            .text-wrap {
+                margin-bottom: 20px;
+
+                h2 {
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        .rules-information {
+            width: 40%;
+            height: fit-content;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .libraryInformation {
+        .information-content {
+            flex-direction: column;
+
+            .main-information {
+                width: 100%;
+            }
+
+            .rules-information {
+                width: 100%;
+            }
+        }
+    }
+}

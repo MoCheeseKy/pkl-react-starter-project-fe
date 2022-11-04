@@ -3,7 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import Head from '../../../components/headlib/head'
 import Foot from '../../../components/footlib/foot'
 
-import Beranda from '../componentLibrary/beranda/beranda';
+// import Beranda from '../componentLibrary/beranda/beranda';
+// import LibraryInformation from '../componentLibrary/informasi/libraryInformation';
+// import BeritaLibrary from '../componentLibrary/berita/beritaLibrary';
+import LibraryHelp from '../componentLibrary/bantuan/LibraryHelp';
 
 export default function Index() {
   return (
@@ -11,7 +14,8 @@ export default function Index() {
       <Head />
       <Suspense fallback={<>loading...</>}>
         <Routes>
-          <Route exact path='/' element={<Beranda />}></Route>
+          <Route exact path='/' element={<LibraryHelp />} />
+          {/* <Route exact path='/library/beranda/library-information' element={<LibraryInformation />} /> */}
         </Routes>
       </Suspense>
       <Foot />

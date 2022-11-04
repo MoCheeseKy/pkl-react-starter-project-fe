@@ -24,7 +24,7 @@ export default function Library() {
                 </div>
                 <div className="links">
                     <div className="link satu">
-                        <Link to={'/library/index'}><p>LIBRARY IBLAM</p></Link>
+                        <Link to={'/library/'}><p>LIBRARY IBLAM</p></Link>
                     </div>
                     <div className="link dua">
                         <Link><p>DIGILIB IBLAM</p></Link>

@@ -97,7 +97,7 @@ function App() {
         <Route exact path='/e-library/jurnal-hukum-tata-negara' element={<JurnalHukumTataNegara />} />
 
         {/* Child Library URL . . .*/}
-        <Route exact path='/library/index' element={<Index />} />
+        <Route exact path='/library/' element={<Index />} />
 
         {/* Child : About URL . . . */}
         <Route exact path='/about/visi-misi' element={<VisiMisi />} />
