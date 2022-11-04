@@ -47,6 +47,7 @@ import KompetensiKelulusan from './pages/academic/kompetensi-kelulusan/kkl';
 import Beasiswa from './pages/admission/beasiswa/beasiswa';
 import Struktur from './pages/about/struktur-organisasi/struktur';
 import Article from './pages/news-event/article/article';
+import Index from './pages/library/index/library';
 
 function App() {
   return (
@@ -94,6 +95,9 @@ function App() {
         <Route exact path='/e-library/jurnal-hukum-bisnis' element={<JurnalHukumBisnis />} />
         <Route exact path='/e-library/jurnal-hukum-pidana' element={<JurnalHukumPidana />} />
         <Route exact path='/e-library/jurnal-hukum-tata-negara' element={<JurnalHukumTataNegara />} />
+
+        {/* Child Library URL . . .*/}
+        <Route exact path='/library/index' element={<Index />} />
 
         {/* Child : About URL . . . */}
         <Route exact path='/about/visi-misi' element={<VisiMisi />} />
