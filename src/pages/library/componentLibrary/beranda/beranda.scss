@@ -1,0 +1,342 @@
+$h1pc : 4em;
+$h2pc : 3em;
+$h3pc : 2.5em;
+$h4pc : 2em;
+$h5pc : 1.5em;
+
+$h1hp : 3em;
+$h2hp : 2.5em;
+$h3hp : 2em;
+$h4hp : 1.5em;
+$h5hp : 1em;
+
+$paddingL : 40px 10vw;
+$paddingM : 20px 10vw;
+$paddingS : 20px 7vw;
+
+.berandaLibrary {
+    height: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+        color: gray;
+        font-weight: 200 !important;
+        font-size: 2em;
+        margin-bottom: 24px;
+    }
+
+    .subject-choice {
+        width: 100vw;
+        height: fit-content;
+        padding: 0px 20vw;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+
+        .subject-choice-item {
+            width: 170px;
+            height: 170px;
+            background-color: #fff;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .choice-image {
+                width: 80px;
+                height: 80px;
+            }
+
+            .choice-image.sastra {
+                background-image: url(https://library.iblam.ac.id/template/default/assets/images/8-books.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .choice-image.ilmuSosial {
+                background-image: url(https://library.iblam.ac.id/template/default/assets/images/3-diploma.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .choice-image.ilmuTerapan {
+                background-image: url(https://library.iblam.ac.id/template/default/assets/images/6-blackboard.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .choice-image.seniHiburan {
+                background-image: url(https://library.iblam.ac.id/template/default/assets/images/7-quill.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .choice-image.other {
+                background-image: url(https://library.iblam.ac.id/template/default/assets/images/icon/grid_icon.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .choice-name {
+                color: lightgray;
+                text-align: center;
+            }
+        }
+    }
+
+    .BooksContent {
+        padding: $paddingM;
+
+        h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .book-type-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            a {
+                button {
+                    padding: 5px 20px;
+                    border-radius: 20px;
+                    border: 1px solid gray;
+                    background-color: #fff;
+                    color: gray;
+                    transition: .3s;
+                }
+
+                button:hover {
+                    background-color: gray;
+                    color: #fff;
+                }
+            }
+        }
+
+        .book-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .book-item {
+                width: 180px;
+                height: 300px;
+                margin-top: 40px;
+                padding: 15px 20px;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                overflow: hidden;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .book-item-image {
+                    width: 140px;
+                    height: 200px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-bottom: 10px;
+                }
+
+                // Popular Book Image Control =================
+                // ============================================
+                // ============================================
+                .book-item-image.popularFirst {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2Fcover_hukum_agraria.jpg&width=120);
+                }
+
+                .book-item-image.popularSecond {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2F300400pxxx_7611_Pengantar_Ilmu_Hukum___%25281%2529.jpg.jpg&width=120);
+                }
+
+                .book-item-image.popularThird {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2Fcover_kejahatan_mayantara_cyber_crime_.jpg&width=120);
+                }
+
+                .book-item-image.popularFour {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2FPERLINDUNGAN_HUKUM_E_COMMERCE.jpg.jpg&width=120);
+                }
+
+                .book-item-image.popularFive {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2F80cdf279e9d507ad8e3633674d0ee072b1ac9ba3_2_326x499.jpeg.jpeg&width=120);
+                }
+
+                .book-item-image.popularSix {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2Fcover_ilmu_negara_pengantar_metode_dan_sejarah_perkembangan.jpg&width=120);
+                }
+
+                // New Book Image Control =================
+                // ========================================
+                // ========================================
+                .book-item-image.newFirst {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2FIKA24.248.jpg.jpg&width=120);
+                }
+
+                .book-item-image.newSecond {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2Fcover_undang_undang_ri_tentang_perbankan_syariah.jpg&width=120);
+                }
+
+                .book-item-image.newThird {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images/default/image.png&width=120);
+                }
+
+                .book-item-image.newFour {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2Fcover_cyber_law.jpg&width=120);
+                }
+
+                .book-item-image.newFive {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images%2Fdocs%2FTOGA_MERAH.png.png&width=120);
+                }
+
+                .book-item-image.newSix {
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images/default/image.png&width=120);
+                }
+
+                .book-tittle {
+                    margin-bottom: 10px;
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+
+    .collectionLovers {
+        padding: $paddingM;
+        margin-top: 40px;
+
+
+        h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .collectionLovers-item {
+            width: 100%;
+            height: fit-content;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .collectionLovers-user {
+                padding: 10px 5%;
+                width: 30%;
+                box-sizing: border-box;
+                border: 1px solid gray;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .user-profile-image {
+                    width: 84px;
+                    height: 84px;
+                    margin-bottom: 15px;
+                    border-radius: 100%;
+                    background-image: url(https://library.iblam.ac.id/lib/minigalnano/createthumb.php?filename=images/default/image.png&width=120);
+                    background-size: cover;
+                }
+
+                .user-name {
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                .loans-title {
+                    display: flex;
+                    margin-top: 15px;
+                    gap: 7px;
+
+                    p {
+                        color: gray;
+                    }
+
+                    p.wall {
+                        margin: 0px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .berandaLibrary {
+        .subject-choice {
+            padding: $paddingS;
+
+            .subject-choice-item {
+                width: 100px;
+                height: 150px;
+
+                .choice-image {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .berandaLibrary {
+        h1 {
+            padding: 0 10vw;
+            margin-bottom: 0;
+            font-size: 1.5em;
+        }
+
+        .BooksContent {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .book-wrapper {
+                .book-item {
+                    padding: 10px 10px;
+                    width: 120px;
+                    height: 300px;
+
+                    .book-item-image {
+                        width: 100px;
+                        height: 150px;
+                    }
+
+                    .book-tittle {
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+
+        .collectionLovers {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .collectionLovers-item {
+                .collectionLovers-user {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
