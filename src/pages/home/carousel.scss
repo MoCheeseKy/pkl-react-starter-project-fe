@@ -2,7 +2,7 @@
     width: 100vw;
 
     .content {
-        height: 400px;
+        height: 90vh;
 
         .cover {
             position: relative;
@@ -59,7 +59,7 @@
 @media only screen and (max-width: 600px) {
     .carousel {
         .content {
-            height: 55vh;
+            height: 60vh;
 
             .cover {
                 img {
