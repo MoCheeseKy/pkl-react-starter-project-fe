@@ -15,7 +15,6 @@ export default function Index() {
       <Suspense fallback={<>loading...</>}>
         <Routes>
           <Route exact path='/' element={<LibraryHelp />} />
-          {/* <Route exact path='/library/beranda/library-information' element={<LibraryInformation />} /> */}
         </Routes>
       </Suspense>
       <Foot />
