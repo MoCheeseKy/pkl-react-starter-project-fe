@@ -1,9 +1,12 @@
 import React from "react";
 import './areaAnggota.scss'
+import Head from "../../../../components/headlib/head";
+import Foot from "../../../../components/footlib/foot";
 
 export default function AreaAnggota() {
     return (
         <>
+            <Head></Head>
             <div className="areaAnggota">
                 <h1>Masuk Anggota Perpustakaan</h1>
                 <hr />
@@ -14,6 +17,7 @@ export default function AreaAnggota() {
                 <input type="text" placeholder="Enter Password" />
                 <button>Masuk</button>
             </div>
+            <Foot></Foot>
         </>
     )
 }

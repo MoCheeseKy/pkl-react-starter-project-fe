@@ -1,9 +1,12 @@
 import React from "react";
 import './libraryInformation.scss'
+import Head from "../../../../components/headlib/head";
+import Foot from "../../../../components/footlib/foot";
 
 export default function LibraryInformation() {
     return (
         <>
+            <Head></Head>
             <div className="libraryInformation">
                 <h1>Library Information</h1>
                 <hr />
@@ -58,6 +61,7 @@ export default function LibraryInformation() {
                     </div>
                 </div>
             </div>
+            <Foot></Foot>
         </>
     )
 }

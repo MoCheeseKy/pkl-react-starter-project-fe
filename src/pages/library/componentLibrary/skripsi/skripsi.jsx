@@ -1,9 +1,12 @@
 import React from "react";
 import './skripsi.scss'
+import Head from "../../../../components/headlib/head";
+import Foot from "../../../../components/footlib/foot";
 
 export default function Skripsi() {
     return (
         <>
+            <Head></Head>
             <div className="skripsi">
                 <h1>Penyerahan Tesis Skripsi</h1>
                 <hr />
@@ -20,6 +23,7 @@ export default function Skripsi() {
                     <li>Lembar pernyataan, lembar pengesahan persetujuan, lembar pengesahan dan lembar persetujuan publikasi discan sebelum dibuat dalam bentuk file.</li>
                 </ul>
             </div>
+            <Foot></Foot>
         </>
     )
 }

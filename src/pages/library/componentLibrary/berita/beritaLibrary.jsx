@@ -2,10 +2,13 @@ import React from "react";
 import './beritaLibrary.scss'
 import { ClockCircleOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
+import Head from "../../../../components/headlib/head";
+import Foot from "../../../../components/footlib/foot";
 
 export default function BeritaLibrary() {
     return (
         <>
+            <Head></Head>
             <div className="newsLibrary">
                 <h1>Warta Perpustakaan</h1>
                 <hr />
@@ -25,6 +28,7 @@ export default function BeritaLibrary() {
                     <Link><button>Lanjutkan Membaca</button></Link>
                 </div>
             </div>
+            <Foot></Foot>
         </>
     )
 }

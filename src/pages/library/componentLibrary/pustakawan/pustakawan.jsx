@@ -1,9 +1,12 @@
 import React from "react";
 import './pustakawan.scss';
+import Head from "../../../../components/headlib/head";
+import Foot from "../../../../components/footlib/foot";
 
 export default function Pustakawan() {
     return (
         <>
+            <Head></Head>
             <div className="pustakawan">
                 <h1>Profil Pustakawan</h1>
                 <hr />
@@ -52,6 +55,7 @@ export default function Pustakawan() {
                     </div>
                 </div>
             </div>
+            <Foot></Foot>
         </>
     )
 }

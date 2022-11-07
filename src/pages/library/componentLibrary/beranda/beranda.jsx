@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './beranda.scss'
+import Head from "../../../../components/headlib/head";
+import Foot from "../../../../components/footlib/foot";
 
 export default function Beranda() {
     return (
         <>
+            <Head></Head>
             <div className="berandaLibrary">
                 <h1>Pilih subjek yang menarik bagi Anda</h1>
                 <div className="subject-choice">
@@ -149,6 +152,7 @@ export default function Beranda() {
                     </div>
                 </div>
             </div>
+            <Foot></Foot>
         </>
     )
 }
