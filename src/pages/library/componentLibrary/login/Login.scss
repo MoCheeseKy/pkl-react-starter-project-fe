@@ -1,0 +1,17 @@
+.loglib{
+    .container{
+        margin: 40px 25px 0 25px;
+        h2{
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        .login-form{
+            width: 35%;
+            margin-bottom: 40px;
+            .row{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
