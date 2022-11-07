@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 // import Head from '../../../components/headlib/head'
 // import Foot from '../../../components/footlib/foot'
 
@@ -10,24 +10,19 @@ import { Route, Routes } from "react-router-dom";
 // import Pustakawan from '../componentLibrary/pustakawan/pustakawan';
 // import Skripsi from '../componentLibrary/skripsi/skripsi';
 // import AreaAnggota from '../componentLibrary/areaAnggota/areaAnggota';
-import Visitor from '../componentLibrary/visitor/visitor';
-import Login from '../componentLibrary/login/Login';
+// import Visitor from '../componentLibrary/visitor/visitor';
+// import Login from '../componentLibrary/login/Login';
 
 export default function Index() {
   return (
     <div className='index'>
       {/* <Head /> */}
-      <Suspense fallback={<>loading...</>}>
+      {/* <Suspense fallback={<>loading...</>}>
         <Routes>
           <Route exact path='/' element={<Visitor />} />
         </Routes>
-      </Suspense>
+      </Suspense> */}
       {/* <Foot /> */}
-      <Suspense fallback={<>loading...</>}>
-        <Routes>
-          <Route exact path='/' element={<Login />} />
-        </Routes>
-      </Suspense>
     </div>
   )
 }
