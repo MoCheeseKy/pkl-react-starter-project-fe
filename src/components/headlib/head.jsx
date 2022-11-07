@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import './head.scss'
 import { Link } from 'react-router-dom'
-import { Drawer, Divider, Carousel } from 'antd';
+import { Drawer, Divider, Carousel, Input } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 
 export default function Head() {
+
+  const {Search} = Input;
 
   const [open, setOpen] = useState(false);
 
@@ -89,6 +91,9 @@ export default function Head() {
             <Link style={navStyle}>TL</Link>
           </Drawer>
           </div>
+        </div>
+        <div className="row">
+          <Search size='large' placeholder='Masukkan kata kunci untuk mencari koleksi'/>
         </div>
       </div>
     </div>
