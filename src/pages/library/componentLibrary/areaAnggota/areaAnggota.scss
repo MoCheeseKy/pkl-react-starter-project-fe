@@ -1,0 +1,66 @@
+$h1pc : 4em;
+$h2pc : 3em;
+$h3pc : 2.5em;
+$h4pc : 2em;
+$h5pc : 1.5em;
+
+$h1hp : 3em;
+$h2hp : 2.5em;
+$h3hp : 2em;
+$h4hp : 1.5em;
+$h5hp : 1em;
+
+$paddingL : 40px 10vw;
+$paddingM : 20px 10vw;
+$paddingS : 20px 7vw;
+
+.areaAnggota {
+    padding: $paddingM;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid gray;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 0;
+    }
+
+    input {
+        width: 250px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        transition: .3s;
+    }
+
+
+
+    button {
+        width: 130px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        background-color: #0074e7;
+        border: none;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .areaAnggota {
+        h1 {
+            font-size: 2em;
+        }
+    }
+}

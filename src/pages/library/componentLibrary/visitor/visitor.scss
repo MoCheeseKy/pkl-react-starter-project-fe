@@ -1,0 +1,188 @@
+.visitor {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    .visitor-login {
+        width: 35%;
+        height: 100%;
+        padding: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        h1 {
+            margin: 0;
+            font-weight: 300;
+            font-size: 28px;
+        }
+
+        p {
+            font-weight: 250;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 18px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px 20px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        p.input {
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 5px 20px;
+            background-color: #0074e7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .signature {
+            display: flex;
+            font-size: 14px;
+            align-self: flex-end;
+
+            p {
+                color: #e83e8c;
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .visitor-carousel {
+        width: 65%;
+        height: 100%;
+
+
+        .quotes {
+            h4 {
+                color: white;
+                margin: 0;
+            }
+
+            font-size: 18px;
+            position: fixed;
+            z-index: 1;
+            color: white;
+            bottom: 0;
+            margin-left: 40px;
+            margin-bottom: 40px;
+        }
+
+        .Carousel {
+            width: 100%;
+            height: 100vh;
+
+            .slick-dots li button {
+                display: none;
+            }
+
+            .carousel-content {
+                width: 100%;
+                height: 100vh;
+
+
+                .image-satu {
+                    background-image: url(https://library.iblam.ac.id/template/default/assets/images/slide1.jpg);
+                    background-size: 150%;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100vh;
+                    background-position: center;
+                    background-position-y: -80px;
+                }
+
+                .image-dua {
+                    background-image: url(https://library.iblam.ac.id/template/default/assets/images/slide2.jpg);
+                    background-size: 180%;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100vh;
+                    background-position: center;
+                }
+
+                .image-tiga {
+                    background-image: url(https://library.iblam.ac.id/template/default/assets/images/slide3.jpg);
+                    background-size: 160%;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100vh;
+                    background-position: center;
+                    background-position-y: -100px;
+                }
+
+                .image-empat {
+                    background-image: url(https://library.iblam.ac.id/template/default/assets/images/slide4.jpg);
+                    background-size: 150%;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100vh;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .visitor {
+        .visitor-carousel {
+            .Carousel {
+                .carousel-content {
+                    .image-satu {
+                        background-size: 300%;
+                        background-position-x: -900px;
+                    }
+
+                    .image-dua {
+                        background-size: 300%;
+                        background-position-x: -350px;
+                    }
+
+                    .image-tiga {
+                        background-size: 300%;
+                        background-position-y: -90px;
+                        background-position-x: -300px;
+                    }
+
+                    .image-empat {
+                        background-size: 300%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    .visitor {
+        .visitor-login {
+            width: 100%;
+            padding: 34px;
+            box-sizing: border-box;
+
+            .visitor-login-content {
+                width: 100%;
+            }
+        }
+
+        .visitor-carousel {
+            display: none;
+        }
+    }
+}
