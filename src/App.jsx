@@ -47,7 +47,15 @@ import KompetensiKelulusan from './pages/academic/kompetensi-kelulusan/kkl';
 import Beasiswa from './pages/admission/beasiswa/beasiswa';
 import Struktur from './pages/about/struktur-organisasi/struktur';
 import Article from './pages/news-event/article/article';
-import Index from './pages/library/index/library';
+import Beranda from './pages/library/componentLibrary/beranda/beranda';
+import LibraryInformation from './pages/library/componentLibrary/informasi/libraryInformation';
+import BeritaLibrary from './pages/library/componentLibrary/berita/beritaLibrary';
+import LibraryHelp from './pages/library/componentLibrary/bantuan/LibraryHelp';
+import Pustakawan from './pages/library/componentLibrary/pustakawan/pustakawan';
+import Skripsi from './pages/library/componentLibrary/skripsi/skripsi';
+import AreaAnggota from './pages/library/componentLibrary/areaAnggota/areaAnggota';
+import Visitor from './pages/library/componentLibrary/visitor/visitor';
+import Loginlib from './pages/library/componentLibrary/login/Login';
 
 function App() {
   return (
@@ -97,7 +105,15 @@ function App() {
         <Route exact path='/e-library/jurnal-hukum-tata-negara' element={<JurnalHukumTataNegara />} />
 
         {/* Child Library URL . . .*/}
-        <Route exact path='/library/' element={<Index />} />
+        <Route exact path='/library/beranda' element={<Beranda />} />
+        <Route exact path='/library/information' element={<LibraryInformation />} />
+        <Route exact path='/library/berita' element={<BeritaLibrary />} />
+        <Route exact path='/library/help' element={<LibraryHelp />} />
+        <Route exact path='/library/pustakawan' element={<Pustakawan />} />
+        <Route exact path='/library/skripsi' element={<Skripsi />} />
+        <Route exact path='/library/anggota' element={<AreaAnggota />} />
+        <Route exact path='/library/visitor' element={<Visitor />} />
+        <Route exact path='/library/login' element={<Loginlib />} />
 
         {/* Child : About URL . . . */}
         <Route exact path='/about/visi-misi' element={<VisiMisi />} />
