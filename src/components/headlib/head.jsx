@@ -25,12 +25,18 @@ export default function Head() {
   return (
     <div className="head">
       <div className="cover">
-        <Carousel autoplay dots={false}>
+        <Carousel autoplay dots={false} effect='fade'>
           <div className="img">
-            <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner1.jpg" alt="" />
+            <img src="https://library.iblam.ac.id/template/default/assets/images/slide1.jpg" alt="" />
           </div>
           <div className="img">
-            <img src="https://iblam.ac.id/wp-content/uploads/2019/11/big-banner2.jpg" alt="" />
+            <img src="https://library.iblam.ac.id/template/default/assets/images/slide2.jpg" alt="" />
+          </div>
+          <div className="img">
+            <img src="https://library.iblam.ac.id/template/default/assets/images/slide3.jpg" alt="" />
+          </div>
+          <div className="img">
+            <img src="https://library.iblam.ac.id/template/default/assets/images/slide4.jpg" alt="" />
           </div>
         </Carousel>
         <div className="content">
