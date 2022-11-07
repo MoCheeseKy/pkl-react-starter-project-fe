@@ -1,72 +1,111 @@
 .head{
-    display: flex;
     width: 100vw;
-    background-color: red;
-    justify-content: space-between;
-    .logo{
-        margin-left: 20px;
-        a{
-            display: inline-flex;
-            padding-right: 60px;
-            img{
-                float: left;
-                width: 40px;
-                height: 40px;
-                margin: 16px 5px 16px 0;
-            }
-            .txt{
-                height: fit-content;
-                margin-top: 10%;
-                width: fit-content;
-                h1{
-                    font-size: 18px;
-                    color: white;
+    height: fit-content;
+    .cover{
+        height: 100%;
+        .ant-carousel{
+            height: 100%;
+            position: relative;
+            .img{
+                height: 150px;
+                img{
+                    object-fit: cover;
+                    width: 100vw;
+                    height: 100%;
                 }
             }
         }
-    }
-    .items-large{
-        margin-top: 10px;
-        ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: transparent;
-            li{
-                float: left;
+        .content{
+            position: absolute;
+            justify-content: space-between;
+            display: flex;
+            margin-top: -150px;
+            width: 100%;
+            .logo{
+                a{
+                    display: inline-flex;
+                    padding-right: 60px;
+                    img{
+                        float: left;
+                        width: 40px;
+                        height: 40px;
+                        margin: 16px 5px 16px 10px;
+                    }
+                    .txt{
+                        height: fit-content;
+                        margin-top: 10%;
+                        width: fit-content;
+                        h1{
+                            font-size: 18px;
+                            color: white;
+                        }
+                    }
+                }
             }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 5px;
-                font-size: 16px;
+            .items-large{
+                margin-top: 10px;
+                ul{
+                    list-style-type: none;
+                    margin: 0 10px 0 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: transparent;
+                    li{
+                        float: left;
+                    }
+                    li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .items-small{
+                display: none;
             }
         }
-    }
-    .items-small{
-        display: none;
+        .row{
+            margin-top: -20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            box-shadow: 0 5px 50px grey;
+        }
     }
 }
 @media only screen and (max-width: 1030px){
     .head{
-        justify-content: space-between;
-        .items-large{
-            display: none;
+        .cover{
+            .content{
+                justify-content: space-between;
+                .items-large{
+                    display: none;
+                }
+                .items-small{
+                    display: block;
+                    height: fit-content;
+                    button{
+                        margin-right: 20px;
+                        margin-top: 10px;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 20px;
+                        border: 10px;
+                        background-color: transparent;
+                        border: none;
+                    }
+                }
+            }
         }
-        .items-small{
-            display: block;
-            height: fit-content;
-            button{
-                margin-right: 20px;
-                margin-top: 10px;
-                width: 30px;
-                height: 30px;
-                font-size: 20px;
-                border: 10px;
-                background-color: transparent;
-                border: none;
+    }
+}
+@media only screen and (max-width: 700px){
+    .head{
+        .cover{
+            .row{
+                width: 90%;
             }
         }
     }

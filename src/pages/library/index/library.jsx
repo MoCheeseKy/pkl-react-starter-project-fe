@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 // import Skripsi from '../componentLibrary/skripsi/skripsi';
 // import AreaAnggota from '../componentLibrary/areaAnggota/areaAnggota';
 import Visitor from '../componentLibrary/visitor/visitor';
+import Login from '../componentLibrary/login/Login';
 
 export default function Index() {
   return (
@@ -22,6 +23,11 @@ export default function Index() {
         </Routes>
       </Suspense>
       {/* <Foot /> */}
+      <Suspense fallback={<>loading...</>}>
+        <Routes>
+          <Route exact path='/' element={<Login />} />
+        </Routes>
+      </Suspense>
     </div>
   )
 }
